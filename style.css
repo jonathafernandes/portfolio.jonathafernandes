@@ -36,6 +36,7 @@ header h2 {
 }
 
 .icon-title {
+    background: rgb(42, 165, 93);
     border: 3px solid rgb(42, 165, 93);
     border-radius: 10px;
 
@@ -226,7 +227,9 @@ button:hover {
 
 .footer-line {
     width: 100%;
-    border: 2px solid rgb(42, 165, 93);
+
+    background: rgb(42, 165, 93);
+    border: 3px solid rgb(42, 165, 93);
 }
 
 /* form: */
