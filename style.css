@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin: 70px 0 0 170px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.icon-title {
+    border: 3px solid rgb(42, 165, 93);
+    border-radius: 10px;
+
+    width: 9%;
+    margin-top: 8px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.6;
+
+    list-style: none;
+}
+
+ul a {
+    transition: 500ms;
+}
+
+ul a:hover {
+    color: rgb(42, 165, 93);
+}
+
+.about {
+    background: rgba(219, 233, 232, 0.534);
+
+    width: 75%;
+    margin: 100px 0 0 170px;
+    padding: 4%;
+}
+
+.about h1 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.about p {
+    font-size: 22px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social a img {
+    width: 20px;
+    margin-top: 80px;
+
+    transition: 300ms;
+}
+
+.social a img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+}
+
+.line {
+    width: 75%;
+    margin: 40px 0 0 170px;
+
+    background: grey;
+    border: 2px solid gray;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.section-title {
+    margin: 100px 170px 0px 170px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.img-projects {
+    width: 60%;
+
+    /* box-shadow: inset 0 0 1em rgb(224, 223, 217), 0 0 1em rgb(163, 159, 159); */
+    border: 1px solid rgba(42, 165, 93, 0.233);
+}
+
+.project-content {
+    display: flex;
+    gap: 25px;
+    width: 80%;
+    margin: 50px 140px 0 140px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text h2 {
+    font-size: 30px;
+}
+
+.project-text img {
+    width: 20px;
+    opacity: 0.7;
+}
+
+.techs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+button {
+    margin-top: 40px;
+    width: 110px;
+    padding: 10px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+
+    background: rgb(42, 165, 93);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    transition: 300ms;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: none;
+    color: black;
+    border: 1px solid rgb(42, 165, 93);
+}
+
+.post-text {
+    background: rgba(219, 233, 232, 0.534);
+
+    width: 75%;
+    margin: 50px 0 0 170px;
+    padding: 4%;
+}
+
+.post-text a {
+    color: black;
+}
+
+.post span {
+    font-weight: 500;
+}
+
+.caption {
+    opacity: 0.6;
+}
+
+.post-text p {
+    margin-top: 5px;
+}
+
+.post-text div {
+    margin-top: 15px;
+}
+
+.post-text img {
+    width: 13px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px 170px 40px 170px;
+}
+
+#footer-text-1 {
+    color: orangered;
+}
+
+#footer-text-2 {
+    color: dodgerblue;
+}
+
+.footer-line {
+    width: 100%;
+    border: 2px solid rgb(42, 165, 93);
+}
+
+/* form: */
+
+.title-contact {
+    margin: 100px 170px 0px 170px;
+    width: 60%;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 22px;
+}
+
+.form {
+    background: rgba(219, 233, 232, 0.534);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 75%;
+    margin: 50px 0 0 170px;
+    padding: 4%;
+}
+
+.form label {
+    font-family: 'Rubik', Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.form input {
+    width: 60%;
+    height: 50px;
+    padding: 1%;
+
+    font-family: 'Rubik', Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form span {
+    color: rgb(207, 22, 22);
+}
