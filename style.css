@@ -15,7 +15,7 @@ a {
 }
 
 header {
-    margin: 70px 0 0 170px;
+    margin: 70px 0 0 12vw;
 }
 
 header img {
@@ -36,6 +36,8 @@ header h2 {
 }
 
 .icon-title {
+    background: rgb(42, 165, 93);
+
     border: 3px solid rgb(42, 165, 93);
     border-radius: 10px;
 
@@ -57,19 +59,22 @@ header h2 {
     list-style: none;
 }
 
-.list ul a {
+.menu-section nav a {
     transition: 500ms;
 }
 
-.list ul a:hover {
+.menu-section nav a:hover {
     color: rgb(42, 165, 93);
+}
+
+main {
+    margin: 0 12vw 0 12vw;
 }
 
 .about {
     background: rgba(219, 233, 232, 0.534);
 
-    width: 75%;
-    margin: 100px 0 0 170px;
+    margin-top: 100px;
     padding: 4%;
 }
 
@@ -100,8 +105,7 @@ header h2 {
 }
 
 .line {
-    width: 75%;
-    margin: 40px 0 0 170px;
+    margin-top: 40px;
 
     background: grey;
     border: 2px solid gray;
@@ -110,7 +114,7 @@ header h2 {
 }
 
 .section-title {
-    margin: 100px 170px 0px 170px;
+    margin-top: 100px;
 }
 
 .section-title h2 {
@@ -119,16 +123,15 @@ header h2 {
 }
 
 .img-projects {
-    width: 60%;
+    width: 70%;
     
     border: 1px solid rgba(42, 165, 93, 0.233);
 }
 
 .project-content {
     display: flex;
-    gap: 25px;
-    width: 80%;
-    margin: 50px 140px 0 140px;
+    gap: 55px;
+    margin-top: 50px;
 }
 
 .project-text {
@@ -179,8 +182,7 @@ button:hover {
 .post-text {
     background: rgba(219, 233, 232, 0.534);
 
-    width: 75%;
-    margin: 50px 0 0 170px;
+    margin-top: 50px;
     padding: 4%;
 }
 
@@ -212,7 +214,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
 
-    margin: 40px 170px 40px 170px;
+    margin: 40px 12vw 40px 12vw;
 }
 
 #footer-text-1 {
@@ -225,21 +227,21 @@ button:hover {
 
 .footer-line {
     width: 100%;
+
     border: 2px solid rgb(42, 165, 93);
+    
+    background: rgb(42, 165, 93);
 }
 
 /* form: */
 
 .title-contact {
-    margin: 100px 170px 0px 170px;
-    width: 60%;
+    margin-top: 100px;
 }
 
 .contact h2 {
     font-size: 40px;
     font-weight: 300;
-
-    margin-bottom: 20px;
 }
 
 .contact p {
@@ -253,8 +255,7 @@ button:hover {
     flex-direction: column;
     gap: 10px;
 
-    width: 75%;
-    margin: 50px 0 0 170px;
+    margin-top: 50px;
     padding: 4%;
 }
 
