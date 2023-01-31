@@ -1,12 +1,13 @@
 @media(max-width: 980px) {
     .project-content {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 15px;
         align-items: center;
     }
 
     .img-projects {
-        width: 100%;
+        width: 120%;
     }
 
     .footer-content {
@@ -35,7 +36,7 @@
 
     .menu-toggle {
         position: absolute;
-        left: 90vw;
+        left: 85vw;
         top: 3%;
 
         width: 40px;
