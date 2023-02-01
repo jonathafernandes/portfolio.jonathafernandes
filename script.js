@@ -1,4 +1,4 @@
-//Menu responsivo:
+//Menu responsivo
 
 let show = true
 
@@ -16,6 +16,10 @@ menuToggle.addEventListener("click", () => {
 //Botão para voltar ao topo
 var btn = document.querySelector(".back-to-top");
 
-btn.addEventListener("click", function() {
-    window.scrollTo(0, 0);
-});
+btn.addEventListener("click", function () {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+})

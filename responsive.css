@@ -23,10 +23,6 @@
         display: none;
     }
 
-    .back-to-top.on {
-        display: none;
-    }
-
     .one,
     .two,
     .three {
@@ -47,6 +43,7 @@
         height: 30px;
 
         margin-top: 25px;
+        margin-right: 20px;
     }
 
     /* fullscreen */
@@ -79,7 +76,7 @@
     .menu-section.on .menu-toggle {
         position: absolute;
         right: 25px;
-        top: 15px;
+        top: 3px;
     }
 
     .menu-section.on .menu-toggle .one {
@@ -117,20 +114,22 @@
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 640px) {
     header img {
         width: 80px;
         height: 80px;
     }
 
     .perfil {
+        gap: 0;
+
         width: 70%;
     }
 }
 
 @media (max-width: 410px) {
     .perfil {
-        gap: 5%;
+        gap: 0;
     }
 
     header h2 {
