@@ -15,7 +15,12 @@ a {
 }
 
 header {
-    margin: 70px 0 0 12vw;
+    background: #fff;
+
+    width: 100%;
+
+    position: sticky;   
+    top: 0; 
 }
 
 header img {
@@ -32,6 +37,7 @@ header h2 {
 .perfil {
     display: flex;
     align-items: center;
+    margin: 70px 0 0 12vw;
     gap: 36px;
 }
 
@@ -107,10 +113,9 @@ main {
 .line {
     margin-top: 40px;
 
-    background: grey;
-    border: 2px solid gray;
+    background: rgb(190, 186, 186);
+    border: 2px solid rgb(190, 186, 186);
     border-radius: 10px;
-    opacity: 0.3;
 }
 
 .section-title {
@@ -124,7 +129,7 @@ main {
 
 .img-projects {
     width: 70%;
-    
+
     border: 1px solid rgba(42, 165, 93, 0.233);
 }
 
@@ -145,7 +150,6 @@ main {
 
 .project-text img {
     width: 20px;
-    opacity: 0.7;
 }
 
 .techs {
@@ -194,10 +198,6 @@ button:hover {
     font-weight: 500;
 }
 
-.caption {
-    opacity: 0.6;
-}
-
 .post-text p {
     margin-top: 5px;
 }
@@ -225,11 +225,30 @@ button:hover {
     color: dodgerblue;
 }
 
+#footer-text-3 {
+    color: goldenrod;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+}
+
+#back-to-top img {
+    width: 20px;
+}
+
 .footer-line {
     width: 100%;
 
     border: 2px solid rgb(42, 165, 93);
-    
+
     background: rgb(42, 165, 93);
 }
 
@@ -263,8 +282,9 @@ button:hover {
     font-family: 'Rubik', Sans-serif;
     font-size: 20px;
     font-weight: 400;
-    opacity: 0.5;
     text-transform: uppercase;
+
+    color: rgb(133, 132, 132);;
 }
 
 .form input {

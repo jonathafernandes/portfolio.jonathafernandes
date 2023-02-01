@@ -11,3 +11,10 @@ menuToggle.addEventListener("click", () => {
     menuSection.classList.toggle("on", show)
     show = !show;
 })
+
+//Botão para voltar ao topo
+var btn = document.querySelector("#back-to-top");
+
+btn.addEventListener("click", function() {
+    window.scrollTo(0, 0);
+});
