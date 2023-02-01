@@ -229,7 +229,7 @@ button:hover {
     color: goldenrod;
 }
 
-#back-to-top {
+.back-to-top {
     position: fixed;
     bottom: 30px;
     right: 20px;
@@ -239,8 +239,7 @@ button:hover {
 
     border-radius: 50%;
 }
-
-#back-to-top img {
+.back-to-top img {
     width: 20px;
 }
 

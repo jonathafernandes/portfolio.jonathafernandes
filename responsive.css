@@ -23,6 +23,10 @@
         display: none;
     }
 
+    .back-to-top.on {
+        display: none;
+    }
+
     .one,
     .two,
     .three {
@@ -60,11 +64,16 @@
 
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     
     .menu-section.on nav {
         display: block;
+
+        margin-top: 170px;
+    }
+
+    .menu-section.on li {
+        font-size: 25px;
     }
 
     .menu-section.on .menu-toggle {
