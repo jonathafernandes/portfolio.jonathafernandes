@@ -32,10 +32,11 @@ html {
     }
 
     header img {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
-        margin: 10px;
+        
+        margin-top: 4px;
     }
 
     header h2 {
@@ -46,8 +47,8 @@ html {
     .perfil {
         display: flex;
         align-items: center;
-        margin: 70px 0 0 12vw;
-        gap: 36px;
+        margin: 70px 0 0 9vw;
+        gap: 16px;
     }
 
     .icon-title {
@@ -75,7 +76,7 @@ html {
     }
 
     .menu-section nav a {
-        transition: 500ms;
+        transition: 300ms;
     }
 
     .menu-section nav a:hover {
@@ -83,7 +84,7 @@ html {
     }
 
     main {
-        margin: 0 12vw 0 12vw;
+        margin: 0 9vw 0 9vw;
     }
 
     .about {
@@ -167,7 +168,7 @@ html {
         margin-bottom: 25px;
     }
 
-    button {
+    .button-m {
         margin-top: 40px;
         width: 110px;
         padding: 10px;
@@ -186,7 +187,7 @@ html {
         cursor: pointer;
     }
 
-    button:hover {
+    .button-m:hover {
         background: none;
         color: black;
         border: 1px solid rgb(42, 165, 93);
@@ -223,7 +224,7 @@ html {
         display: flex;
         justify-content: space-between;
 
-        margin: 40px 12vw 40px 12vw;
+        margin: 40px 9vw 40px 9vw;
     }
 
     #footer-text-1 {
@@ -247,10 +248,19 @@ html {
         height: 45px;
 
         border-radius: 50%;
+        border: none;
+
+        cursor: pointer;
+
+        background: rgb(42, 165, 93);
     }
 
     .back-to-top img {
-        width: 20px;
+        width: 17px;
+    }
+
+    .back-to-top:hover {
+        background: rgba(42, 165, 93, 0.842);
     }
 
     .footer-line {
