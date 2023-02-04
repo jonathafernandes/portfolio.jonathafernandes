@@ -12,311 +12,356 @@ html {
     scroll-margin-top: .8em;
 }
 
-    body {
-        font-family: 'Rubik', sans-serif;
-        font-weight: 300;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    header {
-        background: #fff;
-
-        width: 100%;
-
-        position: sticky;
-        top: 0;
-    }
-
-    header img {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        
-        margin-top: 4px;
-    }
-
-    header h2 {
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    .perfil {
-        display: flex;
-        align-items: center;
-        margin: 70px 0 0 9vw;
-        gap: 16px;
-    }
-
-    .icon-title {
-        background: rgb(42, 165, 93);
-
-        border: 3px solid rgb(42, 165, 93);
-        border-radius: 10px;
-
-        width: 40px;
-        margin-top: 8px;
-    }
-
-    .menu-section nav ul {
-        display: flex;
-        gap: 40px;
-
-        margin-top: 20px;
-
-        font-size: 18px;
-        font-weight: 400;
-        text-transform: uppercase;
-        opacity: 0.6;
-
-        list-style: none;
-    }
-
-    .menu-section nav a {
-        transition: 300ms;
-    }
-
-    .menu-section nav a:hover {
-        color: rgb(42, 165, 93);
-    }
-
-    main {
-        margin: 0 9vw 0 9vw;
-    }
-
-    .about {
-        background: rgba(219, 233, 232, 0.534);
-
-        margin-top: 100px;
-        padding: 4%;
-    }
-
-    .about h1 {
-        font-size: 45px;
-        font-weight: 300;
-    }
-
-    .about p {
-        font-size: 22px;
-    }
-
-    .social {
-        display: flex;
-        gap: 10px;
-    }
-
-    .social a img {
-        width: 20px;
-        margin-top: 80px;
-
-        transition: 300ms;
-    }
-
-    .social a img:hover {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.3);
-    }
-
-    .line {
-        margin-top: 40px;
-
-        background: rgb(190, 186, 186);
-        border: 2px solid rgb(190, 186, 186);
-        border-radius: 10px;
-    }
-
-    .section-title {
-        margin-top: 100px;
-    }
-
-    .section-title h2 {
-        font-size: 40px;
-        font-weight: 300;
-    }
-
-    .img-projects {
-        width: 70%;
-
-        border: 1px solid rgba(42, 165, 93, 0.233);
-    }
-
-    .project-content {
-        display: flex;
-        gap: 55px;
-        margin-top: 50px;
-    }
-
-    .project-text {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .project-text h2 {
-        font-size: 30px;
-    }
-
-    .project-text img {
-        width: 20px;
-    }
-
-    .techs {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 25px;
-    }
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
 
-    .button-m {
-        margin-top: 40px;
-        width: 110px;
-        padding: 10px;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background: #fff;
 
-        font-family: 'Rubik', sans-serif;
-        font-size: 15px;
-        font-weight: 300;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    margin-top: 4px;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin: 70px 0 0 9vw;
+    gap: 16px;
+}
 
-        background: rgb(42, 165, 93);
-        color: white;
-        border: none;
-        border-radius: 5px;
+.icon-title {
+    background: rgb(42, 165, 93);
+
+    border: 3px solid rgb(42, 165, 93);
+    border-radius: 10px;
 
-        transition: 300ms;
+    width: 40px;
+    margin-top: 8px;
+}
 
-        cursor: pointer;
-    }
+.menu-section nav ul {
+    display: flex;
+    gap: 40px;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.6;
+
+    list-style: none;
+}
+
+.menu-section nav a {
+    transition: 300ms;
+}
+
+.menu-section nav a:hover {
+    color: rgb(42, 165, 93);
+}
+
+main {
+    margin: 0 9vw 0 9vw;
+}
+
+.about {
+    background: rgba(219, 233, 232, 0.534);
+
+    margin-top: 100px;
+    padding: 4%;
+}
+
+.about h1 {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.about p {
+    font-size: 22px;
+}
+
+.about span {
+    background-color: rgb(199, 197, 197);
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social a img {
+    width: 20px;
+    margin-top: 80px;
+
+    transition: 300ms;
+}
+
+.social a img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+}
+
+.line {
+    margin-top: 40px;
+
+    background: rgb(190, 186, 186);
+    border: 2px solid rgb(190, 186, 186);
+    border-radius: 10px;
+}
+
+.section-title {
+    margin-top: 100px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.img-projects {
+    width: 100%;
+
+    border: 1px solid rgba(42, 165, 93, 0.233);
+
+    transition: all 0.2s;
+}
+
+.project-content {
+    display: flex;
+    gap: 55px;
+    margin-top: 50px;
+}
+
+.img {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-text-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -30%;
+    opacity: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);    
+
+    font-weight: 400;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.img:hover .img-text-info {
+    opacity: 1;
+    bottom: 0;
+}
+
+.img-text-info img {
+    width: 30px;
+    margin-top: 4px;
+}
+
+.img p {
+    text-transform: uppercase;
+
+    padding: 5px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text h2 {
+    font-size: 30px;
+}
+
+.project-text img {
+    width: 20px;
+}
+
+.techs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
 
-    .button-m:hover {
-        background: none;
-        color: black;
-        border: 1px solid rgb(42, 165, 93);
-    }
+.button-m {
+    margin-top: 40px;
+    width: 110px;
+    padding: 10px;
 
-    .post-text {
-        background: rgba(219, 233, 232, 0.534);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
 
-        margin-top: 50px;
-        padding: 4%;
-    }
+    background: rgb(42, 165, 93);
+    color: white;
+    border: none;
+    border-radius: 5px;
 
-    .post-text a {
-        color: black;
-    }
+    transition: 300ms;
 
-    .post span {
-        font-weight: 500;
-    }
+    cursor: pointer;
+}
 
-    .post-text p {
-        margin-top: 5px;
-    }
+.button-m:hover {
+    background: none;
+    color: black;
+    border: 1px solid rgb(42, 165, 93);
+}
 
-    .post-text div {
-        margin-top: 15px;
-    }
+.post-text {
+    background: rgba(219, 233, 232, 0.534);
 
-    .post-text img {
-        width: 13px;
-    }
+    margin-top: 50px;
+    padding: 4%;
+}
 
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
+.post-text a {
+    color: black;
+}
 
-        margin: 40px 9vw 40px 9vw;
-    }
+.post span {
+    font-weight: 500;
+}
 
-    #footer-text-1 {
-        color: orangered;
-    }
+.post-text p {
+    margin-top: 5px;
+}
 
-    #footer-text-2 {
-        color: dodgerblue;
-    }
+.post-text div {
+    margin-top: 15px;
+}
 
-    #footer-text-3 {
-        color: goldenrod;
-    }
+.post-text img {
+    width: 13px;
+}
 
-    .back-to-top {
-        position: fixed;
-        bottom: 30px;
-        right: 20px;
-
-        width: 45px;
-        height: 45px;
-
-        border-radius: 50%;
-        border: none;
-
-        cursor: pointer;
-
-        background: rgb(42, 165, 93);
-    }
-
-    .back-to-top img {
-        width: 17px;
-    }
-
-    .back-to-top:hover {
-        background: rgba(42, 165, 93, 0.842);
-    }
-
-    .footer-line {
-        width: 100%;
-
-        border: 2px solid rgb(42, 165, 93);
-
-        background: rgb(42, 165, 93);
-    }
-
-    /* form: */
-
-    .title-contact {
-        margin-top: 100px;
-    }
-
-    .contact h2 {
-        font-size: 40px;
-        font-weight: 300;
-    }
-
-    .contact p {
-        font-size: 22px;
-    }
-
-    .form {
-        background: rgba(219, 233, 232, 0.534);
-
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        margin-top: 50px;
-        padding: 4%;
-    }
-
-    .form label {
-        font-family: 'Rubik', Sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        text-transform: uppercase;
-
-        color: rgb(133, 132, 132);
-        ;
-    }
-
-    .form input {
-        width: 60%;
-        height: 50px;
-        padding: 1%;
-
-        font-family: 'Rubik', Sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-    }
-
-    .form span {
-        color: rgb(207, 22, 22);
-    }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px 9vw 40px 9vw;
+}
+
+#footer-text-1 {
+    color: orangered;
+}
+
+#footer-text-2 {
+    color: dodgerblue;
+}
+
+#footer-text-3 {
+    color: goldenrod;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+
+    background: rgb(42, 165, 93);
+}
+
+.back-to-top img {
+    width: 17px;
+}
+
+.back-to-top:hover {
+    background: rgba(42, 165, 93, 0.842);
+}
+
+.footer-line {
+    width: 100%;
+
+    border: 2px solid rgb(42, 165, 93);
+
+    background: rgb(42, 165, 93);
+}
+
+/* form: */
+
+.title-contact {
+    margin-top: 100px;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.contact p {
+    font-size: 22px;
+}
+
+.form {
+    background: rgba(219, 233, 232, 0.534);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 50px;
+    padding: 4%;
+}
+
+.form label {
+    font-family: 'Rubik', Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: rgb(133, 132, 132);
+    ;
+}
+
+.form input {
+    width: 60%;
+    height: 50px;
+    padding: 1%;
+
+    font-family: 'Rubik', Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form span {
+    color: rgb(207, 22, 22);
+}
