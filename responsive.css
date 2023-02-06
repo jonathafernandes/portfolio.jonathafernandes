@@ -1,13 +1,13 @@
 @media(max-width: 980px) {
-    /* .perfil {
-        margin: 70px 0 0 5vw;
-    } */
-
     .project-content {
         display: flex;
         flex-direction: column;
         gap: 1px;
         align-items: center;
+    }
+
+    .img-text-info {
+        opacity: 1;
     }
 
     .footer-content {
