@@ -6,12 +6,8 @@
     .project-content {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 1px;
         align-items: center;
-    }
-
-    .img-projects {
-        width: 120%;
     }
 
     .footer-content {
