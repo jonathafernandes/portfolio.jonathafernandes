@@ -27,6 +27,8 @@ header {
 
     width: 100%;
 
+    font-family: 'Poppins', sans-serif;
+
     position: sticky;
     top: 0;
 }
@@ -41,7 +43,7 @@ header img {
 
 header h2 {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .perfil {
@@ -68,7 +70,7 @@ header h2 {
     margin-top: 20px;
 
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     opacity: 0.6;
 
@@ -201,6 +203,7 @@ main {
 
 .project-text h2 {
     font-size: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .project-text img {
@@ -345,7 +348,7 @@ main {
 .form label {
     font-family: 'Rubik', Sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
 
     color: rgb(133, 132, 132);
