@@ -6,20 +6,21 @@ const menuToggle = menuSection.querySelector(".menu-toggle")
 
 menuToggle.addEventListener("click", () => {
     document.body.style.overflow = show ? "hidden" : "initial"
+    document.querySelector(".back-to-top").style.display = show ? "none" : "initial"
 
     menuSection.classList.toggle("on", show)
-    show = !show;
+    show = !show
 })
 
 document.querySelectorAll('.buttonOption').forEach(button => {
     button.addEventListener('click', function () {
         document.querySelectorAll('.menu-section.on').forEach(selectedButton => {
-            selectedButton.classList.remove('on');
+            selectedButton.classList.remove('on')
             document.body.style.overflow = "initial"
         });
-        button.classList.add('on');
-    });
-});
+        button.classList.add('on')
+    })
+})
 
 //Botão para voltar ao topo
 const btn = document.querySelector(".back-to-top");

@@ -337,23 +337,13 @@ main {
     bottom: 30px;
     right: 20px;
 
-    width: 45px;
-    height: 45px;
-
-    border-radius: 50%;
-    border: none;
+    width: 50px;
 
     cursor: pointer;
-
-    background: rgb(42, 165, 93);
-}
-
-.back-to-top img {
-    width: 17px;
 }
 
 .back-to-top:hover {
-    background: rgba(42, 165, 93, 0.842);
+    filter: brightness(1.2);
 }
 
 .footer-line {
