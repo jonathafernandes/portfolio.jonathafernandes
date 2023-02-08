@@ -42,12 +42,14 @@
 
     .menu-toggle {
         position: absolute;
-        left: 85vw;
+        left: 83%;
         top: 26px;
 
         margin-right: 90vw;
         width: 40px;
         height: 30px;
+
+        cursor: pointer;
     }
 
     /* fullscreen */
@@ -70,7 +72,7 @@
     .menu-section.on nav {
         display: block;
 
-        margin: 100px 20px 0 0;
+        margin: 100px 13% 0 0;
     }
 
     .menu-section.on li {
@@ -127,6 +129,10 @@
 
         width: 70%;
     }
+
+    .menu-section.on nav {
+        margin-right: 11%;
+    }
 }
 
 @media (max-width: 410px) {
@@ -136,5 +142,9 @@
 
     header h2 {
         font-size: 19px;
+    }
+
+    .menu-section.on nav {
+        margin-right: 8%;
     }
 }
