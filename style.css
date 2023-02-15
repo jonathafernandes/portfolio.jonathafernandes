@@ -105,8 +105,8 @@ main {
     font-size: 22px;
 }
 
-.about span {
-    font-weight: 400;
+.about strong {
+    color: #0000009f;
 }
 
 .about h3 {
@@ -190,6 +190,7 @@ main {
 
 .img-projects {
     width: 100%;
+    max-width: 100%;
 
     border: 1px solid rgba(42, 165, 93, 0.233);
 
@@ -198,7 +199,7 @@ main {
 
 .project-content {
     display: flex;
-    gap: 55px;
+    gap: 30px;
     margin-top: 50px;
 }
 
@@ -211,7 +212,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: -30%;
+    width: 100%;
+
     opacity: 0;
 
     background: rgb(207, 207, 207, 0.7);
@@ -263,7 +265,7 @@ main {
 
 .button-m {
     margin-top: 40px;
-    width: 110px;
+    width: 150px;
     padding: 10px;
 
     font-family: 'Rubik', sans-serif;
@@ -363,8 +365,13 @@ main {
     font-weight: 300;
 }
 
+.contact p a {
+    color: rgb(42, 165, 93);
+}
+
 .contact p {
     font-size: 22px;
+    width: 70%;
 }
 
 form {
