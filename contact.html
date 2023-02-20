@@ -58,17 +58,14 @@
         </div>
         <div class="form">
             <form action="https://formsubmit.co/jonathafernandes@live.com" method="post">
-                <label for="nome">Nome <span>*</span></label>
-                <input type="text" name="Nome" id="nome">
-
                 <label for="e-mail">E-mail <span>*</span></label>
-                <input type="e-mail" required>
+                <input type="e-mail" name="e-mail" id="e-mail" required>
 
-                <label for="assunto">Assunto <span>*</span></label>
-                <input type="text" name="Nome" id="nome">
+                <label for="subject">Assunto <span>*</span></label>
+                <input type="text" name="subject" id="subject">
 
-                <label for="mensagem">Mensagem <span>*</span></label>
-                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem..." cols="90" rows="10" required></textarea>
+                <label for="message">Mensagem <span>*</span></label>
+                <textarea name="message" id="message" placeholder="Digite sua mensagem..." cols="90" rows="10" required></textarea>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://jonatha-fernandes.vercel.app/form-sent.html">
                 <button class="button-m">Enviar</button>
