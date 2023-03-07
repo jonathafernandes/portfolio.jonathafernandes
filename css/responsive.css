@@ -1,6 +1,18 @@
 @media(max-width: 980px) {
-    .project-content {
+    .about-img img {
+        height: 600px;
+    }
+
+    .about {
         display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .social a img {
+        margin: 50px 0 25px 0;
+    }
+
+    .project-content {
         flex-direction: column;
         gap: 1px;
     }
@@ -18,7 +30,7 @@
 }
 
 @media (max-width: 780px) {
-    .perfil {
+    .menu {
         gap: 20px;
     }
 
@@ -42,7 +54,7 @@
     .menu-toggle {
         position: absolute;
         left: 83%;
-        top: 26px;
+        top: 19px;
 
         margin-right: 90vw;
         width: 40px;
@@ -106,6 +118,10 @@
         display: block;
     }
 
+    .about-img img {
+        height: 500px;
+    }
+
     .contact p {
         width: 100%;
     }
@@ -123,11 +139,10 @@
 
 @media (max-width: 640px) {
     header img {
-        width: 85px;
-        height: 85px;
+        width: 100px;
     }
 
-    .perfil {
+    .menu {
         gap: 10px;
 
         width: 70%;
@@ -136,10 +151,14 @@
     .menu-section.on nav {
         margin-right: 11%;
     }
+
+    .about-img img {
+        height: 400px;
+    }
 }
 
 @media (max-width: 410px) {
-    .perfil {
+    .top {
         margin-left: 6vw;
     }
 

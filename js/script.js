@@ -18,7 +18,7 @@ document.querySelectorAll('.buttonOption').forEach(button => {
             selectedButton.classList.remove('on')
             document.body.style.overflow = "initial"
             document.querySelector(".back-to-top").style.display = "initial"
-        });
+        })
         button.classList.add('on')
     })
 })

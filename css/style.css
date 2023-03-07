@@ -34,9 +34,7 @@ header {
 }
 
 header img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+    width: 120px;
 
     margin-top: 4px;
 }
@@ -46,21 +44,10 @@ header h2 {
     font-weight: 600;
 }
 
-.perfil {
+.top {
     display: flex;
-    align-items: center;
     margin: 70px 0 0 9vw;
-    gap: 16px;
-}
-
-.icon-title {
-    background: rgb(42, 165, 93);
-
-    border: 3px solid rgb(42, 165, 93);
-    border-radius: 10px;
-
-    width: 40px;
-    margin-top: 8px;
+    gap: 5%;
 }
 
 .menu-section nav ul {
@@ -91,9 +78,15 @@ main {
 
 .about {
     background: rgba(219, 233, 232, 0.534);
-
+    
+    display: flex;
+    gap: 7%;
     margin-top: 100px;
     padding: 4%;
+}
+
+.about-img img {
+    border-radius: 10px;
 }
 
 .about h1 {
