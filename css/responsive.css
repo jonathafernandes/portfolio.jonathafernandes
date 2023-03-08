@@ -1,6 +1,6 @@
 @media(max-width: 980px) {
     .about-img img {
-        height: 600px;
+        height: 450px;
     }
 
     .about {
@@ -119,7 +119,7 @@
     }
 
     .about-img img {
-        height: 550px;
+        height: 400px;
     }
 
     .contact p {
@@ -150,10 +150,6 @@
 
     .menu-section.on nav {
         margin-right: 11%;
-    }
-
-    .about-img img {
-        height: 429px;
     }
 }
 
