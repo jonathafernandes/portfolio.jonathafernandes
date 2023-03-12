@@ -44,6 +44,31 @@ a {
     border-radius: 10px;
 }
 
+.button-m {
+    margin-top: 40px;
+    width: 150px;
+    padding: 10px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+
+    background: rgb(42, 165, 93);
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    transition: 300ms;
+
+    cursor: pointer;
+}
+
+.button-m:hover {
+    background: none;
+    color: black;
+    border: 1px solid rgb(42, 165, 93);
+}
+
 header {
     background: #fff;
 
@@ -269,31 +294,6 @@ main {
     margin-bottom: 25px;
 }
 
-.button-m {
-    margin-top: 40px;
-    width: 150px;
-    padding: 10px;
-
-    font-family: 'Rubik', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-
-    background: rgb(42, 165, 93);
-    color: white;
-    border: none;
-    border-radius: 5px;
-
-    transition: 300ms;
-
-    cursor: pointer;
-}
-
-.button-m:hover {
-    background: none;
-    color: black;
-    border: 1px solid rgb(42, 165, 93);
-}
-
 .post-text {
     background: rgba(219, 233, 232, 0.534);
 
@@ -319,6 +319,94 @@ main {
 
 .post-text img {
     width: 13px;
+}
+
+#section-4 p a {
+    color: rgb(42, 165, 93);
+}
+
+#section-4 p {
+    font-size: 22px;
+    
+    margin-top: 50px;
+    /* width: 70%; */
+}
+
+form {
+    background: rgba(219, 233, 232, 0.534);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 50px;
+    padding: 4%;
+}
+
+form label {
+    font-family: 'Rubik', Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: rgb(133, 132, 132);
+}
+
+form input {
+    width: 60%;
+    height: 50px;
+    padding: 1%;
+
+    font-family: 'Rubik', Sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+form textarea {
+    resize: vertical;
+
+    padding: 1%;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+form span {
+    color: rgb(207, 22, 22);
+}
+
+.form-sent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-sent-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(219, 233, 232, 0.534);
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+
+    margin-top: 50px;
+    padding: 4%;
+    width: 80%;
+}
+
+.form-sent a {
+    cursor: pointer;
+}
+
+.form-sent a:hover {
+    filter: brightness(1.2);
+}
+
+.form-sent img {
+    width: 40px;
 }
 
 .footer-content {
@@ -358,110 +446,4 @@ main {
     border: 2px solid rgb(42, 165, 93);
 
     background: rgb(42, 165, 93);
-}
-
-/* form: */
-
-.title-contact {
-    margin-top: 100px;
-}
-
-.title-contact span {
-    color: rgb(42, 165, 93);
-    font-size: 50px;
-}
-
-.contact h2 {
-    font-size: 40px;
-    font-weight: 300;
-
-    margin-bottom: 10px;
-}
-
-.contact p a {
-    color: rgb(42, 165, 93);
-}
-
-.contact p {
-    font-size: 22px;
-    width: 70%;
-}
-
-form {
-    background: rgba(219, 233, 232, 0.534);
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    margin-top: 50px;
-    padding: 4%;
-}
-
-form label {
-    font-family: 'Rubik', Sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-
-    color: rgb(133, 132, 132);
-    ;
-}
-
-form input {
-    width: 60%;
-    height: 50px;
-    padding: 1%;
-
-    font-family: 'Rubik', Sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-form textarea {
-    resize: vertical;
-
-    padding: 1%;
-
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-}
-
-form span {
-    color: rgb(207, 22, 22);
-}
-
-.form-sent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 150px;
-}
-
-.form-sent-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-
-    background: rgba(219, 233, 232, 0.534);
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-
-    margin-top: 50px;
-    padding: 4%;
-    width: 90%;
-}
-
-.form-sent a {
-    cursor: pointer;
-}
-
-.form-sent a:hover {
-    filter: brightness(1.2);
-}
-
-.form-sent img {
-    width: 40px;
 }
