@@ -358,6 +358,8 @@ form input {
     font-family: 'Rubik', Sans-serif;
     font-size: 16px;
     font-weight: 300;
+
+    outline: none;
 }
 
 form textarea {
@@ -368,6 +370,8 @@ form textarea {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     font-weight: 300;
+
+    outline: none;
 }
 
 form span {
