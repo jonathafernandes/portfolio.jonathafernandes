@@ -42,7 +42,7 @@
     .one,
     .two,
     .three {
-        background-color: rgb(42, 165, 93);
+        background-color: var(--primary-color);
         height: 3px;
         width: 70%;
         margin: 6px auto;
@@ -55,7 +55,7 @@
     .menu-toggle {
         position: absolute;
         left: 83%;
-        top: 19px;
+        top: 11px;
 
         margin-right: 90vw;
         width: 40px;
@@ -144,7 +144,7 @@
 
 @media (max-width: 640px) {
     header img {
-        width: 100px;
+        width: 42px;
     }
 
     .menu {

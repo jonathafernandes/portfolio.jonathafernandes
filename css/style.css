@@ -8,6 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: rgb(81, 71, 150);
+    --bg-color: rgba(219, 233, 232, 0.534);
+    --details-color: rgb(190, 186, 186);
+}
+
 :target {
     scroll-margin-top: .8em;
 }
@@ -19,7 +25,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 .section-title {
@@ -32,15 +38,15 @@ a {
 }
 
 .section-title h2 span {
-    color: rgb(42, 165, 93);
+    color: var(--primary-color);
     font-size: 50px;
 }
 
 .line {
     margin-top: 40px;
 
-    background: rgb(190, 186, 186);
-    border: 2px solid rgb(190, 186, 186);
+    background: var(--details-color);
+    border: 2px solid var(--details-color);
     border-radius: 10px;
 }
 
@@ -53,7 +59,7 @@ a {
     font-size: 15px;
     font-weight: 300;
 
-    border: 1.5px solid rgb(42, 165, 93);
+    border: 1.5px solid var(--primary-color);
     border-radius: 5px;
 
     transition: 300ms;
@@ -64,7 +70,7 @@ a {
 .button-m:hover {
     background: none;
     color: #fff;
-    background: rgb(42, 165, 93);
+    background: var(--primary-color);
 }
 
 header {
@@ -79,7 +85,7 @@ header {
 }
 
 header img {
-    width: 120px;
+    width: 54px;
 
     margin-top: 4px;
 }
@@ -92,7 +98,7 @@ header h2 {
 .top {
     display: flex;
     margin: 70px 0 0 9vw;
-    gap: 5%;
+    gap: 12%;
 }
 
 .menu-section nav ul {
@@ -113,7 +119,7 @@ header h2 {
 }
 
 .menu-section nav a:hover {
-    color: rgb(42, 165, 93);
+    color: var(--primary-color);
 }
 
 main {
@@ -121,7 +127,7 @@ main {
 }
 
 .about {
-    background: rgba(219, 233, 232, 0.534);
+    background: var(--bg-color);
 
     display: flex;
     gap: 7%;
@@ -154,7 +160,7 @@ main {
 }
 
 .about-text span {
-    color: rgb(42, 165, 93);
+    color: var(--primary-color);
     font-weight: 400;
     font-size: 22px;
 }
@@ -209,7 +215,7 @@ main {
 .icon-list {
     background: #000;
 
-    border: 2px solid rgb(42, 165, 93);
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
 
     width: 10px;
@@ -221,7 +227,7 @@ main {
     width: 100%;
     max-width: 100%;
 
-    border: 1px solid rgb(190, 186, 186);
+    border: 1px solid var(--details-color);
 
     transition: all 0.2s;
 }
@@ -245,8 +251,8 @@ main {
 
     opacity: 0;
 
-    background: rgb(207, 207, 207, 0.7);
-    color: rgb(0, 0, 0);
+    background: var(--details-color);
+    color: #000;
 
     font-weight: 400;
 
@@ -293,7 +299,7 @@ main {
 }
 
 .post-text {
-    background: rgba(219, 233, 232, 0.534);
+    background: var(--bg-color);
 
     margin-top: 50px;
     padding: 4%;
@@ -320,7 +326,7 @@ main {
 }
 
 #section-4 p a {
-    color: rgb(42, 165, 93);
+    color: var(--primary-color);
 }
 
 #section-4 p {
@@ -331,7 +337,7 @@ main {
 }
 
 form {
-    background: rgba(219, 233, 232, 0.534);
+    background: var(--bg-color);
 
     display: flex;
     flex-direction: column;
@@ -390,7 +396,7 @@ form span {
     align-items: center;
     gap: 20px;
 
-    background: rgba(219, 233, 232, 0.534);
+    background: var(--bg-color);
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
 
@@ -402,7 +408,7 @@ form span {
 .thick-check-mark {
     width: 19px;
     height: 33px;
-    border: 10px solid rgb(42, 165, 93);
+    border: 10px solid var(--primary-color);
     border-left: 0;
     border-top: 0;
 
@@ -428,22 +434,21 @@ form span {
     margin: 40px 9vw 40px 9vw;
 }
 
-#footer-text-1 {
-    color: orangered;
+.footer-content img {
+    width: 50px;
 }
 
-#footer-text-2 {
-    color: dodgerblue;
-}
-
-#footer-text-3 {
-    color: goldenrod;
+.powered-by {
+    display: flex;
+    align-items: center;
 }
 
 .back-to-top {
     position: fixed;
     bottom: 30px;
     right: 20px;
+
+    width: 45px;
 
     cursor: pointer;
 }
@@ -455,7 +460,7 @@ form span {
 .footer-line {
     width: 100%;
 
-    border: 2px solid rgb(42, 165, 93);
+    border: 2px solid var(--primary-color);
 
-    background: rgb(42, 165, 93);
+    background: var(--primary-color);
 }
