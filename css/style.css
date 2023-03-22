@@ -430,54 +430,52 @@ form span {
     width: 40px;
 }
 
-.project-1 {
+.project-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 9vw 0 9vw;
 }
-
-.introduction h1 {
+.project-details .introduction h1 {
     font-size: 50px;
     text-align: center;
 
     margin: 100px 0  6px 0;
 }
-
-.introduction p {
+.project-details .introduction p {
     font-size: 20px;
     text-align: center;
 
     margin-bottom: 15px;
 }
 
-.project-1 .techs {
+.project-details .techs {
     display: flex;
     justify-content: center;
     gap: 10%;
 }
 
-.project-1 .text {
+.project-details .techs img {
+    width: 30px;
+}
+
+.project-details .text {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.project-1 .text h2 {
+.project-details .text h2 {
     margin: 30px 0 15px 0;
     
     font-size: 26px;
 }
 
-.project-1 .text p {
-    margin-bottom: 50px;
+.project-details .image {
+    margin-top: 50px;
 }
 
-.project-1 .techs img {
-    width: 30px;
-}
-
-.project-1 .buttons {
+.project-details .buttons {
     display: flex;
     justify-content: center;
     gap: 72%;
