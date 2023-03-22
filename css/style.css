@@ -241,12 +241,12 @@ main {
     margin-top: 50px;
 }
 
-.img {
+.project-content .img {
     cursor: pointer;
     overflow: hidden;
 }
 
-.img-text-info {
+.project-content .img-text-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,17 +265,17 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
-.img:hover .img-text-info {
+.project-content .img:hover .img-text-info {
     opacity: 1;
     bottom: 0;
 }
 
-.img-text-info img {
+.project-content .img-text-info img {
     width: 30px;
     margin-top: 4px;
 }
 
-.img p {
+.project-content .img p {
     text-transform: uppercase;
 
     padding: 5px;
@@ -435,17 +435,18 @@ form span {
     flex-direction: column;
     align-items: center;
     margin: 0 9vw 0 9vw;
-    text-align: center;
 }
 
 .introduction h1 {
     font-size: 50px;
+    text-align: center;
 
     margin: 100px 0  6px 0;
 }
 
 .introduction p {
     font-size: 20px;
+    text-align: center;
 
     margin-bottom: 15px;
 }
@@ -456,14 +457,24 @@ form span {
     gap: 10%;
 }
 
-.project-1 .techs img {
-    width: 30px;
+.project-1 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .project-1 .text h2 {
     margin: 30px 0 15px 0;
-
+    
     font-size: 26px;
+}
+
+.project-1 .text p {
+    margin-bottom: 50px;
+}
+
+.project-1 .techs img {
+    width: 30px;
 }
 
 .project-1 .buttons {
