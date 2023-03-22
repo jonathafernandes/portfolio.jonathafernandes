@@ -156,6 +156,14 @@
     .menu-section.on nav {
         margin-right: 11%;
     }
+
+    .introduction p {
+        font-size: 16px;
+    }
+
+    .project-1 .buttons {
+        gap: 20%;
+    }
 }
 
 @media (max-width: 410px) {
@@ -177,5 +185,9 @@
 
     .project-text img {
         width: 15px;
+    }
+
+    .project-1 .buttons {
+        gap: 3%;
     }
 }

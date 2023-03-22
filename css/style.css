@@ -44,6 +44,7 @@ a {
 
 .line {
     margin-top: 40px;
+    width: 100%;
 
     background: var(--details-color);
     border: 2px solid var(--details-color);
@@ -294,7 +295,7 @@ main {
     width: 20px;
 }
 
-.techs {
+.project-text .techs {
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
@@ -427,6 +428,48 @@ form span {
 
 .form-sent img {
     width: 40px;
+}
+
+.project-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 9vw 0 9vw;
+    text-align: center;
+}
+
+.introduction h1 {
+    font-size: 50px;
+
+    margin: 100px 0  6px 0;
+}
+
+.introduction p {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.project-1 .techs {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.project-1 .techs img {
+    width: 30px;
+}
+
+.project-1 .text h2 {
+    margin: 30px 0 15px 0;
+
+    font-size: 26px;
+}
+
+.project-1 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 72%;
 }
 
 .footer-content {
