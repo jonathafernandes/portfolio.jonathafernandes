@@ -160,10 +160,6 @@
     .introduction p {
         font-size: 16px;
     }
-
-    .project-details .buttons {
-        gap: 20%;
-    }
 }
 
 @media (max-width: 410px) {
@@ -188,6 +184,6 @@
     }
 
     .project-details .buttons {
-        gap: 3%;
+        gap: 2%;
     }
 }

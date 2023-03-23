@@ -477,8 +477,7 @@ form span {
 
 .project-details .buttons {
     display: flex;
-    justify-content: center;
-    gap: 72%;
+    justify-content: space-between;
 }
 
 .footer-content {
