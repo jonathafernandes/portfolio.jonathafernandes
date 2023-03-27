@@ -1,4 +1,8 @@
 @media(max-width: 980px) {
+    .line-details {
+        margin-bottom: 10px;
+    }
+
     .about-img {
         height: 450px;
         margin-top: 30px;

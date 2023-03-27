@@ -238,6 +238,8 @@ main {
     width: 100%;
     max-width: 100%;
 
+    margin-bottom: 10px;
+
     border: 1px solid var(--details-color);
 
     transition: all 0.2s;
