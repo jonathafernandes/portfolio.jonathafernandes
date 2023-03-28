@@ -31,13 +31,16 @@
                                 <li class="buttonOption" id="item-list-1">Sobre mim</li>
                             </a>
                             <a href="./#section-2">
-                                <li class="buttonOption" id="item-list-2">Projetos</li>
+                                <li class="buttonOption" id="item-list-2">Conhecimento</li>
                             </a>
                             <a href="./#section-3">
-                                <li class="buttonOption" id="item-list-3">Publicações</li>
+                                <li class="buttonOption" id="item-list-3">Projetos</li>
                             </a>
                             <a href="./#section-4">
-                                <li class="buttonOption" id="item-list-4">Contato</li>
+                                <li class="buttonOption" id="item-list-4">Publicações</li>
+                            </a>
+                            <a href="./#section-5">
+                                <li class="buttonOption" id="item-list-5">Contato</li>
                             </a>
                         </ul>
                     </nav>
@@ -77,46 +80,128 @@
                         no ecosistema de <strong>JavaScript</strong>, incluindo <strong>NodeJS, ReactJS</strong> e
                         <strong>TypeScript</strong>.
                     </p>
-                    <br>
-                    <h3>Tenho conhecimento em:</h3>
-                    <div class="about-lists">
-                        <div class="about-list-1">
-                            <ul>
-                                <li>
-                                    <div class="icon-list"></div>
-                                    HTML
-                                </li>
-                                <li>
-                                    <div class="icon-list"></div>
-                                    CSS
-                                </li>
-                                <li>
-                                    <div class="icon-list"></div>
-                                    Bootstrap
-                                </li>
-                            </ul>
+                </div>
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="section-title">
+                <h2>Conhecimento <span>.</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="techs-lists">
+                <div id="grid-cards-techs">
+                    <h3>Conhecimento sólido</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>HTML</strong>
+                                <h4>
+                            </div>
+                            <p>hypertext markup language</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Utilizada para criar e estruturar conteúdo na web.</p>
+                            </div>
                         </div>
-                        <div class="about-list-2">
-                            <ul>
-                                <li>
-                                    <div class="icon-list"></div>
-                                    JavaScript
-                                </li>
-                                <li>
-                                    <div class="icon-list"></div>
-                                    GIT
-                                </li>
-                                <li>
-                                    <div class="icon-list"></div>
-                                    Github
-                                </li>
-                            </ul>
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>CSS</strong>
+                                <h4>
+                            </div>
+                            <p>cascading style sheets</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Linguagem de estilo usada para descrever a apresentação.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>GIT</strong>
+                                <h4>
+                            </div>
+                            <p>versionamento de código</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Controle de versão distribuído, usado para gerenciar e rastrear mudanças no
+                                    código-fonte
+                                    durante o desenvolvimento de software.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>JavaScript</strong>
+                                <h4>
+                            </div>
+                            <p>linguagem de programação</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Linguagem de alto nível, usada principalmente para criar interatividade em páginas
+                                    web.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>Bootstrap</strong>
+                                <h4>
+                            </div>
+                            <p>biblioteca</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Ferramenta para criar interfaces web responsivas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="grid-cards-techs">
+                    <h3 id="title-tech-2">Aprendendo</h3>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>React</strong>
+                                <h4>
+                            </div>
+                            <p>biblioteca</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Biblioteca JavaScript para construção de interfaces de usuário reutilizáveis e componentizadas.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>TypeScript</strong>
+                                <h4>
+                            </div>
+                            <p>superset</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Superset de JavaScript que adiciona recursos de tipagem estática para melhorar a produtividade no desenvolvimento.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="title-card">
+                                <div class="icon-card"></div>
+                                </h4><strong>NodeJS</strong>
+                                <h4>
+                            </div>
+                            <p>ambiente de execução</p>
+                            <button class="show-info" onclick="mostrarInfo(this)">🔽</button>
+                            <div class="info-adicional" style="display: none">
+                                <p>Plataforma que permite executar JavaScript no lado do servidor.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="section-2">
+        <section id="section-3">
             <div class="section-title">
                 <h2>Projetos <span>.</span></h2>
             </div>
@@ -191,7 +276,7 @@
                 </div>
             </div>
         </section>
-        <section id="section-3">
+        <section id="section-4">
             <div class="section-title">
                 <h2>Publicações <span>.</span></h2>
             </div>
@@ -234,7 +319,7 @@
                 <button class="button-m">Ver todas</button>
             </a>
         </section>
-        <section id="section-4">
+        <section id="section-5">
             <div class="section-title">
                 <h2>Contato <span>.</span></h2>
                 <div class="line"></div>

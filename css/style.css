@@ -33,7 +33,7 @@ a {
 }
 
 .section-title h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 300;
 }
 
@@ -196,42 +196,79 @@ main {
     font-weight: bold;
 }
 
-.about-text ul {
-    list-style: none;
+#section-2 h3 {
+    margin: 50px 0 30px 0;
 }
 
-.about-lists {
+.techs-lists {
     display: flex;
-    gap: 10%;
-
-    margin-top: 10px;
+    gap: 20%;
 }
 
-.about-list-1 ul,
-.about-list-2 ul {
+#grid-cards-techs {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-
-    font-size: 19px;
 }
 
-.about-list-1 li,
-.about-list-2 li {
+#grid-cards-techs .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 125px;
+}
+
+#grid-cards-techs .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85px;
+    width: 220px;
+    padding: 5px;
+
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    background-color: #c0c0c02d;
+    color: var(--primary-color);
+}
+
+#grid-cards-techs .title-card {
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    gap: 3px;
 }
 
-.icon-list {
-    background: #000;
+.icon-card {
+    background: var(--primary-color);
 
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
+    border: 2px solid #000;
+    border-radius: 50%;
 
     width: 10px;
     height: 10px;
-    margin-top: 2px;
+}
+
+#grid-cards-techs .card p {
+    margin-bottom: 10px;
+    
+    font-size: 16px;
+}
+
+#grid-cards-techs .info-adicional p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+#grid-cards-techs .show-info {
+    border: none;
+    background: none;
+    color: #333333;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+
+    cursor: pointer;
+
+    margin-top: 7px;
 }
 
 .img-projects {
@@ -314,15 +351,15 @@ main {
     width: 13px;
 }
 
-#section-4 p a {
+#section-5 p a {
     color: var(--primary-color);
 }
 
-#section-4 p {
+#section-5 p {
     font-size: 22px;
 
     margin-top: 50px;
-    /* width: 70%; */
+    width: 70%;
 }
 
 form {

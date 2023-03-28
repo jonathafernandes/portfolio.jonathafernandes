@@ -3,6 +3,14 @@
         margin-bottom: 10px;
     }
 
+    .top {
+        gap: 5%;
+    }
+
+    .menu-section nav ul {
+        gap: 20px;
+    }
+
     .about-img {
         height: 450px;
         margin-top: 30px;
@@ -22,6 +30,10 @@
         gap: 1px;
     }
 
+    #section-5 p {
+        width: 100%;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: column;
@@ -30,7 +42,7 @@
     }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
     .menu {
         gap: 20px;
     }
@@ -127,6 +139,10 @@
         width: 224.61px;
     }
 
+    .techs-lists {
+        gap: 15%;
+    }
+
     .contact p {
         width: 100%;
     }
@@ -155,6 +171,15 @@
 
     .menu-section.on nav {
         margin-right: 11%;
+    }
+
+    .techs-lists {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3#title-tech-2 {
+        margin-top: 125px;
     }
 
     .introduction p {

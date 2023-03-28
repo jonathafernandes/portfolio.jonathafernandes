@@ -1,3 +1,17 @@
+//Tecnologias
+function mostrarInfo(btnShow) {
+    const card = btnShow.parentNode;
+    const infoAdicional = card.querySelector(".info-adicional");
+    if (infoAdicional.style.display === "none") {
+        infoAdicional.style.display = "block";
+        btnShow.textContent = "🔼";
+    } else {
+        infoAdicional.style.display = "none";
+        btnShow.textContent = "🔽";
+    }
+}
+
+
 //Menu responsivo
 let show = true
 
@@ -12,21 +26,21 @@ menuToggle.addEventListener("click", () => {
     show = !show
 })
 
-document.querySelectorAll('.buttonOption').forEach(button => {
-    button.addEventListener('click', function () {
+document.querySelectorAll('.buttonOption').forEach(buttonOption => {
+    buttonOption.addEventListener('click', function () {
         document.querySelectorAll('.menu-section.on').forEach(selectedButton => {
             selectedButton.classList.remove('on')
             document.body.style.overflow = "initial"
             document.querySelector(".back-to-top").style.display = "initial"
         })
-        button.classList.add('on')
+        buttonOption.classList.add('on')
     })
 })
 
 //Botão para voltar ao topo
-const btn = document.querySelector(".back-to-top");
+const btnToTop = document.querySelector(".back-to-top");
 
-btn.addEventListener("click", function () {
+btnToTop.addEventListener("click", function () {
     window.scroll({
         top: 0,
         left: 0,
