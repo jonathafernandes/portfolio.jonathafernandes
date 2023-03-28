@@ -250,19 +250,24 @@ main {
 #grid-cards-techs .card p {
     margin-bottom: 10px;
     
-    font-size: 16px;
+    font-size: 13px;
+    font-style: italic;
+    color: #000;
 }
 
 #grid-cards-techs .info-adicional p {
-    margin-top: 10px;
+    margin-top: 14px;
+
+    font-size: 16px;
+    font-style: normal;
     text-align: center;
+    color: var(--primary-color);
 }
 
 
 #grid-cards-techs .show-info {
     border: none;
     background: none;
-    color: #333333;
     font-family: 'Rubik', sans-serif;
     font-weight: 200;
 
