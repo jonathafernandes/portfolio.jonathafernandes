@@ -213,7 +213,7 @@ main {
 #grid-cards-techs .cards {
     display: flex;
     flex-direction: column;
-    gap: 125px;
+    gap: 115px;
 }
 
 #grid-cards-techs .card {
@@ -256,12 +256,16 @@ main {
 }
 
 #grid-cards-techs .info-adicional p {
-    margin-top: 14px;
+    margin-top: 24px;
 
     font-size: 16px;
     font-style: normal;
-    text-align: center;
-    color: var(--primary-color);
+    line-height: 14px;
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
