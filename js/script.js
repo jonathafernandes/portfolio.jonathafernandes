@@ -1,13 +1,13 @@
 //Tecnologias
 function mostrarInfo(btnShow) {
     const card = btnShow.parentNode;
-    const infoAdicional = card.querySelector(".info-adicional");
+    const infoAdicional = card.querySelector(".info-adicional")
     if (infoAdicional.style.display === "none") {
-        infoAdicional.style.display = "block";
-        btnShow.textContent = "🔼";
+        infoAdicional.style.display = "block"
+        btnShow.textContent = "🔼"
     } else {
-        infoAdicional.style.display = "none";
-        btnShow.textContent = "🔽";
+        infoAdicional.style.display = "none"
+        btnShow.textContent = "🔽"
     }
 }
 
@@ -38,7 +38,7 @@ document.querySelectorAll('.buttonOption').forEach(buttonOption => {
 })
 
 //Botão para voltar ao topo
-const btnToTop = document.querySelector(".back-to-top");
+const btnToTop = document.querySelector(".back-to-top")
 
 btnToTop.addEventListener("click", function () {
     window.scroll({
