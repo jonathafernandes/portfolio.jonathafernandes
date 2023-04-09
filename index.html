@@ -337,17 +337,18 @@
             <div class="form">
                 <form action="https://formsubmit.co/jonathafernandes@live.com" method="post">
                     <label for="e-mail">E-mail <span>*</span></label>
-                    <input type="e-mail" name="e-mail" id="e-mail" required>
+                    <input type="e-mail" name="e-mail" id="e-mail">
+                    <a id="message-error">Por favor, digite seu e-mail!</a>
 
-                    <label for="subject">Assunto <span>*</span></label>
+                    <label for="subject">Assunto</label>
                     <input type="text" name="subject" id="subject">
 
                     <label for="message">Mensagem <span>*</span></label>
-                    <textarea name="message" id="message" placeholder="Digite sua mensagem..." cols="90" rows="10"
-                        required></textarea>
+                    <textarea name="message" id="message" placeholder="Digite sua mensagem..." cols="90" rows="10"></textarea>
+                    <a id="message-error">Esse campo é obrigatório. Digite sua mensagem!</a>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://jonatha-fernandes.vercel.app/form-sent.html">
-                    <button class="button-m">Enviar</button>
+                    <button id="button-form" class="button-m">Enviar</button>
                 </form>
             </div>
         </section>
