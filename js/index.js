@@ -1,5 +1,5 @@
 //Tecnologias
-function mostrarInfo(btnShow) {
+function showInfo(btnShow) {
     const card = btnShow.parentNode;
     const infoAdicional = card.querySelector(".info-adicional")
     if (infoAdicional.style.display === "none") {
@@ -10,7 +10,6 @@ function mostrarInfo(btnShow) {
         btnShow.textContent = "🔽"
     }
 }
-
 
 //Menu responsivo
 let show = true
@@ -28,12 +27,14 @@ menuToggle.addEventListener("click", () => {
 
 document.querySelectorAll('.buttonOption').forEach(buttonOption => {
     buttonOption.addEventListener('click', function () {
-        document.querySelectorAll('.menu-section.on').forEach(selectedButton => {
-            selectedButton.classList.remove('on')
+        if (!buttonOption.classList.contains('on')) {
+            document.querySelectorAll('.buttonOption.on').forEach(selectedButton => {
+                selectedButton.classList.remove('on')
+            })
+            buttonOption.classList.add('on')
             document.body.style.overflow = "initial"
             document.querySelector(".back-to-top").style.display = "initial"
-        })
-        buttonOption.classList.add('on')
+        }
     })
 })
 
