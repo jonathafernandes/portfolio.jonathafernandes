@@ -80,7 +80,6 @@ a {
 }
 
 .button-m:hover {
-    background: none;
     color: #fff;
     background: var(--primary-color);
 }
@@ -221,6 +220,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 23px;
     height: 85px;
     width: 240px;
     padding: 5px;
@@ -240,6 +240,8 @@ main {
     align-items: center;
     justify-content: center;
     gap: 3px;
+
+    font-size: 18px;
 }
 
 .icon-card {
@@ -252,27 +254,18 @@ main {
     height: 10px;
 }
 
-#grid-cards-techs .card p {
-    margin-bottom: 10px;
-    
-    font-size: 13px;
-    font-style: italic;
-    color: #000;
-}
-
 #grid-cards-techs .info-adicional p {
-    margin-top: 29px;
+    margin-bottom: 10px;
 
     font-size: 16px;
     font-style: normal;
-    line-height: 14px;
+    line-height: 15px;
     color: #000;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 
 #grid-cards-techs .show-info {
     border: none;
