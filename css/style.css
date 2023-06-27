@@ -126,11 +126,23 @@ header h2 {
 }
 
 .menu-section nav a {
-    transition: 300ms;
+    position: relative;
 }
 
-.menu-section nav a:hover {
-    color: var(--primary-color);
+.menu-section nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.menu-section nav a:hover::after {
+    transform: scaleX(1);
 }
 
 main {
@@ -284,7 +296,8 @@ main {
 
     margin-bottom: 10px;
 
-    border: 1px solid var(--details-color);
+    border-radius: 10px;
+    border: 3px solid var(--details-color);
 
     transition: all 0.2s;
 }
@@ -296,19 +309,18 @@ main {
 }
 
 .project-content .img {
-    overflow: hidden;
-}
-
-.project-content .img a { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
 }
 
-.project-content .img p {
+.project-content .img button {
+    border: none;
+    background: none;
+
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 500;   
+    font-family: 'Rubik', sans-serif;
 }
 
 .project-text {
@@ -331,31 +343,19 @@ main {
     margin-bottom: 25px;
 }
 
-.post-text {
+.academic-education-text {
     background: var(--bg-color);
 
     margin-top: 50px;
     padding: 4%;
 }
 
-.post-text a {
-    color: black;
-}
-
-.post span {
-    font-weight: 500;
-}
-
-.post-text p {
+.academic-education-text p {
     margin-top: 5px;
 }
 
-.post-text div {
+.academic-education-text div {
     margin-top: 15px;
-}
-
-.post-text img {
-    width: 13px;
 }
 
 #section-5 p a {
@@ -494,12 +494,14 @@ form span {
     align-items: center;
     margin: 0 9vw 0 9vw;
 }
+
 .project-details .introduction h1 {
     font-size: 50px;
     text-align: center;
 
-    margin: 100px 0  6px 0;
+    margin: 100px 0 6px 0;
 }
+
 .project-details .introduction p {
     font-size: 20px;
     text-align: center;
@@ -525,7 +527,7 @@ form span {
 
 .project-details .text h2 {
     margin: 30px 0 15px 0;
-    
+
     font-size: 26px;
 }
 
