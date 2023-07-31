@@ -205,6 +205,10 @@
         margin-right: 8%;
     }
 
+    .about {
+        align-items: start;
+    }
+
     .project-text h2 {
         font-size: 25px;
     }

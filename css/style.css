@@ -52,24 +52,16 @@ a {
     border-radius: 10px;
 }
 
-.line-details {
-    background-color: var(--primary-color);
-    color: var(--primary-color);
-
-    width: 40px;
-    height: 3px;
-}
-
 .button-m {
     background-color: #fff;
 
-    margin-top: 40px;
     width: 150px;
     padding: 10px;
 
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
     font-weight: 300;
+    text-align: center;
 
     border: 1.5px solid var(--primary-color);
     border-radius: 5px;
@@ -331,6 +323,10 @@ main {
 
 .project-text img {
     width: 20px;
+}
+
+.project-text p {
+    margin-bottom: 40px;
 }
 
 .project-text .techs {
