@@ -27,8 +27,16 @@
     }
 
     .project-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 1px;
+    }
+
+    .img-projects {
+        margin: 10px 0;
+    }
+
+    .project-text {
+        align-items: center;
     }
 
     #section-5 p {
@@ -186,9 +194,13 @@
     .introduction p {
         font-size: 16px;
     }
-    
+
     .img-projects {
         width: 95vw;
+    }
+
+    .project-text p {
+        text-align: center;
     }
 }
 
