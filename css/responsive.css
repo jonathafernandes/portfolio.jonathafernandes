@@ -154,8 +154,8 @@
         width: 224.61px;
     }
 
-    .techs-lists {
-        gap: 12%;
+    .cards-techs summary, .cards-techs p {
+        width: 100%;
     }
 
     .contact p {

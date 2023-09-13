@@ -21,5 +21,5 @@ function errorImput(input, message){
 
 	textMessage.innerText = message;
 
-	fomrItem.className = ""
+	fomrItem.className = "";
 }
