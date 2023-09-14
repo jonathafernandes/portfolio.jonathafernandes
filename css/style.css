@@ -205,7 +205,6 @@ main {
 
 .cards-techs {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 50px;
@@ -314,21 +313,13 @@ main {
     width: 70%;
 }
 
-.badge-base {
-    margin-bottom: 34px;
-}
-
-.form {
+form {
     background: var(--bg-color);
 
     margin-top: 50px;
-    padding: 2%;
-}
-
-form {
+    padding: 4%;
     display: flex;
     flex-direction: column;
-
 }
 
 form label {
