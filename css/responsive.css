@@ -154,10 +154,6 @@
         width: 224.61px;
     }
 
-    .cards-techs summary, .cards-techs p {
-        width: 100%;
-    }
-
     .contact p {
         width: 100%;
     }
@@ -188,9 +184,8 @@
         margin-right: 11%;
     }
 
-    .techs-lists {
-        flex-direction: column;
-        align-items: center;
+    .cards-techs{
+        justify-content: center;
     }
 
     h3#title-tech-2 {

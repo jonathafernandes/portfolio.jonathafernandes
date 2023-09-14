@@ -205,7 +205,8 @@ main {
 
 .cards-techs {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 50px;
 }
@@ -218,7 +219,7 @@ main {
 
     margin-bottom: 10px;
     padding: 1rem;
-    width: 50%;
+    width: 200px;
 }
 
 .cards-techs summary:hover {
@@ -226,7 +227,7 @@ main {
 }
 
 .cards-techs p {
-    width: 50%;
+    width: 200px;
 }
 
 .img-projects {
