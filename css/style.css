@@ -314,14 +314,21 @@ main {
     width: 70%;
 }
 
-form {
+.badge-base {
+    margin-bottom: 34px;
+}
+
+.form {
     background: var(--bg-color);
 
+    margin-top: 50px;
+    padding: 2%;
+}
+
+form {
     display: flex;
     flex-direction: column;
 
-    margin-top: 50px;
-    padding: 4%;
 }
 
 form label {
