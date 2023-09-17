@@ -258,10 +258,10 @@
                 </p>
             </div>
             <div class="form">
-                <form id="form" action="https://formsubmit.co/jonathafernandes@live.com" method="post">
+                <form id="form" action="https://formspree.io/f/mdordlav" method="POST">
                     <label for="e-mail">E-mail <span>*</span></label>
                     <input class="e-mail" type="e-mail" name="e-mail" id="e-mail">
-                    <a class="message-error">Por favor, digite seu e-mail!</a>
+                    <p id="email-message"></p>
 
                     <label for="subject">Assunto</label>
                     <input type="text" name="subject" id="subject">
@@ -269,10 +269,9 @@
                     <label for="message">Mensagem <span>*</span></label>
                     <textarea class="message" name="message" id="message" placeholder="Digite sua mensagem..." cols="90"
                         rows="10"></textarea>
-                    <a class="message-error">Esse campo é obrigatório. Digite sua mensagem!</a>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://jonatha-fernandes.vercel.app/form-sent.html">
-                    <button id="button-form" class="button-m">Enviar</button>
+                    <p id="error-message"></p>
+
+                    <button type="submit" id="button-form" class="button-m">Enviar</button>
                 </form>
             </div>
         </section>

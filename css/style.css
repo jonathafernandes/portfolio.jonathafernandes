@@ -306,11 +306,10 @@ main {
     color: var(--primary-color);
 }
 
-#section-5 p {
+.section-title p {
     font-size: 22px;
 
-    margin-top: 50px;
-    width: 70%;
+    margin-top: 40px;
 }
 
 form {
@@ -323,19 +322,19 @@ form {
 }
 
 form label {
+    color: rgb(133, 132, 132);
     font-family: 'Rubik', Sans-serif;
     font-size: 20px;
     font-weight: 500;
     text-transform: uppercase;
 
-    color: rgb(133, 132, 132);
+    margin-bottom: 5px;
 }
 
 form input {
     width: 60%;
     height: 50px;
     padding: 1%;
-    margin-top: 8px;
 
     font-family: 'Rubik', Sans-serif;
     font-size: 16px;
@@ -348,7 +347,6 @@ form textarea {
     resize: none;
 
     padding: 1%;
-    margin-top: 8px;
 
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
@@ -361,31 +359,14 @@ form span {
     color: var(--highlight-color);
 }
 
-.e-mail.error {
-    border: 1px solid var(--highlight-color);
+form p {
+    color: var(--highlight-color);
+
+    margin: 5px 0 34px 0;
 }
 
 #subject {
     margin-bottom: 34px;
-}
-
-.message.error {
-    border: 1px solid var(--highlight-color);
-}
-
-.message-error {
-    color: var(--highlight-color);
-    font-size: 14px;
-
-    margin: 5px 0 10px 0;
-
-    visibility: hidden;
-}
-
-.message-error.error {
-    color: var(--highlight-color);
-
-    visibility: visible;
 }
 
 .form-sent {
