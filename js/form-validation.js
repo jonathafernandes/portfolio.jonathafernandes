@@ -29,6 +29,6 @@ function checkInputMessage(emailValue) {
     if (messageValue === '' || emailValue === false) {
         errorMessage.innerHTML = 'Por favor, digite a mensagem!';
     } else {
-        location.href = './form-sent.html';
+        location.href = 'https://formspree.io/thanks?language=pt';
     }
 }

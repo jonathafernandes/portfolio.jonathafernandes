@@ -226,6 +226,9 @@ main {
 }
 
 .cards-techs p {
+    background-color: var(--bg-color);
+
+    padding: 10px;
     width: 200px;
 }
 
