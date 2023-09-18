@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
@@ -40,6 +41,9 @@
                                 <li class="buttonOption" id="item-list-4">Formação</li>
                             </a>
                             <a href="./#section-5">
+                                <li class="buttonOption" id="item-list-5">Experiência</li>
+                            </a>
+                            <a href="./#section-6">
                                 <li class="buttonOption" id="item-list-5">Contato</li>
                             </a>
                         </ul>
@@ -238,44 +242,67 @@
             </div>
             <div class="line"></div>
             <div class="academic-education-text">
+                <span>2022 — 2024</span>
                 <h4>Uninassau</h4>
-                <p>Análise e Desenvolvimento de Sistemas ▪ 2022 - 2023</p>
-                <div class="line-details"></div>
+                <p>Análise e Desenvolvimento de Sistemas</p>
                 <br>
+                <span>2023</span>
                 <h4>Alura</h4>
-                <p>ONE - Oracle Next Education ▪ 2023</p>
-                <div class="line-details"></div>
+                <p>ONE — Oracle Next Education</p>
+                <ul>
+                    <li class="tag">#lógica-de-programação</li>
+                    <li class="tag">#html</li>
+                    <li class="tag">#css</li>
+                    <li class="tag">#javascript</li>
+                    <li class="tag">#react</li>
+                </ul>
             </div>
         </section>
         <section id="section-5">
             <div class="section-title">
-                <h2>Contato <span>.</span></h2>
+                <h2>Experiência <span>.</span></h2>
                 <div class="line"></div>
-                <p>Preencha o formulário abaixo para falarmos sobre algum projeto ou tirar qualquer dúvida. Se preferir,
-                    entre em contato comigo através do <a href="https://www.linkedin.com/in/jonathafernandes-/"
-                        target="_blank">LinkedIn</a> ou <a href="https://instagram.com/_jonathafernandes"
-                        target="_blank">Instagram</a>.
-                </p>
             </div>
-            <div class="form">
-                <form id="form" action="https://formspree.io/f/xwkdqngo" method="POST">
-                    <label for="e-mail">E-mail <span>*</span></label>
-                    <input class="e-mail" type="e-mail" name="e-mail" id="e-mail">
-                    <p id="email-message"></p>
-
-                    <label for="subject">Assunto</label>
-                    <input type="text" name="subject" id="subject">
-
-                    <label for="message">Mensagem <span>*</span></label>
-                    <textarea class="message" name="message" id="message" placeholder="Digite sua mensagem..." cols="90"
-                        rows="10"></textarea>
-                    <p id="error-message"></p>
-
-                    <button type="submit" id="button-form" class="button-m">Enviar</button>
-                </form>
+            <div class="professional-experience">
+                <span>2023 — Presente</span>
+                <h4>Polícia Civil de Alagoas</h4>
+                <p>Desenvolvedor web — estágio</p>
+                <div class="link">
+                    <img src="./assets/link.svg" alt="">
+                    <a href="https://github.com/GeinfoPcal">
+                        GeinfoPcal
+                    </a>
+                </div>
+                <ul>
+                    <li class="tag">#javascript</li>
+                    <li class="tag">#typescript</li>
+                    <li class="tag">#react</li>
+                    <li class="tag">#node.js</li>
+                    <li class="tag">#styled-components</li>
+                </ul>
             </div>
         </section>
-        <div class="line"></div>
+        <section id="section-6">
+            <div class="section-title">
+                <h2>Contato <span>.</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="social-section">
+                <a href="https://www.linkedin.com/in/jonathafernandes-/">
+                    <i class="ph ph-linkedin-logo"></i>
+                </a>
+                <a href="https://github.com/jonathafernandes">
+                    <i class="ph ph-github-logo"></i>
+                </a>
+                <a href="https://instagram.com/_jonathafernandes">
+                    <i class="ph ph-instagram-logo"></i>
+                </a>
+                <a href="https://twitter.com/_jonatha__">
+                    <i class="ph ph-twitter-logo"></i>
+                </a>
+            </div>
+        </section>
+        <!-- <div class="line"></div> -->
     </main>
     <footer>
         <div class="footer-content">
@@ -291,7 +318,6 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/form-validation.js"></script>
 </body>
 
 </html>

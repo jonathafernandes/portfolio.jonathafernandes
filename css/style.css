@@ -12,7 +12,6 @@ html {
     --primary-color: rgb(81, 71, 150);
     --bg-color: rgba(219, 233, 232, 0.534);
     --details-color: rgb(190, 186, 186);
-    --highlight-color: rgb(207, 22, 22);
 }
 
 :target {
@@ -27,6 +26,10 @@ body {
 a {
     text-decoration: none;
     color: #000;
+}
+
+ul {
+    list-style: none;
 }
 
 .section-title {
@@ -76,6 +79,14 @@ a {
     background: var(--primary-color);
 }
 
+.tag {
+    /* background-color: var(--bg-color); */
+    color: var(--primary-color);
+    /* border: 1px solid var(--bg-color); */
+    font-size: 13px;
+    font-weight: 300;
+}
+
 header {
     background: #fff;
 
@@ -101,19 +112,17 @@ header h2 {
 .top {
     display: flex;
     margin: 10px 0 0 9vw;
-    gap: 12%;
+    gap: 8%;
     align-items: center;
 }
 
 .menu-section nav ul {
     display: flex;
-    gap: 40px;
+    gap: 24px;
 
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-
-    list-style: none;
 }
 
 .menu-section nav a {
@@ -290,130 +299,59 @@ main {
     margin-bottom: 25px;
 }
 
-.academic-education-text {
+.academic-education-text,.professional-experience {
     background: var(--bg-color);
 
     margin-top: 50px;
     padding: 4%;
 }
 
-.academic-education-text p {
-    margin-top: 5px;
+.academic-education-text span,.professional-experience span {
+    font-size: 13px;
 }
 
-.academic-education-text div {
-    margin-top: 15px;
+.academic-education-text p,.professional-experience p {
+    margin: 5px 0;
 }
 
-#section-5 p a {
-    color: var(--primary-color);
-}
-
-.section-title p {
-    font-size: 22px;
-
-    margin-top: 40px;
-}
-
-form {
-    background: var(--bg-color);
-
-    margin-top: 50px;
-    padding: 4%;
+#section-4 ul,#section-5 ul {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-form label {
-    color: rgb(133, 132, 132);
-    font-family: 'Rubik', Sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-
+.professional-experience .link {
+    display: flex;
+    align-items: center;
+    gap: 1px;
     margin-bottom: 5px;
 }
 
-form input {
-    width: 60%;
-    height: 50px;
-    padding: 1%;
-
-    font-family: 'Rubik', Sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-
-    outline: none;
+.professional-experience a {
+    font-size: 14px;
+    font-weight: 400;
 }
 
-form textarea {
-    resize: none;
-
-    padding: 1%;
-
-    font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-
-    outline: none;
+.professional-experience img {
+    width: 14px;
 }
 
-form span {
-    color: var(--highlight-color);
-}
-
-form p {
-    color: var(--highlight-color);
-
-    margin: 5px 0 34px 0;
-}
-
-#subject {
-    margin-bottom: 34px;
-}
-
-.form-sent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.form-sent-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    background: var(--bg-color);
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-
+.social-section {
     margin-top: 50px;
-    padding: 4%;
-    width: 80%;
+    display: flex;
+    gap: 15px;
 }
 
-.thick-check-mark {
-    width: 19px;
-    height: 33px;
-    border: 10px solid var(--primary-color);
-    border-left: 0;
-    border-top: 0;
+.social-section i {
+    color: var(--details-color);
+    font-size: 50px;
 
-    transform: rotate(45deg);
-}
-
-.form-sent a {
     cursor: pointer;
+    transition: 300ms;
 }
 
-.form-sent a:hover {
-    filter: brightness(1.2);
-}
-
-.form-sent img {
-    width: 40px;
+.social-section i:hover {
+    color: var(--primary-color);
 }
 
 .project-details {
