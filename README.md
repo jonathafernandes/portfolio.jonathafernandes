@@ -3,7 +3,6 @@
 <p align="center">
 Página pessoal.
 <br>
-Versão 1.0
 </p>
 
 <p align="center">
@@ -13,9 +12,7 @@ Versão 1.0
 
 <br>
 
-<p align="center">
-  <img alt="" src="./assets/layout.png" width="100%">
-</p>
+<!-- <p align="center"></p> -->
 
 ## 🚀 Tecnologias
 
@@ -27,13 +24,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Meu portfólio com alguns de meus projetos, um pouco de minha história, publicações recentes e contato.
+Meu portfólio com meus projetos, experiência, um pouco de minha história e contato.
 
 ## 🖱️ Visite
 
 https://jonatha-fernandes.vercel.app/
-
----
-👨‍💻 Desenvolvedor
-<br>
-- Jonatha Fernandes
