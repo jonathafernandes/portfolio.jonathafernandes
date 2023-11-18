@@ -80,9 +80,7 @@ ul {
 }
 
 .tag {
-    /* background-color: var(--bg-color); */
     color: var(--primary-color);
-    /* border: 1px solid var(--bg-color); */
     font-size: 13px;
     font-weight: 300;
 }
