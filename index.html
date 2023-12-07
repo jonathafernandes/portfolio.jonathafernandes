@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -72,7 +73,7 @@
                 <div class="about-text">
                     <span>Quem sou</span>
                     <h1>Jonatha Fernandes</h1>
-                    <h3>Crio páginas web, sou desenvolvedor front-end e estudante de Análise e Desenvolvimento de
+                    <h3>Sou desenvolvedor web e estudante de Análise e Desenvolvimento de
                         Sistemas! 👋🏼</h3>
                     <br>
                     <p>Tenho 28 anos, sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
@@ -152,86 +153,8 @@
                 <h2>Projetos <span>.</span></h2>
             </div>
             <div class="line"></div>
-            <div class="projects">
-                <div class="project-content">
-                    <div class="img">
-                        <img class="img-projects" src="./assets/project-1.png" alt="">
-                    </div>
-                    <div class="project-text">
-                        <h2>nikel</h2>
-                        <div class="techs">
-                            <img src="./assets/html5.svg" alt="">
-                            <img src="./assets/css3.svg" alt="">
-                            <img src="./assets/bootstrap.svg" alt="">
-                            <img src="./assets/js.svg" alt="">
-                        </div>
-                        <p>Sistema de controle financeiro. Entrada e saída de despesas.</p>
-                        <a href="./project-1.html" class="button-m">
-                            Ver mais detalhes
-                        </a>
-                        <a href="https://jonathafernandes.github.io/nikel/" target="_blank" class="button-m">
-                            Visite
-                        </a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="img">
-                        <img class="img-projects" src="./assets/project-2.png" alt="">
-                    </div>
-                    <div class="project-text">
-                        <h2>alaclimabom</h2>
-                        <div class="techs">
-                            <img src="./assets/css3.svg" alt="">
-                            <img src="./assets/js.svg" alt="">
-                            <img src="./assets/react.svg" alt="">
-                            <img src="./assets/vite.svg" alt="">
-                        </div>
-                        <p>Informações sobre a Ala Clima Bom. Feito com React e Vite.
-                        </p>
-                        <a href="https://github.com/jonathafernandes/alaclimabom" class="button-m" target="_blank">
-                            Ver no GitHub
-                        </a>
-                        <a href="https://alaclimabom.vercel.app/" target="_blank" class="button-m">
-                            Visite
-                        </a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="img">
-                        <img class="img-projects" src="./assets/project-3.png" alt="">
-                    </div>
-                    <div class="project-text">
-                        <h2>monteiro-esportes</h2>
-                        <div class="techs">
-                            <img src="./assets/html5.svg" alt="">
-                            <img src="./assets/css3.svg" alt="">
-                        </div>
-                        <p>Landing page modelo e-commerce da Monteiro Esportes.</p>
-                        <a href="https://monteiro-esportes.vercel.app/home.html" target="_blank" class="button-m">
-                            Visite
-                        </a>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <div class="img">
-                        <img class="img-projects" src="./assets/project-4.png" alt="">
-                    </div>
-                    <div class="project-text">
-                        <h2>raniellefernandes</h2>
-                        <div class="techs">
-                            <img src="./assets/html5.svg" alt="">
-                            <img src="./assets/css3.svg" alt="">
-                        </div>
-                        <p>Portfólio para a Ranielle Fernandes. Aplicação responsiva.</p>
-                        <a href="https://github.com/jonathafernandes/raniellefernandes" class="button-m"
-                            target="_blank">
-                            Ver no GitHub
-                        </a>
-                        <a href="https://raniellefernandes.vercel.app/" target="_blank" class="button-m">
-                            Visite
-                        </a>
-                    </div>
-                </div>
+            <div id="userData">
+                <ul id="repositories-list"></ul>
             </div>
         </section>
         <section id="section-4">
@@ -267,7 +190,7 @@
                 <p>Desenvolvedor web — estágio</p>
                 <div class="link">
                     <img src="./assets/link.svg" alt="">
-                    <a href="https://github.com/GeinfoPcal">
+                    <a href="https://github.com/GeinfoPcal" target="_blank">
                         GeinfoPcal
                     </a>
                 </div>
@@ -313,8 +236,9 @@
         <div class="footer-line"></div>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/button.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/projects-data.js"></script>
 </body>
 
 </html>

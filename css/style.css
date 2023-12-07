@@ -239,62 +239,47 @@ main {
     width: 200px;
 }
 
-.img-projects {
-    width: 100%;
-
-    margin-bottom: 10px;
-
-    border-radius: 10px;
-    border: 3px solid var(--details-color);
-}
-
-.project-content {
-    display: flex;
-    gap: 30px;
+#section-3 #userData {
     margin-top: 50px;
 }
 
-.project-content .img {
+#repositories-list {
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#repositories-list .title-projects, #repositories-list .language-projects {
+    display: flex;
     align-items: center;
+    gap: 0.4rem;
 }
 
-.project-content .img button {
-    border: none;
-    background: none;
+#repositories-list li {
+    background-color: var(--bg-color);
+    border: 1px solid var(--details-color);
+    border-radius: 5px;
 
-    text-transform: uppercase;
-    font-weight: 500;   
-    font-family: 'Rubik', sans-serif;
+    padding: 1rem;
+    width: 14rem;
+    
+    cursor: pointer;
 }
 
-.project-text {
-    display: flex;
-    flex-direction: column;
+#repositories-list li:hover {
+    background-color: #00000036;
 }
 
-.project-text a:nth-child(5) {
-    margin-top: 0.55rem;
+#repositories-list li span {
+    font-size: 0.85rem;
 }
 
-.project-text h2 {
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.project-text img {
-    width: 20px;
-}
-
-.project-text p {
-    margin-bottom: 23px;
-}
-
-.project-text .techs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
+.repo-language-color {
+    background-color: #f1e05a;
+    border-radius: 50%;
+    
+    height: 12px;
+    width: 12px;
 }
 
 .academic-education-text,.professional-experience {
