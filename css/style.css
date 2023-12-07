@@ -249,21 +249,30 @@ main {
     flex-wrap: wrap;
 }
 
-#repositories-list .title-projects, #repositories-list .language-projects {
+#repositories-list li {
+    background-color: var(--bg-color);
+
+    padding: 1rem;
+    width: 18rem;
+    
+    cursor: pointer;
+
+}
+
+#repositories-list li a {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.repo-title {
+    font-family: Poppins;
+}
+
+#repositories-list .repo-title, #repositories-list .repo-language {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-}
-
-#repositories-list li {
-    background-color: var(--bg-color);
-    border: 1px solid var(--details-color);
-    border-radius: 5px;
-
-    padding: 1rem;
-    width: 14rem;
-    
-    cursor: pointer;
 }
 
 #repositories-list li:hover {
@@ -271,15 +280,19 @@ main {
 }
 
 #repositories-list li span {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 .repo-language-color {
-    background-color: #f1e05a;
+    background-color: var(--primary-color);
     border-radius: 50%;
     
     height: 12px;
     width: 12px;
+}
+
+.repo-topics {
+    color: var(--primary-color);
 }
 
 .academic-education-text,.professional-experience {
@@ -335,59 +348,6 @@ main {
 
 .social-section i:hover {
     color: var(--primary-color);
-}
-
-.project-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 9vw 0 9vw;
-}
-
-.project-details .introduction h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 50px;
-    text-align: center;
-
-    margin: 100px 0 6px 0;
-}
-
-.project-details .introduction p {
-    font-size: 20px;
-    text-align: center;
-
-    margin-bottom: 15px;
-}
-
-.project-details .techs {
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-}
-
-.project-details .techs img {
-    width: 30px;
-}
-
-.project-details .text {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.project-details .text h2 {
-    margin: 30px 0 15px 0;
-
-    font-size: 26px;
-}
-
-.project-details .image {
-    margin-top: 50px;
-}
-
-.project-details .buttons {
-    display: flex;
-    justify-content: space-between;
 }
 
 .footer-content {

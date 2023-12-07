@@ -178,7 +178,7 @@
         margin-right: 11%;
     }
 
-    .cards-techs {
+    .cards-techs, #repositories-list {
         justify-content: center;
     }
 
