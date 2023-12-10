@@ -5,23 +5,11 @@ Página pessoal
 <br>
 </p>
 
-<br>
-
-<p align="center">
-  <img alt="" src="./assets/layout.png" width="100%">
-</p>
-
-### Tecnologias
----
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+**Desenvolvido com:**
 
 - HTML e CSS
 - JavaScript
 - Git
-
-### Projeto
----
-Meu portfólio com meus projetos, experiência, um pouco de minha história e contato.
 
 ### Visite
 ---
