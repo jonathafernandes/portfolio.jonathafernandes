@@ -24,6 +24,13 @@ async function getSpecificRepositories() {
         const repositoriesList = document.getElementById('repositories-list');
         filteredRepositories.forEach(repo => {
         const listItem = document.createElement('li');
+
+        let textButton = 'Visite';
+        
+        if (repo.homepage === "") {
+            textButton = 'Em breve...'
+        } 
+
         listItem.innerHTML = `
             <div class="repo-title">
                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
@@ -40,7 +47,7 @@ async function getSpecificRepositories() {
                 <span>${repo.language}</span>
             </div>
             <div class="buttons">
-                <a href="${repo.homepage}" target="_blank" class="button">Visite</a>
+                <a href="${repo.homepage}" target="_blank" class="button">${textButton}</a>
                 <a href="${repo.html_url}" target="_blank" class="button">Ver no GitHub</a>
             </div>
         `;
