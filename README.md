@@ -10,7 +10,6 @@ Página pessoal
 - HTML e CSS
 - JavaScript Vanilla
 - Vite
-
-### Visite
 ---
-https://jonatha-fernandes.vercel.app/
+### Visite
+▶️ https://jonatha-fernandes.vercel.app/
