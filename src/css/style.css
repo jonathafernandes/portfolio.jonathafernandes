@@ -167,14 +167,14 @@ main {
     justify-content: center;
 }
 
-.social-media a img {
-    width: 20px;
+.social-media a {
+    font-size: 1.5rem;
     margin-top: 20px;
 
     transition: 300ms;
 }
 
-.social a img:hover {
+.social a:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.3);
 }
@@ -366,7 +366,8 @@ main {
     bottom: 30px;
     right: 20px;
 
-    width: 45px;
+    font-size: 2.8125rem;
+    color: var(--primary-color);
 
     cursor: pointer;
 }
