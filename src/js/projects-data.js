@@ -1,3 +1,5 @@
+const userData = document.getElementById("userData");
+
 async function getSpecificRepositories() {
     try {
         const username = 'jonathafernandes';
@@ -54,7 +56,8 @@ async function getSpecificRepositories() {
         repositoriesList.appendChild(listItem);
         });
     } catch (error) {
-        console.error('Erro ao obter repositórios específicos:', error.message);
+        console.error('Erro ao obter repositórios:', error.message);
+        userData.innerHTML = `<p style="color: red">Erro ao obter repositórios!</p>`
     }
 }
 
