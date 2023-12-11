@@ -8,8 +8,8 @@ Página pessoal
 **Desenvolvido com:**
 
 - HTML e CSS
-- JavaScript
-- Git
+- JavaScript Vanilla
+- Vite
 
 ### Visite
 ---
