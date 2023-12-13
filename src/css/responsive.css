@@ -13,19 +13,19 @@
     .two,
     .three {
         background-color: var(--primary-color);
-        height: 3px;
+        height: 2px;
         width: 70%;
-        margin: 6px auto;
-
-        border-radius: 10px;
 
         transition-duration: 0.3s;
     }
 
     .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
         position: absolute;
         left: 83%;
-        top: 11px;
+        top: 18px;
 
         margin-right: 90vw;
         width: 40px;
@@ -70,7 +70,7 @@
     }
 
     .menu-section.on .menu-toggle .one {
-        transform: rotate(45deg) translate(4px, 4px);
+        transform: rotate(45deg) translate(2px, 2px);
     }
 
     .menu-section.on .menu-toggle .two {
