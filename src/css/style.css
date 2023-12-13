@@ -128,7 +128,7 @@ header h2 {
 }
 
 .menu-section nav a:hover {
-    background-color: rgba(9, 9, 11, 0.1);
+    background-color: var(--bg-color);
 }
 
 main {
