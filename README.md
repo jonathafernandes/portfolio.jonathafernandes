@@ -12,4 +12,4 @@ Página pessoal
 - Vite
 ---
 ### Visite
-▶️ https://jonatha-fernandes.vercel.app/
+▶️ https://jonathafernandes.vercel.app/
