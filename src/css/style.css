@@ -334,20 +334,7 @@ main {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     margin: 40px 9vw 40px 9vw;
-}
-
-.footer-content img {
-    width: 50px;
-}
-
-.powered-by {
-    display: flex;
-    align-items: center;
 }
 
 .back-to-top {
