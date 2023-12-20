@@ -20,7 +20,7 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["alaclimabom", "crud-node","decodificador-de-texto","time-generator","todome","cv-express"];
+        const specificRepositories = ["alaclimabom", "habithub","decodificador-de-texto","time-generator","todome","cv-express"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
         const repositoriesList = document.getElementById('repositories-list');
@@ -47,6 +47,10 @@ async function getSpecificRepositories() {
             <div class="repo-language">
                 <span class="repo-language-color"></span>
                 <span>${repo.language}</span>
+            </div>
+            <br>
+            <div class="repo-image">
+                <img src="./src/assets/${repo.name}.png" alt="" width="100%">
             </div>
             <div class="buttons">
                 <a href="${repo.homepage}" target="_blank" class="button">${textButton}</a>

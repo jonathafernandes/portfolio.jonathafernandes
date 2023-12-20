@@ -147,7 +147,7 @@ main {
 .about-img {
     height: 450px;
 
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .social-media {
@@ -233,15 +233,17 @@ main {
 
 #repositories-list {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
 #repositories-list li {
     background-color: var(--bg-color);
+    border: 1px solid var(--details-color);
 
     padding: 1rem;
-    width: 21rem;
+    width: 34rem;
 }
 
 #repositories-list .buttons {
@@ -272,6 +274,11 @@ main {
     
     height: 12px;
     width: 12px;
+}
+
+.repo-image img {
+    border: 1px solid var(--details-color);
+    border-radius: 2px;
 }
 
 .repo-topics {
