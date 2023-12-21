@@ -50,7 +50,7 @@ async function getSpecificRepositories() {
             </div>
             <br>
             <div class="repo-image">
-                <img src="https://jonathafernandes.vercel.app/src/assets/${repo.name}.png" alt="" width="100%">
+                <img src="usr/jonathafernandes/Documentos/Estudos/jonathafernandes/src/assets/${repo.name}.png" alt="" width="100%">
             </div>
                 <img
                     src="./src/assets/${repo.name}.png"
