@@ -50,16 +50,7 @@ async function getSpecificRepositories() {
             </div>
             <br>
             <div class="repo-image">
-                <img src="usr/jonathafernandes/Documentos/Estudos/jonathafernandes/src/assets/${repo.name}.png" alt="" width="100%">
-            </div>
-                <img
-                    src="./src/assets/${repo.name}.png"
-                    alt=""
-                    style="
-                        border: 1px solid var(--details-color);
-                        border-radius: 2px;
-                        width: 100%;
-                    ">
+                <img src="./src/assets/${repo.name}.png" alt="">
             </div>
             <div class="buttons">
                 <a href="${repo.homepage}" target="_blank" class="button">${textButton}</a>
