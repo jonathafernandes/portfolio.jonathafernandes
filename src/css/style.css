@@ -234,7 +234,6 @@ main {
 
 #repositories-list {
     display: flex;
-    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -244,7 +243,7 @@ main {
     border: 1px solid var(--details-color);
 
     padding: 1rem;
-    width: 34rem;
+    width: 30rem;
 
     display: flex;
     flex-direction: column;
