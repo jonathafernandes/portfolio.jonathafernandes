@@ -6,7 +6,7 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.add('show');
         }
     });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.1 });
 
     boxes.forEach(box => {
     observer.observe(box);
