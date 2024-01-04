@@ -50,7 +50,7 @@ async function getSpecificRepositories() {
             </div>
             <br>
             <div class="repo-image">
-                <img src="./src/assets/${repo.name}.png" alt="">
+                <img src="${repo.name}.png" alt="">
             </div>
             <div class="buttons">
                 <a href="${repo.homepage}" target="_blank" class="button">${textButton}</a>
@@ -66,5 +66,3 @@ async function getSpecificRepositories() {
 }
 
 window.onload = getSpecificRepositories;
-
-export default getSpecificRepositories;
