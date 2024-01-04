@@ -32,13 +32,13 @@
         position: absolute;
         top: 0;
         right: 0;
-        margin-right: 8rem;
+        margin-right: 13%;
 
         border: 1px solid var(--details-color);
         width: 200px;
         height: 350px;
 
-        background-color: var(--bg-color);
+        background-color: #fff;
 
         z-index: 10;
 
@@ -53,7 +53,13 @@
     }
 
     .menu-section.on li {
+        border-bottom: 1px solid #222222;
+
         font-size: 18px;
+    }
+
+    .menu-section.on .latestLink {
+        border-bottom: none;
     }
 
     .menu-section nav a {
@@ -121,6 +127,10 @@
 }
 
 @media (max-width: 800px) {
+    .menu-section.on {
+        margin-right: 12%;
+    }
+
     .about-img {
         height: 400px;
     }
@@ -141,6 +151,10 @@
         width: 70%;
     }
 
+    .menu-section.on {
+        margin-right: 10%;
+    }
+
     .menu-section.on nav {
         margin-right: 11%;
     }
@@ -159,7 +173,7 @@
         font-size: 19px;
     }
 
-    .menu-section.on nav {
+    .menu-section.on {
         margin-right: 8%;
     }
 
