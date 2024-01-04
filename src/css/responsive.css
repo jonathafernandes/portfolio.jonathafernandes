@@ -31,12 +31,14 @@
     .menu-section.on {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
+        margin-right: 8rem;
 
-        width: 100vw;
-        height: 100vh;
+        border: 1px solid var(--details-color);
+        width: 200px;
+        height: 350px;
 
-        background-color: #fff;
+        background-color: var(--bg-color);
 
         z-index: 10;
 
@@ -47,7 +49,7 @@
     .menu-section.on nav {
         display: block;
 
-        margin: 100px 13% 0 0;
+        margin: 3rem 13% 0 0;
     }
 
     .menu-section.on li {

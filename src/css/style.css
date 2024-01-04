@@ -23,17 +23,6 @@ body {
     font-weight: 300;
 }
 
-.box {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.box.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 a {
     text-decoration: none;
     color: #000;
@@ -98,6 +87,9 @@ ul {
 header {
     background: #fff;
     font-family: 'Poppins', sans-serif;
+
+    position: sticky;
+    top: 0;
 }
 
 header img {
