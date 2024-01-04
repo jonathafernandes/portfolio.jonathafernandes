@@ -66,3 +66,5 @@ async function getSpecificRepositories() {
 }
 
 window.onload = getSpecificRepositories;
+
+export default getSpecificRepositories;

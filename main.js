@@ -1,0 +1,1 @@
+import getSpecificRepositories from "./src/js/projects-data";
