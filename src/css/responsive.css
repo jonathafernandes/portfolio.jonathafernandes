@@ -36,7 +36,7 @@
 
         border: 1px solid var(--details-color);
         width: 200px;
-        height: 350px;
+        height: 450px;
 
         background-color: #fff;
 
@@ -54,8 +54,9 @@
 
     .menu-section.on li {
         border-bottom: 1px solid #222222;
-
         font-size: 18px;
+
+        margin-bottom: 1rem;
     }
 
     .menu-section.on .latestLink {
