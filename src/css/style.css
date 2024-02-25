@@ -202,30 +202,33 @@ main {
 .cards-techs {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
     margin-top: 50px;
 }
 
-.cards-techs summary {
-    border: 1px solid var(--details-color);
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-
-    margin-bottom: 10px;
+.card {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
-    width: 200px;
-}
 
-.cards-techs summary:hover {
     background: var(--bg-color);
+    border: 1px solid var(--details-color);
 }
 
-.cards-techs p {
-    background-color: var(--bg-color);
+.card img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
-    padding: 10px;
+.card p {
+    color: #0000009f;
+
+    margin-top: 0.2rem;
     width: 200px;
+}
+
+.card span {
+    margin-top: 1rem;
 }
 
 #section-3 #userData {

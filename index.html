@@ -12,14 +12,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://kit.fontawesome.com/8b4b4245f7.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="top">
-            <a href="./index.html"><img src="/logo.png" alt="Logotipo de Jonatha Fernandes"></a>
+            <a href="./index.html"><img src="./public/images/logo/logo.png" alt="Jonatha Fernandes | Desenvolvedor web"></a>
             <div class="menu">
                 <div class="menu-section">
                     <div class="menu-toggle">
@@ -58,19 +58,19 @@
         <section id="section-1">
             <div class="about">
                 <div class="social">
-                    <img class="about-img" src="img-jonatha.jpeg" alt="Foto de Jonatha Fernandes">
+                    <img class="about-img" src="./public/images/others/hero-img.jpeg" alt="Foto de Jonatha Fernandes">
                     <div class="social-media">
                         <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
-                            <i class="ph-fill ph-linkedin-logo"></i>
+                            <i class="fa-brands fa-linkedin"></i>
                         </a>
                         <a href="https://github.com/jonathafernandes" target="_blank">
-                            <i class="ph-fill ph-github-logo"></i>
+                            <i class="fa-brands fa-square-github"></i>
                         </a>
                         <a href="https://instagram.com/_jonathafernandes" target="_blank">
-                            <i class="ph-fill ph-instagram-logo"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
                         </a>
                         <a href="https://twitter.com/_jonatha__" target="_blank">
-                            <i class="ph-fill ph-twitter-logo"></i>
+                            <i class="fa-brands fa-square-x-twitter"></i>
                         </a>
                     </div>
                 </div>
@@ -97,61 +97,66 @@
             </div>
             <div class="cards-techs">
                 <div class="card">
-                    <details>
-                        <summary>HTML</summary>
-                        <p>Utilizada para criar e estruturar conteúdo na web.</p>
-                    </details>
+                    <img src="./public/images/techs/html.svg" alt="">
+                    <span>HTML</span>
+                    <p>Utilizada para criar e estruturar conteúdo na web.</p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>CSS</summary>
-                        <p>Linguagem de estilo usada para descrever a apresentação.</p>
-                    </details>
+                    <img src="./public/images/techs/css.svg" alt="">
+                    <span>CSS</span>
+                    <p>Linguagem de estilo usada para descrever a apresentação.</p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>GIT</summary>
-                        <p>Controle de versão para gerenciar e rastrear mudanças no código-fonte durante o
-                            desenvolvimento de software.</p>
-                    </details>
+                    <img src="./public/images/techs/git.svg" alt="">
+                    <span>GIT</span>
+                    <p>Controle de versão para gerenciar e rastrear mudanças no código-fonte durante o
+                        desenvolvimento de software.</p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>SASS</summary>
-                        <p>Linguagem de extensão do CSS. A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações.</p>
-                    </details>
+                    <img src="./public/images/techs/sass.svg" alt="">
+                    <span>SASS</span>
+                    <p>Linguagem de extensão do CSS. A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações.</p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>JavaScript</summary>
-                        <p>Linguagem de alto nível, usada principalmente para criar interatividade em páginas web.</p>
-                    </details>
+                    <img src="./public/images/techs/javascript.svg" alt="">
+                    <span>JavaScript</span>
+                    <p>Linguagem de alto nível, usada principalmente para criar interatividade em páginas web.</p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>Bootstrap</summary>
-                        <p>Ferramenta para criar interfaces web responsivas.</p>
-                    </details>
+                    <img src="./public/images/techs/bootstrap-5-logo-icon.svg" alt="">
+                    <span>Bootstrap</span>
+                    <p>Ferramenta para criar interfaces web responsivas.</p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>React</summary>
-                        <p>Biblioteca JavaScript para construção de interfaces de usuário reutilizáveis e
-                            componentizadas.</p>
-                    </details>
+                    <img src="./public/images/techs/react.svg" alt="">
+                    <span>React</span>
+                    <p>Biblioteca JavaScript para construção de interfaces de usuário reutilizáveis e
+                        componentizadas.</p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>TypeScript</summary>
-                        <p>Superset de JavaScript que adiciona recursos de tipagem estática para melhorar a
-                            produtividade no desenvolvimento.</p>
-                    </details>
+                    <img src="./public/images/techs/tailwindcss.svg" alt="">
+                    <span>TailwindCSS</span>
+                    <p>
+                        Framework CSS que permite criar designs personalizados sem sair do HTML.
+                    </p>
                 </div>
                 <div class="card">
-                    <details>
-                        <summary>Node.js</summary>
-                        <p>Plataforma que permite executar JavaScript no lado do servidor.</p>
-                    </details>
+                    <img src="./public/images/techs/typescript.svg" alt="">
+                    <span>TypeScript</span>
+                    <p>Superset de JavaScript que adiciona recursos de tipagem estática para melhorar a
+                        produtividade no desenvolvimento.</p>
+                </div>
+                <div class="card">
+                    <img src="./public/images/techs/vite.svg" alt="">
+                    <span>Vite</span>
+                    <p>
+                        Build tool que visa ser uma alternativa mais rápida para o Webpack.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./public/images/techs/nodejs.svg" alt="">
+                    <span>Node.js</span>
+                    <p>Plataforma que permite executar JavaScript no lado do servidor.</p>
                 </div>
             </div>
             </div>
@@ -218,16 +223,16 @@
             </div>
             <div class="social-section">
                 <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
-                    <i class="ph ph-linkedin-logo"></i>
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
                 </a>
                 <a href="https://github.com/jonathafernandes" target="_blank">
-                    <i class="ph ph-github-logo"></i>
+                    <i class="fa-brands fa-square-github fa-2xl"></i>
                 </a>
                 <a href="https://instagram.com/_jonathafernandes" target="_blank">
-                    <i class="ph ph-instagram-logo"></i>
+                    <i class="fa-brands fa-square-instagram fa-2xl"></i>
                 </a>
                 <a href="https://twitter.com/_jonatha__" target="_blank">
-                    <i class="ph ph-twitter-logo"></i>
+                    <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
                 </a>
             </div>
         </section>
