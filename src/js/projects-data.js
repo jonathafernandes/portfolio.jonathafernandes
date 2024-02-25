@@ -50,7 +50,7 @@ async function getSpecificRepositories() {
             </div>
             <br>
             <div class="repo-image">
-                <img src="./public/images/projects/${repo.name}.png" alt="">
+                <img src="/${repo.name}.png" alt="">
             </div>
             <div class="buttons">
                 <a href="${repo.homepage}" target="_blank" class="button">${textButton}</a>
