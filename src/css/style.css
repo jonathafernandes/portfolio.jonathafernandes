@@ -52,7 +52,7 @@ ul {
 
     background: var(--details-color);
     border: 2px solid var(--details-color);
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .button {
@@ -67,7 +67,7 @@ ul {
     font-weight: 300;
     text-align: center;
 
-    border-radius: 5px;
+    border-radius: 3px;
 
     transition: 300ms;
 
@@ -122,7 +122,7 @@ header h2 {
     position: relative;
     padding: 0.5rem;
 
-    border-radius: 5px;
+    border-radius: 3px;
 
     transition: 300ms;
 }
@@ -137,7 +137,7 @@ main {
 
 .about {
     background: var(--bg-color);
-    border: 1px solid var(--details-color);
+    border-radius: 3px;
 
     display: flex;
     gap: 7%;
@@ -148,7 +148,7 @@ main {
 .about-img {
     height: 450px;
 
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .social-media {
@@ -204,6 +204,7 @@ main {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .card {
@@ -212,7 +213,6 @@ main {
     padding: 1rem;
 
     background: var(--bg-color);
-    border: 1px solid var(--details-color);
 }
 
 .card img {
@@ -244,7 +244,6 @@ main {
 
 #repositories-list li {
     background-color: var(--bg-color);
-    border: 1px solid var(--details-color);
 
     padding: 1rem;
     width: 30rem;
@@ -286,7 +285,7 @@ main {
 
 .repo-image img {
     border: 1px solid var(--details-color);
-    border-radius: 2px;
+    border-radius: 3px;
 
     width: 100%;
 }
@@ -297,7 +296,6 @@ main {
 
 .academic-education-text,.professional-experience {
     background: var(--bg-color);
-    border: 1px solid var(--details-color);
 
     margin-top: 50px;
     padding: 4%;
