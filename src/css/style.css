@@ -11,6 +11,7 @@ html {
 :root {
     --primary-color: rgb(81, 71, 150);
     --bg-color: rgba(219, 233, 232, 0.534);
+    --text-color: #212121;
     --details-color: rgb(190, 186, 186);
 }
 
@@ -19,13 +20,14 @@ html {
 }
 
 body {
+    color: var(--text-color);
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
 }
 
 ul {
@@ -80,7 +82,7 @@ ul {
 
 .tag {
     color: var(--primary-color);
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 300;
 }
 
@@ -96,11 +98,6 @@ header img {
     width: 54px;
 
     margin-top: 9px;
-}
-
-header h2 {
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 .top {
@@ -146,27 +143,10 @@ main {
 }
 
 .about-img {
-    height: 450px;
+    height: 400px;
 
-    border-radius: 3px;
-}
-
-.social-media {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.social-media a {
-    font-size: 1.5rem;
-    margin-top: 20px;
-
-    transition: 300ms;
-}
-
-.social a:hover {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.3);
+    border: 2px solid var(--details-color);
+    border-radius: 5px;
 }
 
 .about-text span {
@@ -176,7 +156,7 @@ main {
 }
 
 .about-text h1 {
-    font-size: 42px;
+    font-size: 2.2rem;
     font-weight: 300;
 
     margin: 10px 0 8px 0;
@@ -193,6 +173,26 @@ main {
 .about-text h3 {
     font-size: 19px;
     font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 1.25rem;
+}
+
+.social-media a {
+    color: #0000009f;
+    font-size: 1.75rem;
+    margin-top: 20px;
+
+    transition: 300ms;
+}
+
+.social-media a:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+    color: var(--primary-color);
 }
 
 #section-2 h3 {
@@ -338,7 +338,7 @@ main {
 }
 
 .social-section i {
-    color: var(--details-color);
+    color: #0000009f;
     font-size: 50px;
 
     cursor: pointer;
