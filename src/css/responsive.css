@@ -163,4 +163,8 @@
     .about {
         align-items: start;
     }
+
+    .about-text h1 {
+        font-size: 1.7rem;
+    }
 }
