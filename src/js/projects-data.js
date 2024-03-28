@@ -20,7 +20,7 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["alaclimabom","links.jonathafernandes","habithub","form-ex-alunos","insight-cast","git-search","notesnest","cv-express","organo","time-generator","nikel"];
+        const specificRepositories = ["alaclimabom","links.jonathafernandes","habithub","form-ex-alunos","insight-cast","git-search","notesnest","cv-express","organo","time-generator","nikel","consult-bible"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
         const repositoriesList = document.getElementById('repositories-list');
@@ -28,9 +28,11 @@ async function getSpecificRepositories() {
         const listItem = document.createElement('li');
 
         let textButton = 'Visite';
+        let buttonClass = '';
         
         if (repo.homepage === "") {
             textButton = 'Em breve...'
+            buttonClass = 'not-allowed';
         } 
 
         listItem.innerHTML = `
@@ -53,12 +55,20 @@ async function getSpecificRepositories() {
                 <img src="/${repo.name}.png" alt="">
             </div>
             <div class="buttons">
-                <a href="${repo.homepage}" target="_blank" class="button">${textButton}</a>
+                <a href="${repo.homepage}" target="_blank" class="button ${buttonClass}">${textButton}</a>
                 <a href="${repo.html_url}" target="_blank" class="button">Ver no GitHub</a>
             </div>
         `;
         repositoriesList.appendChild(listItem);
         });
+
+        const notAllowedButtons = document.querySelectorAll('.button.not-allowed');
+        notAllowedButtons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.cursor = 'not-allowed';
+            });
+        });
+
     } catch (error) {
         console.error('Erro ao obter repositórios:', error.message);
         userData.innerHTML = `<p style="color: red">Erro ao obter repositórios!</p>`
