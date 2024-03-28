@@ -10,6 +10,7 @@ Página pessoal
 - HTML e CSS
 - JavaScript Vanilla
 - Vite
+- GitHub API
 ---
 ### Visite
 ▶️ https://jonathafernandes.vercel.app/
