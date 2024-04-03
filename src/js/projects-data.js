@@ -20,7 +20,7 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["alaclimabom","links.jonathafernandes","habithub","form-ex-alunos","insight-cast","git-search","notesnest","cv-express","organo","time-generator","nikel","consult-bible"];
+        const specificRepositories = ["alaclimabom","links.jonathafernandes","habithub","form-ex-alunos","insight-cast","git-search","notesnest","cv-express","organo","time-generator","nikel","consult-bible","blog.github.io"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
         const repositoriesList = document.getElementById('repositories-list');
