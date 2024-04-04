@@ -3,9 +3,9 @@ const btnToTop = document.querySelector(".back-to-top")
 btnToTop.style.display = "none";
 
 window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 0) {
+    if (window.scrollY > 0) {
         btnToTop.style.display = "block";
-    } else {
+    } else { 
         btnToTop.style.display = "none";
     }
 });
