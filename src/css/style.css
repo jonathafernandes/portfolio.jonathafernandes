@@ -314,7 +314,7 @@ main {
     max-width: 900px;
 }
 
-.modal-content .open-modal {
+.open-modal {
     cursor: zoom-in;
 }
 
