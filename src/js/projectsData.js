@@ -1,3 +1,5 @@
+import { setupModalEvents } from './modal.js';
+
 const userData = document.getElementById("userData");
 
 async function getSpecificRepositories() {
@@ -51,19 +53,26 @@ async function getSpecificRepositories() {
                     <span>${repo.language}</span>
                 </div>
                 <br>
-                <div class="repo-image">
+                <button class="repo-image open-modal">
                     <img src="/${repo.name}.png" alt="">
-                </div>
+                </button>
                 <div class="buttons">
-                    <a href="${repo.homepage}" target="_blank" class="button ${buttonClass}" ${buttonClass === 'not-allowed' ? 'disabled' : ''}>${textButton}</a>
-                    <a href="${repo.html_url}" target="_blank" class="button">Ver no GitHub</a>
+                    <a href="${repo.homepage}" target="_blank" class="primary-button ${buttonClass}" ${buttonClass === 'not-allowed' ? 'disabled' : ''}>${textButton}</a>
+                    <a href="${repo.html_url}" target="_blank" class="primary-button">Ver no GitHub</a>
                 </div>
+                <dialog>
+                    <div class="modal-content">
+                        <button class="close-modal"><i class="fa-solid fa-rectangle-xmark"></i></button>
+                        <img src="/${repo.name}.png" alt="">
+                    </div>
+                </dialog>
             `;
             
             repositoriesList.appendChild(listItem);
+            setupModalEvents(listItem);
 
             if (textButton === 'Em breve...') {
-                const buttonElement = listItem.querySelector('.button.not-allowed');
+                const buttonElement = listItem.querySelector('.primary-button.not-allowed');
                 buttonElement.style = 'background-color: #bab7b6; color: #858585; cursor: not-allowed';
                 buttonElement.addEventListener('click', (event) => {
                     event.preventDefault();

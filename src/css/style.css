@@ -25,6 +25,10 @@ body {
     font-weight: 300;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -32,6 +36,12 @@ a {
 
 ul {
     list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 .section-title {
@@ -57,14 +67,13 @@ ul {
     border-radius: 3px;
 }
 
-.button {
+.primary-button {
     background-color: var(--primary-color);
     color: #fff;
 
     width: 7.5rem;
     padding: 0.3rem;
 
-    font-family: 'Rubik', sans-serif;
     font-size: 15px;
     font-weight: 300;
     text-align: center;
@@ -72,11 +81,9 @@ ul {
     border-radius: 3px;
 
     transition: 300ms;
-
-    cursor: pointer;
 }
 
-.button:hover {
+.primary-button:hover {
     filter: brightness(1.2);
 }
 
@@ -294,6 +301,40 @@ main {
     color: var(--primary-color);
 }
 
+.modal-content {
+    background-color: var(--bg-color);
+    border: 1px solid var(--details-color);
+    border-radius: 3px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-width: 900px;
+}
+
+.modal-content .open-modal {
+    cursor: zoom-in;
+}
+
+.modal-content .close-modal {
+    background: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.modal-content .close-modal:hover {
+    filter: brightness(1.2);
+}
+
+.modal-content img {
+    padding: 2rem;
+    width: 100%;
+}
 .academic-education-text,.professional-experience {
     background: var(--bg-color);
 
