@@ -174,12 +174,12 @@ main {
 }
 
 .about-text strong {
-    color: #0000009f;
+    color: #4d4d4d;
 }
 
 .about-text h3 {
+    color: #4d4d4d;
     font-size: 19px;
-    font-weight: bold;
 }
 
 .social-media {
