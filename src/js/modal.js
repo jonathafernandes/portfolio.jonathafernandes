@@ -26,4 +26,10 @@ export function setupModalEvents(listItem) {
             closeModal(modal);
         }
     });
+
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal(modal);
+        }
+    });
 }
