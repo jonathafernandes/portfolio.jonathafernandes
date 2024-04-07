@@ -27,6 +27,8 @@ body {
 
 body.modal-open {
     overflow: hidden;
+    backdrop-filter: blur(15px);
+    filter: blur(15px);
 }
 
 a {
@@ -311,7 +313,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80vw;
-    max-width: 900px;
+    max-width: 80vw;
 }
 
 .open-modal {
