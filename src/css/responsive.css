@@ -136,6 +136,15 @@
         height: 100vh;
         padding-top: 30vh;
     }
+
+    .modal-content .close-modal {
+        position: relative;
+        margin-left: 1rem;
+    }
+
+    .modal-content img {
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 640px) {
