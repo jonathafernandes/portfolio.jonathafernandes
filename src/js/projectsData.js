@@ -37,6 +37,12 @@ async function getSpecificRepositories() {
                 buttonClass = 'not-allowed';
             }
 
+            let definiteDescription = `<span>${repo.description}</span>`;
+
+            if (repo.name === 'blog.github.io') {
+                definiteDescription = `<span>Blog pessoal criado com Quartz, Obsidian e GitHub Pages.</span>`;
+            }
+
             listItem.innerHTML = `
                 <div class="repo-title">
                     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
@@ -45,7 +51,7 @@ async function getSpecificRepositories() {
                     <h4>${repo.name}</h4>
                 </div>
                 <div class="repo-descripiton">
-                    <span>${repo.description}<span>
+                    <span>${definiteDescription}<span>
                     <span class="repo-topics">#${repo.topics[0]}</span>
                 </div>
                 <div class="repo-language">
