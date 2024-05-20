@@ -22,7 +22,7 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["alaclimabom","links.jonathafernandes","habithub","form-ex-alunos","insight-cast","git-search","notesnest","cv-express","organo","time-generator","nikel","consult-bible","blog.github.io"];
+        const specificRepositories = ["alaclimabom","links.jonathafernandes","habithub","form-ex-alunos","insight-cast","git-search","notesnest","cv-express","organo","time-generator","nikel","consult-bible","blog.github.io","monteiro-esportes-cms"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
         const repositoriesList = document.getElementById('repositories-list');
@@ -43,6 +43,8 @@ async function getSpecificRepositories() {
                 definiteDescription = `<span>Blog pessoal criado com Quartz, Obsidian e GitHub Pages.</span>`;
             }
 
+            const topics = repo.topics.map(topic => `#${topic}`).join(' ');
+
             listItem.innerHTML = `
                 <div class="repo-title">
                     <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 color-fg-muted">
@@ -52,7 +54,7 @@ async function getSpecificRepositories() {
                 </div>
                 <div class="repo-descripiton">
                     <span>${definiteDescription}<span>
-                    <span class="repo-topics">#${repo.topics[0]}</span>
+                    <span class="repo-topics">${topics}</span>
                 </div>
                 <div class="repo-language">
                     <span class="repo-language-color"></span>
@@ -63,8 +65,8 @@ async function getSpecificRepositories() {
                     <img src="/${repo.name}.png" alt="">
                 </button>
                 <div class="buttons">
+                <a href="${repo.html_url}" target="_blank" class="primary-button">Ver mais</a>
                     <a href="${repo.homepage}" target="_blank" class="primary-button ${buttonClass}" ${buttonClass === 'not-allowed' ? 'disabled' : ''}>${textButton}</a>
-                    <a href="${repo.html_url}" target="_blank" class="primary-button">Ver no GitHub</a>
                 </div>
                 <dialog>
                     <div class="modal-content">
