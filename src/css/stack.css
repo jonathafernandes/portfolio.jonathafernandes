@@ -1,0 +1,35 @@
+.stack {
+    font-family: 'Rubik', sans-serif;
+}
+
+.cards-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3.125rem;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    background: var(--bg-color);
+}
+
+.card img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.card p {
+    color: #0000009f;
+
+    margin-top: 0.2rem;
+    width: 200px;
+}
+
+.card span {
+    margin-top: 1rem;
+}

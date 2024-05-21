@@ -10,14 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Rubik:wght@300;500&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="/public/logo/logo-favicon.png" />
-    <link rel="stylesheet" href="./src/css/global.css">
-    <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/hero.css">
-    <link rel="stylesheet" href="./src/css/footer.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="icon" type="image/png" href="./../public/logo/logo-favicon.png" />
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <script src="https://kit.fontawesome.com/8b4b4245f7.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
@@ -32,13 +31,13 @@
                     </span>
                     <nav id="navigation">
                         <ul>
-                            <a href="./src/pages/about.html">
+                            <a href="./about.html">
                                 <li class="buttonOption" id="item-list-1">Sobre</li>
                             </a>
-                            <a href="./src/pages/stack.html">
+                            <a href="./stack.html">
                                 <li class="buttonOption" id="item-list-2">Conhecimento</li>
                             </a>
-                            <a href="./src/pages/projects.html">
+                            <a href="./projects.html">
                                 <li class="buttonOption" id="item-list-3">Projetos</li>
                             </a>
                         </ul>
@@ -48,23 +47,16 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h1>Olá, eu sou Jonatha Fernandes - Desenvolvedor Web</h1>
-        </stion>
-        <section class="learn-more">
-            <h3>Saiba mais</h3>
-            <div class="learn-more-content">
-                <a href="./src/pages/stack.html" id="stack">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <span>Conhecimento</span>
-                </a>
-                <a href="./src/pages/projects.html" id="project">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Projetos</span>
-                </a>
+        <section class=".projects">
+            <div class="section-title">
+                <h2>Projetos <span>.</span></h2>
+            </div>
+            <div id="userData">
+                <ul id="repositories-list"></ul>
             </div>
         </section>
     </main>
+    <div class="line"></div>
     <footer>
         <h3>Tire seu projeto do papel, vamos construir juntos!</h3>
         <p>Se tem algo em mente, não hesite em me mandar uma mensagem para conversarmos melhor sobre sua ideia.</p>
@@ -87,10 +79,10 @@
         <i class="fa-solid fa-square-caret-up back-to-top"></i>
     </footer>
 
-    <script src="./src/js/buttonToTop.js" type="module"></script>
-    <script src="./src/js/responsiveMenu.js" type="module"></script>
-    <script src="./src/js/projectsData.js" type="module"></script>
-    <script src="./src/js/currentDate.js" type="module"></script>
+    <script src="../js/buttonToTop.js" type="module"></script>
+    <script src="../js/responsiveMenu.js" type="module"></script>
+    <script src="../js/projectsData.js" type="module"></script>
+    <script src="../js/currentDate.js" type="module"></script>
 </body>
 
 </html>

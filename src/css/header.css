@@ -1,0 +1,42 @@
+header {
+    padding: 1rem 0;
+}
+
+header a, header i {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+header i {
+    display: none;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navigation ul {
+    display: flex;
+    gap: 0.7rem;
+
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#navigation a {
+    position: relative;
+    padding: 0.5rem;
+    
+    border-radius: 3px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+
+    transition: 300ms;
+}
+
+nav a:hover {
+    background-color: var(--bg-color);
+}
