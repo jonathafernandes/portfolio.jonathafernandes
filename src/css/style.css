@@ -23,6 +23,9 @@ body {
     color: var(--text-color);
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
+
+    max-width: 64rem;
+    margin: 0 auto;
 }
 
 body.modal-open {
@@ -97,26 +100,34 @@ button {
 
 header {
     background: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Manrope", sans-serif;, sans-serif;
 
-    position: sticky;
-    top: 0;
+    padding: 1rem 0;
+    /* position: sticky; */
+    /* top: 0; */
 }
 
-header img {
+/* header img {
     width: 54px;
 
     margin-top: 9px;
+} */
+
+header a {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
 }
 
 .top {
     display: flex;
-    margin: 10px 0 0 9vw;
-    gap: 8%;
+    /* margin: 10px 0 0 9vw; */
+    /* gap: 8%; */
     align-items: center;
+    justify-content: space-between;
 }
 
-.menu-section nav ul {
+.menu-section #navigation ul {
     display: flex;
     gap: 0.7rem;
 
@@ -124,11 +135,13 @@ header img {
     text-transform: uppercase;
 }
 
-.menu-section nav a {
+.menu-section #navigation a {
     position: relative;
     padding: 0.5rem;
-
+    
     border-radius: 3px;
+    color: var(--text-color);
+    font-size: 0.875rem;
 
     transition: 300ms;
 }
@@ -137,8 +150,17 @@ header img {
     background-color: var(--bg-color);
 }
 
-main {
+/* main {
     margin: 0 9vw 0 9vw;
+} */
+
+.hero {
+    margin: 4rem 0;
+}
+
+.hero h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: 3rem;
 }
 
 .about {
@@ -270,7 +292,7 @@ main {
 }
 
 .repo-title {
-    font-family: Poppins;
+    font-family: "Manrope", sans-serif;
 }
 
 #repositories-list .repo-title, #repositories-list .repo-language {
