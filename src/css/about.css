@@ -1,6 +1,8 @@
-.about {
+.about, section {
     font-family: 'Rubik', sans-serif;
+}
 
+.about {
     background: var(--bg-color);
     border: 2px solid var(--details-color);
     border-radius: 6px;
