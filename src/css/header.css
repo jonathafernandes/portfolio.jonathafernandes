@@ -1,21 +1,18 @@
 header {
     padding: 1rem 0;
-}
-
-header a, header i {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-color);
-}
-
-header i {
-    display: none;
-}
-
-.top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header img {
+    width: 50px;
+}
+
+header a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
 }
 
 #navigation ul {

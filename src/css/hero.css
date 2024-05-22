@@ -14,6 +14,7 @@
 
 .learn-more-content {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -44,6 +45,10 @@
     background-image: url('../../public/others/bg-01-stack-hero.png');
 }
 
-#project {
-    background-image: url('../../public/others/bg-01-project-hero.png');
+#projects {
+    background-image: url('../../public/others/bg-01-projects-hero.png');
+}
+
+#articles {
+    background-image: url('../../public/others/bg-01-articles-hero.png');
 }

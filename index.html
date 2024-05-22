@@ -17,35 +17,19 @@
     <link rel="stylesheet" href="./src/css/footer.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
     <script src="https://kit.fontawesome.com/8b4b4245f7.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="top">
-            <a href="/">{J}</a>
-            <div class="menu">
-                <div class="menu-section">
-                    <span class="icon">
-                        <i class="ph ph-sidebar-simple icon menu-toggle"></i>
-                    </span>
-                    <nav id="navigation">
-                        <ul>
-                            <a href="./src/pages/about.html">
-                                <li class="buttonOption" id="item-list-1">Sobre</li>
-                            </a>
-                            <a href="./src/pages/stack.html">
-                                <li class="buttonOption" id="item-list-2">Conhecimento</li>
-                            </a>
-                            <a href="./src/pages/projects.html">
-                                <li class="buttonOption" id="item-list-3">Projetos</li>
-                            </a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <a href="/"><img src="./public/logo/WhatsApp_Image_2024-05-21_at_21.25.33-removebg-preview.png" alt=""></a>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="./src/pages/about.html">Sobre</a></li>
+                    <li><a href="./src/pages/stack.html">Conhecimento</a></li>
+                    <li><a href="./src/pages/projects.html">Projetos</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <section class="hero">
@@ -53,16 +37,26 @@
         </stion>
         <section class="learn-more">
             <h3>Saiba mais</h3>
-            <div class="learn-more-content">
-                <a href="./src/pages/stack.html" id="stack">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <span>Conhecimento</span>
-                </a>
-                <a href="./src/pages/projects.html" id="project">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Projetos</span>
-                </a>
-            </div>
+            <ul class="learn-more-content">
+                <li>
+                    <a href="./src/pages/stack.html" id="stack">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Conhecimento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./src/pages/projects.html" id="projects">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Projetos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://jonathafernandes.github.io/blog.github.io/" target="_blank" id="articles">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span>Artigos</span>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
