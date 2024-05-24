@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Jonatha Fernandes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Rubik:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="./../public/logo/logo-jonatha-fernandes-1-04.png" />
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/stack.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script src="https://kit.fontawesome.com/8b4b4245f7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img src="../../public/logo/logo-jonatha-fernandes-1-04.png" alt="">
+            <span>Jonatha Fernandes</span>
+        </a>
+        <nav id="navigation">
+            <ul>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./stack.html">Conhecimento</a></li>
+                <li><a href="./projects.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="stack">
+            <div class="section-title">
+                <h2>Conhecimento <span>.</span></h2>
+            </div>
+            <div class="cards-techs">
+                <div class="card">
+                    <img src="../../public/techs/html.svg" alt="">
+                    <span>HTML</span>
+                    <p>Utilizada para criar e estruturar conteúdo na web.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/css.svg" alt="">
+                    <span>CSS</span>
+                    <p>Linguagem de estilo usada para descrever a apresentação.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/git.svg" alt="">
+                    <span>GIT</span>
+                    <p>Controle de versão para gerenciar e rastrear mudanças no código-fonte durante o
+                        desenvolvimento de software.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/sass.svg" alt="">
+                    <span>SASS</span>
+                    <p>Linguagem de extensão do CSS. A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/javascript.svg" alt="">
+                    <span>JavaScript</span>
+                    <p>Linguagem de alto nível, usada principalmente para criar interatividade em páginas web.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/bootstrap-5-logo-icon.svg" alt="">
+                    <span>Bootstrap</span>
+                    <p>Ferramenta para criar interfaces web responsivas.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/react.svg" alt="">
+                    <span>React</span>
+                    <p>Biblioteca JavaScript para construção de interfaces de usuário reutilizáveis e
+                        componentizadas.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/tailwindcss.svg" alt="">
+                    <span>TailwindCSS</span>
+                    <p>
+                        Framework CSS que permite criar designs personalizados sem sair do HTML.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/typescript.svg" alt="">
+                    <span>TypeScript</span>
+                    <p>Superset de JavaScript que adiciona recursos de tipagem estática para melhorar a
+                        produtividade no desenvolvimento.</p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/vite.svg" alt="">
+                    <span>Vite</span>
+                    <p>
+                        Build tool que visa ser uma alternativa mais rápida para o Webpack.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="../../public/techs/nodejs.svg" alt="">
+                    <span>Node.js</span>
+                    <p>Plataforma que permite executar JavaScript no lado do servidor.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <div class="line"></div>
+    <footer>
+        <h3>Tire seu projeto do papel, vamos construir juntos!</h3>
+        <p>Se tem algo em mente, não hesite em me mandar uma mensagem para conversarmos melhor sobre ideia.</p>
+        <div class="social-section">
+            <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+            <a href="https://github.com/jonathafernandes" target="_blank">
+                <i class="fa-brands fa-square-github fa-2xl"></i>
+            </a>
+            <a href="https://instagram.com/_jonathafernandes" target="_blank">
+                <i class="fa-brands fa-square-instagram fa-2xl"></i>
+            </a>
+            <a href="https://twitter.com/_jonatha__" target="_blank">
+                <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+            </a>
+        </div>
+        <div class="footer-line"></div>
+        <span id="current-year"></span>
+        <i class="fa-solid fa-square-caret-up back-to-top"></i>
+    </footer>
+
+    <script src="../js/buttonToTop.js" type="module"></script>
+    <script src="../js/projectsData.js" type="module"></script>
+    <script src="../js/currentDate.js" type="module"></script>
+</body>
+
+</html>

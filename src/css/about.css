@@ -1,0 +1,85 @@
+.about, section {
+    font-family: 'Rubik', sans-serif;
+}
+
+.about {
+    background: var(--bg-color);
+    border: 2px solid var(--details-color);
+    border-radius: 6px;
+
+    display: flex;
+    gap: 7%;
+    margin-top: 50px;
+    padding: 4%;
+}
+
+.about-img {
+    height: 400px;
+
+    border: 2px solid var(--details-color);
+    border-radius: 5px;
+}
+
+.about-text span {
+    color: var(--primary-color);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about-text h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+
+    margin: 10px 0 8px 0;
+}
+
+.about-text p {
+    font-size: 22px;
+}
+
+.about-text strong {
+    color: #4d4d4d;
+}
+
+.about-text h3 {
+    color: #4d4d4d;
+    font-size: 19px;
+}
+
+
+.academic-education-text,.professional-experience {
+    background: var(--bg-color);
+
+    margin-top: 50px;
+    padding: 4%;
+}
+
+.academic-education-text span,.professional-experience span {
+    font-size: 13px;
+}
+
+.academic-education-text p,.professional-experience p {
+    margin: 5px 0;
+}
+
+#section-4 ul,#section-5 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.professional-experience .link {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 5px;
+}
+
+.professional-experience a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.professional-experience img {
+    width: 14px;
+}
