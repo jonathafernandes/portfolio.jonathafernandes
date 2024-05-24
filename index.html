@@ -11,11 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Rubik:wght@300;500&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" href="/public/logo/logo-jonatha-fernandes-1-04.png" />
-    <link rel="stylesheet" href="./src/css/global.css">
-    <link rel="stylesheet" href="./src/css/header.css">
-    <link rel="stylesheet" href="./src/css/hero.css">
-    <link rel="stylesheet" href="./src/css/footer.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="/src/css/global.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/home.css">
+    <link rel="stylesheet" href="/src/css/about.css">
+    <link rel="stylesheet" href="/src/css/stack.css">
+    <link rel="stylesheet" href="/src/css/projects.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
     <script src="https://kit.fontawesome.com/8b4b4245f7.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
@@ -23,44 +26,19 @@
 <body>
     <header>
         <a href="/">
-            <img src="./public/logo/logo-jonatha-fernandes-1-04.png" alt="">
+            <img src="/public/logo/logo-jonatha-fernandes-1-04.png" alt="Logotipo de Jonatha Fernandes">
             <span>Jonatha Fernandes</span>
         </a>
         <nav id="navigation">
             <ul>
-                <li><a href="/src/pages/about.html">Sobre</a></li>
-                <li><a href="/src/pages/stack.html">Conhecimento</a></li>
-                <li><a href="/src/pages/projects.html">Projetos</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">Sobre</a></li>
+                <li><a href="/stack">Conhecimento</a></li>
+                <li><a href="/projects">Projetos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>Olá, eu sou Jonatha Fernandes - Desenvolvedor Web</h1>
-        </stion>
-        <section class="learn-more">
-            <h3>Saiba mais</h3>
-            <ul class="learn-more-content">
-                <li>
-                    <a href="./src/pages/stack.html" id="stack">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <span>Conhecimento</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./src/pages/projects.html" id="projects">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Projetos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://jonathafernandes.github.io/blog.github.io/" target="_blank" id="articles">
-                        <i class="fa-solid fa-newspaper"></i>
-                        <span>Artigos</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
     </main>
     <footer>
         <h3>Tire seu projeto do papel, vamos construir juntos!</h3>
@@ -84,9 +62,10 @@
         <i class="fa-solid fa-square-caret-up back-to-top"></i>
     </footer>
 
-    <script src="./src/js/buttonToTop.js" type="module"></script>
-    <script src="./src/js/projectsData.js" type="module"></script>
-    <script src="./src/js/currentDate.js" type="module"></script>
+    <script src="/src/js/router.js"></script>
+    <script src="/src/js/buttonToTop.js" type="module"></script>
+    <script src="/src/js/projectsData.js" type="module"></script>
+    <script src="/src/js/currentDate.js" type="module"></script>
 </body>
 
 </html>

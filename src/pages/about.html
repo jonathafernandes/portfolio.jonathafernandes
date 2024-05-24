@@ -1,129 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Jonatha Fernandes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Rubik:wght@300;500&display=swap"
-        rel="stylesheet">
-    <link rel="icon" type="image/png" href="/public/logo/logo-jonatha-fernandes-1-04.png" />
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <script src="https://kit.fontawesome.com/8b4b4245f7.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</head>
-
-<body>
-    <header>
-        <a href="/">
-            <img src="../../public/logo/logo-jonatha-fernandes-1-04.png" alt="">
-            <span>Jonatha Fernandes</span>
-        </a>
-        <nav id="navigation">
+<main>
+    <div class="about">
+        <img class="about-img" src="../../public/others/about-IMG_2023.webp" alt="Jonatha Fernandes">
+        <div class="about-text">
+            <span>Quem sou</span>
+            <h2>Jonatha Fernandes</h2>
+            <h3>Desenvolvedor Web</h3>
+            <br>
+            <p>Tenho 29 anos, sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
+                <br>
+                Meu primeiro contato com programação foi na faculdade
+                em
+                2018, onde iniciei o aprendizado em Python. Também tive contato com as linguagens Java e SQL. No momento tenho focado meus estudos no ecosistema
+                de <strong>JavaScript</strong> com <strong>React</strong>, <strong>Node.js</strong> e <strong>TypeScript</strong>.
+            </p>
+        </div>
+    </div>
+    <section>
+        <div class="section-title">
+            <h2>Formação <span>.</span></h2>
+        </div>
+        <div class="academic-education-text">
+            <span>2022 — 2024</span>
+            <h4>Uninassau</h4>
+            <p>Análise e Desenvolvimento de Sistemas</p>
+            <br>
+            <span>2023</span>
+            <h4>Alura</h4>
+            <p>ONE — Oracle Next Education</p>
             <ul>
-                <li><a href="./about.html">Sobre</a></li>
-                <li><a href="./stack.html">Conhecimento</a></li>
-                <li><a href="./projects.html">Projetos</a></li>
+                <li class="tag">#lógica-de-programação</li>
+                <li class="tag">#html</li>
+                <li class="tag">#css</li>
+                <li class="tag">#javascript</li>
+                <li class="tag">#react</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="about">
-            <img class="about-img" src="../../public/others/about-IMG_2023.webp" alt="Jonatha Fernandes">
-            <div class="about-text">
-                <span>Quem sou</span>
-                <h2>Jonatha Fernandes</h2>
-                <h3>Desenvolvedor Web</h3>
-                <br>
-                <p>Tenho 29 anos, sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
-                    <br>
-                    Meu primeiro contato com programação foi na faculdade
-                    em
-                    2018, onde iniciei o aprendizado em Python. Também tive contato com as linguagens Java e SQL. No momento tenho focado meus estudos no ecosistema
-                    de <strong>JavaScript</strong> com <strong>React</strong>, <strong>Node.js</strong> e <strong>TypeScript</strong>.
-                </p>
-            </div>
         </div>
-        <section>
-            <div class="section-title">
-                <h2>Formação <span>.</span></h2>
-            </div>
-            <div class="academic-education-text">
-                <span>2022 — 2024</span>
-                <h4>Uninassau</h4>
-                <p>Análise e Desenvolvimento de Sistemas</p>
-                <br>
-                <span>2023</span>
-                <h4>Alura</h4>
-                <p>ONE — Oracle Next Education</p>
-                <ul>
-                    <li class="tag">#lógica-de-programação</li>
-                    <li class="tag">#html</li>
-                    <li class="tag">#css</li>
-                    <li class="tag">#javascript</li>
-                    <li class="tag">#react</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div class="section-title">
-                <h2>Experiência <span>.</span></h2>
-            </div>
-            <div class="professional-experience">
-                <span>Set/2023 — Presente ·</span>
-                <span id="current-date-working"></span>
-                <h4>Polícia Civil de Alagoas</h4>
-                <p>Desenvolvedor Web — estágio</p>
-                <div class="link">
-                    <i class="ph-bold ph-link"></i>
-                    <a href="https://github.com/GeinfoPcal" target="_blank">
-                        GeinfoPcal
-                    </a>
-                </div>
-                <ul>
-                    <li class="tag">#javascript</li>
-                    <li class="tag">#typescript</li>
-                    <li class="tag">#react</li>
-                    <li class="tag">#node.js</li>
-                    <li class="tag">#styled-components</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <div class="line"></div>
-    <footer>
-        <h3>Tire seu projeto do papel, vamos construir juntos!</h3>
-        <p>Se tem algo em mente, não hesite em me mandar uma mensagem para conversarmos melhor sobre sua ideia.</p>
-        <div class="social-section">
-            <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
-                <i class="fa-brands fa-linkedin fa-2xl"></i>
-            </a>
-            <a href="https://github.com/jonathafernandes" target="_blank">
-                <i class="fa-brands fa-square-github fa-2xl"></i>
-            </a>
-            <a href="https://instagram.com/_jonathafernandes" target="_blank">
-                <i class="fa-brands fa-square-instagram fa-2xl"></i>
-            </a>
-            <a href="https://twitter.com/_jonatha__" target="_blank">
-                <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
-            </a>
+    </section>
+    <section>
+        <div class="section-title">
+            <h2>Experiência <span>.</span></h2>
         </div>
-        <div class="footer-line"></div>
-        <span id="current-year"></span>
-        <i class="fa-solid fa-square-caret-up back-to-top"></i>
-    </footer>
-
-    <script src="../js/buttonToTop.js" type="module"></script>
-    <script src="../js/projectsData.js" type="module"></script>
-    <script src="../js/currentDate.js" type="module"></script>
-    <script src="../js/calculateMonths.js" type="module"></script>
-</body>
-
-</html>
+        <div class="professional-experience">
+            <span>Set/2023 — Presente ·</span>
+            <span id="current-date-working"></span>
+            <h4>Polícia Civil de Alagoas</h4>
+            <p>Desenvolvedor Web — estágio</p>
+            <div class="link">
+                <i class="ph-bold ph-link"></i>
+                <a href="https://github.com/GeinfoPcal" target="_blank">
+                    GeinfoPcal
+                </a>
+            </div>
+            <ul>
+                <li class="tag">#javascript</li>
+                <li class="tag">#typescript</li>
+                <li class="tag">#react</li>
+                <li class="tag">#node.js</li>
+                <li class="tag">#styled-components</li>
+            </ul>
+        </div>
+    </section>
+</main>
