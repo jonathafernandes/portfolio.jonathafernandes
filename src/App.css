@@ -1,43 +1,5 @@
 header {
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header img {
-    width: 30px;
-}
-
-header a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text-color);
-}
-
-#navigation ul {
-    display: flex;
-    gap: 0.7rem;
-
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-#navigation a {
-    position: relative;
-    padding: 0.5rem;
-    
-    border-radius: 3px;
-    color: var(--text-color);
-    font-size: 0.875rem;
-}
-
-nav a:hover {
-    background-color: var(--bg-color);
+    box-shadow: none !important;
 }
 
 .hero {
