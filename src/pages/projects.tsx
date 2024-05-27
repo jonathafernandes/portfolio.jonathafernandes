@@ -64,7 +64,7 @@ const setupModalEvents = (listItem: HTMLLIElement) => {
     });
 }
 
-    const Projects: React.FC = () => {
+const Projects: React.FC = () => {
     const [repositories, setRepositories] = useState<Repository[]>([]);
     const [error, setError] = useState<string | null>(null);
 
