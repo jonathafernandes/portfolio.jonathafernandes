@@ -85,15 +85,15 @@ nav a:hover {
 }
 
 #stack {
-    background-image: url('../../public/others/bg-01-stack-hero.png');
+    background-image: url('../public/others/bg-01-stack-hero.png');
 }
 
 #projects {
-    background-image: url('../../public/others/bg-01-projects-hero.png');
+    background-image: url('../public/others/bg-01-projects-hero.png');
 }
 
 #articles {
-    background-image: url('../../public/others/bg-01-articles-hero.png');
+    background-image: url('../public/others/bg-01-articles-hero.png');
 }
 
 .about, section {
