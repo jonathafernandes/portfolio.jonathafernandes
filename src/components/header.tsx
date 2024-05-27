@@ -71,7 +71,7 @@ const Header: React.FC = () => {
 
     return (
         <AppBar position="static" sx={{ backgroundColor: '#fff', padding: '1rem 0' }}>
-            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0' }}>
+            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: '0' }} className='tool-bar'>
                 <LogoLink to="/">
                     <LogoImg src={logo104} alt="Jonatha Fernandes - Desenvolvedor Web" />
                     <span>

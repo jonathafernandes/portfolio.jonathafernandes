@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
         <div className="footer-line"></div>
         <span id="current-year">{new Date().getFullYear()}</span>
         {displayBackToTop && (
-            <IoMdArrowDropupCircle size={30} className="back-to-top" onClick={scrollToTop} />
+            <IoMdArrowDropupCircle size={40} className="back-to-top" onClick={scrollToTop} />
         )}
         </footer>
     );
