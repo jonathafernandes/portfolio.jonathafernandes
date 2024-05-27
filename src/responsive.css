@@ -63,6 +63,14 @@
 }
 
 @media (max-width: 410px) {
+    #navigation ul {
+        gap: 0.4rem;
+    }
+
+    #navigation a {
+        padding: 0.2rem;
+    }
+
     .about {
         align-items: start;
     }

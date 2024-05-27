@@ -7,8 +7,8 @@ Página pessoal
 
 **Desenvolvido com:**
 
-- HTML e CSS
-- JavaScript Vanilla
+- React
+- TypeScript
 - Vite
 - GitHub API
 ---

@@ -1,0 +1,382 @@
+header {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 30px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#navigation ul {
+    display: flex;
+    gap: 0.7rem;
+
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#navigation a {
+    position: relative;
+    padding: 0.5rem;
+    
+    border-radius: 3px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+}
+
+nav a:hover {
+    background-color: var(--bg-color);
+}
+
+.hero {
+    margin: 4rem 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.learn-more h3 {
+    text-transform: uppercase;
+
+    margin: 3.125rem 0 1rem 0;
+}
+
+.learn-more-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.learn-more-content a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px; 
+    color: #f1f1f1;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    width: 15rem;
+    height: 10rem;
+
+    transition: transform 0.5s;
+}
+
+.learn-more-content a:hover {
+    transform: scale(1.03);
+}
+
+#stack {
+    background-image: url('../../public/others/bg-01-stack-hero.png');
+}
+
+#projects {
+    background-image: url('../../public/others/bg-01-projects-hero.png');
+}
+
+#articles {
+    background-image: url('../../public/others/bg-01-articles-hero.png');
+}
+
+.about, section {
+    font-family: 'Rubik', sans-serif;
+}
+
+.about {
+    background: var(--bg-color);
+    border: 2px solid var(--details-color);
+    border-radius: 6px;
+
+    display: flex;
+    gap: 7%;
+    margin-top: 50px;
+    padding: 4%;
+}
+
+.about-img {
+    height: 400px;
+
+    border: 2px solid var(--details-color);
+    border-radius: 5px;
+}
+
+.about-text span {
+    color: var(--primary-color);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.about-text h1 {
+    font-size: 2.2rem;
+    font-weight: 300;
+
+    margin: 10px 0 8px 0;
+}
+
+.about-text p {
+    font-size: 22px;
+}
+
+.about-text strong {
+    color: #4d4d4d;
+}
+
+.about-text h3 {
+    color: #4d4d4d;
+    font-size: 19px;
+}
+
+
+.academic-education-text,.professional-experience {
+    background: var(--bg-color);
+
+    margin-top: 50px;
+    padding: 4%;
+}
+
+.academic-education-text span,.professional-experience span {
+    font-size: 13px;
+}
+
+.academic-education-text p,.professional-experience p {
+    margin: 5px 0;
+}
+
+#section-4 ul,#section-5 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.professional-experience .link {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 5px;
+}
+
+.professional-experience a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.professional-experience img {
+    width: 14px;
+}
+
+.stack {
+    font-family: 'Rubik', sans-serif;
+}
+
+.cards-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3.125rem;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    background: var(--bg-color);
+}
+
+.card img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.card p {
+    color: #0000009f;
+
+    margin-top: 0.2rem;
+    width: 200px;
+}
+
+.card span {
+    margin-top: 1rem;
+}
+
+.projects {
+    font-family: 'Rubik', sans-serif;
+}
+
+#userData {
+    margin-top: 3.125rem;
+}
+
+#repositories-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#repositories-list li {
+    background-color: var(--bg-color);
+
+    width: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#repositories-list .buttons {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+.repo-title {
+    font-family: "Manrope", sans-serif;
+}
+
+#repositories-list .repo-title, #repositories-list .repo-language {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+}
+
+#repositories-list li span {
+    font-size: 0.8rem;
+}
+
+.repo-language-color {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    
+    height: 12px;
+    width: 12px;
+}
+
+.repo-image img {
+    border: 1px solid var(--details-color);
+    border-radius: 3px;
+
+    width: 100%;
+}
+
+.repo-topics {
+    color: var(--primary-color);
+}
+
+.modal-content {
+    background-color: var(--bg-color);
+    border: 1px solid var(--details-color);
+    border-radius: 3px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65vw;
+    max-width: 80vw;
+}
+
+.open-modal {
+    cursor: zoom-in;
+}
+
+.modal-content .close-modal {
+    background: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.modal-content .close-modal:hover {
+    filter: brightness(1.2);
+}
+
+.modal-content img {
+    padding: 2rem;
+    width: 100%;
+}
+
+footer {
+    background: var(--bg-color);
+    border: 2px solid var(--details-color);
+    border-radius: 6px;
+
+    margin: 2rem 0;
+    padding: 3rem;
+}
+
+footer h3 {
+    text-transform: uppercase;
+}
+
+footer span, footer p {
+    color: #0000009f;
+    font-size: 0.875rem;
+
+    margin-top: 0.5rem;
+}
+
+.social-section {
+    margin: 50px 0;
+    display: flex;
+}
+
+.social-section a {
+    color: #0000009f;
+    font-size: 50px;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.social-section a:hover {
+    color: var(--primary-color);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+
+    font-size: 2.8125rem;
+    color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    filter: brightness(1.2);
+}
+
+.footer-line {
+    width: 100%;
+
+    border: 2px solid var(--primary-color);
+
+    background: var(--primary-color);
+}
