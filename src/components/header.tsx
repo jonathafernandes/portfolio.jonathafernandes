@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo104 from '../../public/logo/logo-jonatha-fernandes-1-04.png';
 
 const Header: React.FC = () => {
     return (
         <header>
         <Link to="/">
             <img
-            src="/public/logo/logo-jonatha-fernandes-1-04.png"
+            src={logo104}
             alt="Jonatha Fernandes - Desenvolvedor Web"
             />
             <span>Jonatha Fernandes</span>

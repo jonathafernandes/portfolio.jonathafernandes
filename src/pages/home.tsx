@@ -1,4 +1,7 @@
 import React from 'react';
+import { BsStack } from 'react-icons/bs';
+import { FaCode } from 'react-icons/fa';
+import { GrArticle } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
@@ -12,20 +15,20 @@ const Home: React.FC = () => {
             <ul className="learn-more-content">
             <li>
                 <Link to="/stack" id="stack">
-                <i className="fa-solid fa-layer-group"></i>
-                <span>Conhecimento</span>
+                    <BsStack />
+                    <span>Conhecimento</span>
                 </Link>
             </li>
             <li>
                 <Link to="/projects" id="projects">
-                <i className="fa-solid fa-code"></i>
-                <span>Projetos</span>
+                    <FaCode />
+                    <span>Projetos</span>
                 </Link>
             </li>
             <li>
                 <a href="https://jonathafernandes.github.io/blog.github.io/" target="_blank" id="articles" rel="noopener noreferrer">
-                <i className="fa-solid fa-newspaper"></i>
-                <span>Artigos</span>
+                    <GrArticle />
+                    <span>Artigos</span>
                 </a>
             </li>
             </ul>

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import aboutImage03 from '../../public/others/about-IMG_2023.webp';
+
 const About: React.FC = () => {
     useEffect(() => {
         const currentDateWorking = document.getElementById('current-date-working');
@@ -20,7 +22,7 @@ const About: React.FC = () => {
     return (
         <>
         <div className="about">
-            <img className="about-img" src="../../public/others/about-IMG_2023.webp" alt="Jonatha Fernandes" />
+            <img className="about-img" src={aboutImage03} alt="Jonatha Fernandes" />
             <div className="about-text">
             <span>Quem sou</span>
             <h2>Jonatha Fernandes</h2>
