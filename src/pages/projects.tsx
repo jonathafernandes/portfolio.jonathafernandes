@@ -70,30 +70,34 @@ const setupModalEvents = (listItem: HTMLLIElement) => {
 
     useEffect(() => {
         const fetchRepositories = async () => {
-        try {
-            const username = 'jonathafernandes';
-            const perPage = 100;
-            let allRepositories: Repository[] = [];
+            try {
+                const username = 'jonathafernandes';
+                const perPage = 100;
+                let allRepositories: Repository[] = [];
 
-            const fetchData = async (url: string) => {
-            const response = await axios.get(url);
-            allRepositories = allRepositories.concat(response.data);
+                const fetchData = async (url: string) => {
+                const response = await axios.get(url);
+                allRepositories = allRepositories.concat(response.data);
 
-            const nextLink = response.headers.link && response.headers.link.split(',').find(link => link.includes('rel="next"'));
-            if (nextLink) {
-                const nextUrl = nextLink.split(';')[0].slice(1, -1);
-                await fetchData(nextUrl);
+                const nextLink = response.headers.link && response.headers.link.split(',').find((link: string | string[]) => link.includes('rel="next"'));
+                if (nextLink) {
+                    const nextUrl = nextLink.split(';')[0].slice(1, -1);
+                    await fetchData(nextUrl);
+                }
+                };
+
+                const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
+                await fetchData(initialUrl);
+
+                const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
+                setRepositories(filteredRepositories);
+            } catch (error: unknown) {
+                if (error instanceof Error) {
+                    setError('Erro ao obter repositórios: ' + error.message);
+                } else {
+                    setError('Erro ao obter repositórios.');
+                }
             }
-            };
-
-            const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
-            await fetchData(initialUrl);
-
-            const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
-            setRepositories(filteredRepositories);
-        } catch (error: any) {
-            setError('Erro ao obter repositórios: ' + error.message);
-        }
         };
 
         fetchRepositories();
