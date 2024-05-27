@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaGithubSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
+import { IoMdArrowDropupCircle } from 'react-icons/io';
 
 const Footer: React.FC = () => {
     const [displayBackToTop, setDisplayBackToTop] = useState<boolean>(false);
@@ -62,7 +63,7 @@ const Footer: React.FC = () => {
         <div className="footer-line"></div>
         <span id="current-year">{new Date().getFullYear()}</span>
         {displayBackToTop && (
-            <i className="fas fa-caret-square-up back-to-top" onClick={scrollToTop}></i>
+            <IoMdArrowDropupCircle size={30} className="back-to-top" onClick={scrollToTop} />
         )}
         </footer>
     );
