@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loadContent(route);
     }
 
-    // Navegação por link
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
