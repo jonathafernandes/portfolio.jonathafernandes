@@ -64,7 +64,7 @@ button {
   font-size: 50px;
 }
 
-.primary-button {
+.primary-button, .disabled-button {
   background-color: var(--primary-color);
   color: #fff;
 
@@ -82,6 +82,11 @@ button {
 
 .primary-button:hover {
   filter: brightness(1.2);
+}
+
+.disabled-button {
+  background-color: gray;
+  cursor: not-allowed;
 }
 
 .tag {

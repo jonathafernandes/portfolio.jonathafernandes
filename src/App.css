@@ -235,14 +235,6 @@ header {
     font-size: 0.8rem;
 }
 
-.repo-language-color {
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    
-    height: 12px;
-    width: 12px;
-}
-
 .repo-image img {
     border: 1px solid var(--details-color);
     border-radius: 3px;
