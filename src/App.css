@@ -116,7 +116,7 @@ header {
 .academic-education-text,.professional-experience {
     background: var(--bg-color);
 
-    margin-top: 50px;
+    margin-top: 1rem;
     padding: 4%;
 }
 
@@ -287,7 +287,7 @@ footer {
     border: 2px solid var(--details-color);
     border-radius: 6px;
 
-    margin: 2rem 0;
+    margin: 3.125rem 0;
     padding: 3rem;
 }
 

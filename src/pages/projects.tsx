@@ -139,7 +139,11 @@ const Projects: React.FC = () => {
                                     </div>
                                     <div className="repo-description">
                                         <span>{repo.name === 'blog.github.io' ? 'Blog pessoal criado com Quartz, Obsidian e GitHub Pages.' : repo.description}</span>
-                                        <span className="repo-topics">{repo.topics.map(topic => `#${topic}`).join(' ')}</span>
+                                        <br />
+                                        <span className="repo-topics"></span>
+                                        {repo.topics.map(topic => (
+                                            <span key={topic} className='repo-topics'>#{topic}<br /></span>
+                                        ))}
                                     </div>
                                     <div className="repo-language">
                                         <FaCircle color='#514796' size={12} />
