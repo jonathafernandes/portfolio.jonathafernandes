@@ -11,6 +11,7 @@ Página pessoal
 - TypeScript
 - Vite
 - GitHub API
+- Material UI
 ---
 ### Visite
 ▶️ https://jonathafernandes.vercel.app/
