@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Button from '../components/button';
+import Spinner from '../utils/spinner';
 
 import { FaCircle, FaWindowClose } from 'react-icons/fa';
 import { RiGitRepositoryLine } from 'react-icons/ri';
@@ -69,6 +70,7 @@ const setupModalEvents = (listItem: HTMLLIElement) => {
 
 const Projects: React.FC = () => {
     const [repositories, setRepositories] = useState<Repository[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
@@ -100,6 +102,8 @@ const Projects: React.FC = () => {
                 } else {
                     setError('Erro ao obter repositórios.');
                 }
+            } finally {
+                setLoading(false);
             }
         };
 
@@ -121,47 +125,53 @@ const Projects: React.FC = () => {
                 <h2>Projetos <span>.</span></h2>
             </div>
             <div id="userData">
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-                <ul id="repositories-list">
-                    {repositories.map(repo => (
-                        <li key={repo.name} id={repo.name}>
-                            <div className="repo-title">
-                                <RiGitRepositoryLine />
-                                <h4>{repo.name}</h4>
-                            </div>
-                            <div className="repo-description">
-                                <span>{repo.name === 'blog.github.io' ? 'Blog pessoal criado com Quartz, Obsidian e GitHub Pages.' : repo.description}</span>
-                                <span className="repo-topics">{repo.topics.map(topic => `#${topic}`).join(' ')}</span>
-                            </div>
-                            <div className="repo-language">
-                                <FaCircle color='#514796' size={12} />
-                                <span>{repo.language}</span>
-                            </div>
-                            <br />
-                            <button className="repo-image open-modal">
-                                <img src={`/${repo.name}.png`} alt={repo.name} />
-                            </button>
-                            <div className="buttons">
-                                <Button href={repo.html_url} className="primary-button">
-                                    Ver mais
-                                </Button>
-                                <Button
-                                    href={repo.homepage || '#'}
-                                    className={repo.homepage ? 'primary-button' : 'disabled-button not-allowed'}
-                                    disabled={!repo.homepage}
-                                >
-                                    {repo.homepage ? 'Visite' : 'Em breve...'}
-                                </Button>
-                            </div>
-                            <dialog>
-                                <div className="modal-content">
-                                    <button className="close-modal"><FaWindowClose /></button>
-                                    <img src={`/${repo.name}.png`} alt={repo.name} />
-                                </div>
-                            </dialog>
-                        </li>
-                    ))}
-                </ul>
+                {loading ? (
+                    <Spinner />
+                ) : (
+                    <>
+                        {error && <p style={{ color: 'red' }}>{error}</p>}
+                        <ul id="repositories-list">
+                            {repositories.map(repo => (
+                                <li key={repo.name} id={repo.name}>
+                                    <div className="repo-title">
+                                        <RiGitRepositoryLine />
+                                        <h4>{repo.name}</h4>
+                                    </div>
+                                    <div className="repo-description">
+                                        <span>{repo.name === 'blog.github.io' ? 'Blog pessoal criado com Quartz, Obsidian e GitHub Pages.' : repo.description}</span>
+                                        <span className="repo-topics">{repo.topics.map(topic => `#${topic}`).join(' ')}</span>
+                                    </div>
+                                    <div className="repo-language">
+                                        <FaCircle color='#514796' size={12} />
+                                        <span>{repo.language}</span>
+                                    </div>
+                                    <br />
+                                    <button className="repo-image open-modal">
+                                        <img src={`/${repo.name}.png`} alt={repo.name} />
+                                    </button>
+                                    <div className="buttons">
+                                        <Button href={repo.html_url} className="primary-button">
+                                            Ver mais
+                                        </Button>
+                                        <Button
+                                            href={repo.homepage || '#'}
+                                            className={repo.homepage ? 'primary-button' : 'disabled-button not-allowed'}
+                                            disabled={!repo.homepage}
+                                        >
+                                            {repo.homepage ? 'Visite' : 'Em breve...'}
+                                        </Button>
+                                    </div>
+                                    <dialog>
+                                        <div className="modal-content">
+                                            <button className="close-modal"><FaWindowClose /></button>
+                                            <img src={`/${repo.name}.png`} alt={repo.name} />
+                                        </div>
+                                    </dialog>
+                                </li>
+                            ))}
+                        </ul>
+                    </>
+                )}
             </div>
         </section>
     );
