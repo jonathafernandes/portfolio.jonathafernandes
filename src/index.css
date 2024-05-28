@@ -64,15 +64,6 @@ button {
   font-size: 50px;
 }
 
-.line {
-  margin-top: 40px;
-  width: 100%;
-
-  background: var(--details-color);
-  border: 2px solid var(--details-color);
-  border-radius: 3px;
-}
-
 .primary-button {
   background-color: var(--primary-color);
   color: #fff;
