@@ -1,89 +1,79 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import aboutImage03 from '../../public/others/about-IMG_2023.webp';
+import AboutCard from '../components/about-card';
+
+// TODO: Implement this function
+// const calculateMonthsSinceJune2024 = () => {
+//     const startDate = new Date(2024, 6);
+//     const currentDate = new Date();
+//     const yearsDifference = currentDate.getFullYear() - startDate.getFullYear();
+//     const monthsDifference = currentDate.getMonth() - startDate.getMonth();
+    
+//     return yearsDifference * 12 + monthsDifference;
+// };
 
 const About: React.FC = () => {
-    useEffect(() => {
-        const currentDateWorking = document.getElementById('current-date-working');
-        if (currentDateWorking) {
-            currentDateWorking.textContent = `${getMonths()} meses`;
-        }
-    }, []);
-
-    function getMonths() {
-        const currentDate = new Date();
-        const september2023 = new Date(2023, 7);
-        const monthsDiff = (currentDate.getFullYear() - september2023.getFullYear()) * 12 +
-            (currentDate.getMonth() - september2023.getMonth());
-
-        return monthsDiff;
-    }
+    // TODO: Implement this function
+    // const monthsSinceJune2024 = calculateMonthsSinceJune2024();
 
     return (
         <>
-        <div className="about">
-            <img className="about-img" src={aboutImage03} alt="Jonatha Fernandes" />
-            <div className="about-text">
-            <span>Quem sou</span>
-            <h2>Jonatha Fernandes</h2>
-            <h3>Desenvolvedor Web</h3>
-            <br />
-            <p>
-                Tenho 29 anos, sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
+            <div className="about">
+                <img className="about-img" src={aboutImage03} alt="Jonatha Fernandes" />
+                <div className="about-text">
+                <span>Quem sou</span>
+                <h2>Jonatha Fernandes</h2>
+                <h3>Desenvolvedor Web</h3>
                 <br />
-                Meu primeiro contato com programação foi na faculdade em 2018, onde iniciei o aprendizado em
-                Python. Também tive contato com as linguagens Java e SQL. No momento tenho focado meus estudos
-                no ecosistema de <strong>JavaScript</strong> com <strong>React</strong>, <strong>Node.js</strong> e <strong>TypeScript</strong>.
-            </p>
+                <p>
+                    Tenho 29 anos, sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
+                    <br />
+                    Meu primeiro contato com programação foi na faculdade em 2018, onde iniciei o aprendizado em
+                    Python. Também tive contato com as linguagens Java e SQL. No momento tenho focado meus estudos
+                    no ecosistema de <strong>JavaScript</strong> com <strong>React</strong>, <strong>Node.js</strong> e <strong>TypeScript</strong>.
+                </p>
+                </div>
             </div>
-        </div>
 
-        <section>
-            <div className="section-title">
-                <h2>Formação <span>.</span></h2>
-            </div>
-            <div className="academic-education-text">
-                <span>2022 — 2024</span>
-                <h4>Uninassau</h4>
-                <p>Análise e Desenvolvimento de Sistemas</p>
-                <br />
-                <span>2023</span>
-                <h4>Alura</h4>
-                <p>ONE — Oracle Next Education</p>
-                <ul>
-                    <li className="tag">#lógica-de-programação</li>
-                    <li className="tag">#html</li>
-                    <li className="tag">#css</li>
-                    <li className="tag">#javascript</li>
-                    <li className="tag">#react</li>
-                </ul>
-            </div>
-        </section>
+            <section>
+                <div className="section-title">
+                    <h2>Formação <span>.</span></h2>
+                </div>
+                <div className="academic-education-text">
+                    <AboutCard date="2022 — 2024" title="Uninassau" description="Análise e Desenvolvimento de Sistemas" tags={['graduação', 'tecnólogo']} />
+                    <br />
+                    <AboutCard date="2023" title="Alura" description="ONE — Oracle Next Education" tags={['lógica-de-programação', 'html', 'css', 'javascript', 'react']} />
+                </div>
+            </section>
 
-        <section>
-            <div className="section-title">
-                <h2>Experiência <span>.</span></h2>
-            </div>
-            <div className="professional-experience">
-                <span>Set/2023 — Presente · </span>
-                <span id="current-date-working"></span>
-                <h4>Polícia Civil de Alagoas</h4>
-                <p>Desenvolvedor Web — estágio</p>
-            <div className="link">
-                <i className="ph-bold ph-link"></i>
-                <a href="https://github.com/GeinfoPcal" target="_blank" rel="noopener noreferrer">
-                GeinfoPcal
-                </a>
-            </div>
-            <ul>
-                <li className="tag">#javascript</li>
-                <li className="tag">#typescript</li>
-                <li className="tag">#react</li>
-                <li className="tag">#node.js</li>
-                <li className="tag">#styled-components</li>
-            </ul>
-            </div>
-        </section>
+            <section>
+                <div className="section-title">
+                    <h2>Experiência <span>.</span></h2>
+                </div>
+                <div className="professional-experience">
+                    <AboutCard
+                        date="2023 — 2024 · 10 meses"
+                        title="Polícia Civil de Alagoas"
+                        description="Desenvolvedor Web — estágio"
+                        url="https://github.com/GeinfoPcal"
+                        organization="GeinfoPcal"
+                    />
+                    
+                    {/* TODO: Implement this card
+                    <br />
+                    <AboutCard
+                        date={`Junho/2024 — Presente · ${monthsSinceJune2024} ${monthsSinceJune2024 === 1 ? 'mês' : 'meses'}`}
+                        title='Polícia Civil de Alagoas'
+                        description='Desenvolvedor Web — Júnior'
+                        url="https://github.com/GeinfoPcal"
+                        organization="GeinfoPcal"
+                    /> */}
+                    <AboutCard
+                        tags={['javascript', 'typescript', 'react', 'node.js', 'styled-components', 'next.js']}
+                    />
+                </div>
+            </section>
         </>
     );
 };

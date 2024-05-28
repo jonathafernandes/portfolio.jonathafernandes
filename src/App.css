@@ -142,8 +142,9 @@ header {
 }
 
 .professional-experience a {
-    font-size: 14px;
+    font-size: 0.75rem;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .professional-experience img {
