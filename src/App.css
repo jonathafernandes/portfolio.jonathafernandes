@@ -240,6 +240,7 @@ header {
     border-radius: 3px;
 
     width: 100%;
+    height: 100%;
 }
 
 .repo-topics {
@@ -271,6 +272,7 @@ header {
     position: absolute;
     right: 0.5rem;
     top: 0.5rem;
+    height: 1.2rem;
 }
 
 .modal-content .close-modal:hover {
