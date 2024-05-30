@@ -1,9 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import './App.css';
-import './index.css';
-import './responsive.css';
+import './global.css';
 
 import Header from './components/header';
 import About from './pages/about';

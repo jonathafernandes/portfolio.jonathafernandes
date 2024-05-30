@@ -1,4 +1,5 @@
 import React from 'react';
+import './about.css';
 
 import aboutImage03 from '../../public/others/about-IMG_2023.webp';
 import AboutCard from '../components/about-card';

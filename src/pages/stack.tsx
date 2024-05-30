@@ -1,4 +1,5 @@
 import React from 'react';
+import './stack.css';
 import StackCard from '../components/stack-card';
 
 import html5Logo from '/public/techs/html.svg';

@@ -1,0 +1,9 @@
+header {
+    box-shadow: none !important;
+}
+
+.tool-bar {
+    padding: 1rem 0 2rem 0 !important;
+
+    border-bottom: 2px solid var(--details-color);
+}

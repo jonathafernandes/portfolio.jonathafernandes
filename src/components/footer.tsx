@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './footer.css';
 import { FaGithubSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import { IoMdArrowDropupCircle } from 'react-icons/io';

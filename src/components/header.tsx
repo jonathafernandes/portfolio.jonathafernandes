@@ -1,3 +1,5 @@
+import './header.css';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';

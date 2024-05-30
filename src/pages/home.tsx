@@ -1,4 +1,5 @@
 import React from 'react';
+import './home.css';
 
 import { BsStack } from 'react-icons/bs';
 import { FaCode } from 'react-icons/fa';

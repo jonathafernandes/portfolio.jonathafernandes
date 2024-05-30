@@ -1,0 +1,55 @@
+.hero {
+    margin: 4rem 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.learn-more h3 {
+    text-transform: uppercase;
+
+    margin: 3.125rem 0 1rem 0;
+}
+
+.learn-more-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.learn-more-content a {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px; 
+    color: #f1f1f1;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    width: 15rem;
+    height: 10rem;
+
+    transition: transform 0.5s;
+}
+
+.learn-more-content a:hover {
+    transform: scale(1.03);
+}
+
+#stack {
+    background-image: url('../public/others/bg-01-stack-hero.png');
+}
+
+#projects {
+    background-image: url('../public/others/bg-01-projects-hero.png');
+}
+
+#articles {
+    background-image: url('../public/others/bg-01-articles-hero.png');
+}
