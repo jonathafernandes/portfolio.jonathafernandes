@@ -170,16 +170,12 @@ button {
 }
 
 @media (max-width: 640px) {
-  .learn-more-content {
-      flex-direction: column;
-  }
-
   .hero h1 {
-      font-size: 1.87rem;
+      font-size: 1.87rem !important;
   }
 
   .learn-more-content {
-    align-items: center;
+    justify-content: center;
   }
 
   .modal-content .close-modal {
