@@ -2,21 +2,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface HeroCardProps {
+    image: string;
     icon: React.ReactNode;
     link: string;
-    id: string;
     title: string;
+    external?: boolean;
 }
 
-const HeroCard: React.FC <HeroCardProps> = ({icon, link, id, title}) => {
+const HeroCard: React.FC <HeroCardProps> = ({image, icon, link, title, external}) => {
     return (
         <li>
-            <Link to={link} id={id}>
-                {icon}
-                <span>{title}</span>
-            </Link>
+            {external ? (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    <img src={image} alt="" />
+                    {icon}
+                    <span>{title}</span>
+                </a>
+            ) : (
+                <Link to={link}>
+                    <img src={image} alt="" />
+                    {icon}
+                    <span>{title}</span>
+                </Link>
+            )}
         </li>
-    )
+    );
 };
 
 export default HeroCard;

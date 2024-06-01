@@ -14,12 +14,14 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/stack" element={<Stack />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/stack" element={<Stack />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );

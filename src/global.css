@@ -175,11 +175,11 @@ button {
   }
 
   .hero h1 {
-      font-size: 1.875rem;
+      font-size: 1.87rem;
   }
 
-  .learn-more-content a {
-      width: 100%;
+  .learn-more-content {
+    align-items: center;
   }
 
   .modal-content .close-modal {

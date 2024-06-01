@@ -17,23 +17,26 @@ const Home: React.FC = () => {
                 <h3>Saiba mais</h3>
                 <ul className="learn-more-content">
                     <HeroCard
-                        icon={<BsStack />}
+                        image='others/bg-01-stack-hero.png'
+                        icon={<BsStack size={16} />}
                         link="/stack"
-                        id="stack"
                         title="Conhecimento"
+                        external={false}
                     />
                     <HeroCard
-                        icon={<FaCode />}
+                        image='others/bg-01-projects-hero.png'
+                        icon={<FaCode size={16} />}
                         link="/projects"
-                        id="projects"
                         title="Projetos"
+                        external={false}
                     />
-                    <li>
-                        <a href="https://jonathafernandes.github.io/blog.github.io/" target="_blank" id="articles" rel="noopener noreferrer">
-                            <GrArticle />
-                            <span>Blog</span>
-                        </a>
-                    </li>
+                    <HeroCard
+                        image='others/bg-01-articles-hero.png'
+                        icon={<GrArticle size={16} />}
+                        link="https://jonathafernandes.github.io/blog.github.io/"
+                        title="Blog"
+                        external={true}
+                    />
                 </ul>
             </section>
         </>
