@@ -174,8 +174,8 @@ button {
       font-size: 1.87rem !important;
   }
 
-  .learn-more-content {
-    justify-content: center;
+  .learn-more-content li {
+    width: 100% !important;
   }
 
   .modal-content .close-modal {
