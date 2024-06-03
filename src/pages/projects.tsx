@@ -74,6 +74,8 @@ const Projects: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
+    const urlBlog = 'https://jonathafernandes.github.io/blog.github.io/';
+
     useEffect(() => {
         const fetchRepositories = async () => {
             try {
@@ -159,7 +161,7 @@ const Projects: React.FC = () => {
                                             Ver mais
                                         </Button>
                                         <Button
-                                            href={repo.homepage || '#'}
+                                            href={repo.name === 'blog.github.io' ? urlBlog : repo.homepage}
                                             className={repo.homepage ? 'primary-button' : 'disabled-button not-allowed'}
                                             disabled={!repo.homepage}
                                         >
