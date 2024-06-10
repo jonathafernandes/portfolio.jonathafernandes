@@ -153,16 +153,16 @@ button {
       width: 100%;
       max-width: 100%;
       height: 100vh;
-      padding-top: 30vh;
+      padding-top: 40vh;
   }
 
   .modal-content .close-modal {
       position: relative;
-      top: 1rem !important;
+      top: 2rem !important;
   }
 
   .modal-content img {
-      padding: 0.2rem !important;
+      padding: 0.5rem !important;
   }
 }
 
