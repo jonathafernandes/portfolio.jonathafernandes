@@ -67,8 +67,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65vw;
-    max-width: 80vw;
 }
 
 .open-modal {
