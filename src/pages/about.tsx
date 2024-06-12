@@ -4,19 +4,24 @@ import './about.css';
 import aboutImage03 from '../../public/others/about-IMG_2023.webp';
 import AboutCard from '../components/about-card';
 
-// TODO: Implement this function
-// const calculateMonthsSinceJune2024 = () => {
-//     const startDate = new Date(2024, 6);
-//     const currentDate = new Date();
-//     const yearsDifference = currentDate.getFullYear() - startDate.getFullYear();
-//     const monthsDifference = currentDate.getMonth() - startDate.getMonth();
-    
-//     return yearsDifference * 12 + monthsDifference;
-// };
-
 const About: React.FC = () => {
-    // TODO: Implement this function
-    // const monthsSinceJune2024 = calculateMonthsSinceJune2024();
+    const calculateMonths = () => {
+        const startDate = new Date(2024, 5);
+        const currentDate = new Date();
+        
+        let totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
+        totalMonths += currentDate.getMonth() - startDate.getMonth();
+        
+        const years = Math.floor(totalMonths / 12);
+        const months = totalMonths % 12;
+    
+        const yearsText = years > 0 ? `${years} ano${years > 1 ? 's' : ''}` : '';
+        const monthsText = months > 0 ? `${months} mes${months > 1 ? 'es' : ''}` : '';
+    
+        return `${yearsText} ${monthsText}`.trim();
+    };
+
+    const months = calculateMonths();
 
     return (
         <>
@@ -61,15 +66,14 @@ const About: React.FC = () => {
                         organization="GeinfoPcal"
                     />
                     
-                    {/* TODO: Implement this card
                     <br />
                     <AboutCard
-                        date={`Junho/2024 — Presente · ${monthsSinceJune2024} ${monthsSinceJune2024 === 1 ? 'mês' : 'meses'}`}
+                        date={`${months === '' ? `Junho/2024 — Presente` : `Junho/2024 — Presente · ${months}`}`}
                         title='Polícia Civil de Alagoas'
                         description='Desenvolvedor Web — Júnior'
                         url="https://github.com/GeinfoPcal"
                         organization="GeinfoPcal"
-                    /> */}
+                    />
                     <AboutCard
                         tags={['javascript', 'typescript', 'react', 'node.js', 'styled-components', 'next.js']}
                     />

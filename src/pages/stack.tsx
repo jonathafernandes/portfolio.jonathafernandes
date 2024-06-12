@@ -52,7 +52,7 @@ const techStack = [
     },
     {
         image: tailwindcssLogo,
-        tech: "TailwindCSS",
+        tech: "Tailwind CSS",
         description: "Framework CSS que permite criar designs personalizados sem sair do HTML."
     },
     {
