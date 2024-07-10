@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 
-import aboutImage03 from '../../public/others/about-IMG_2023.webp';
+import image from '/others/about-IMG_2023.webp';
 import AboutCard from '../components/about-card';
 
 const About: React.FC = () => {
@@ -27,14 +27,14 @@ const About: React.FC = () => {
     return (
         <>
             <div className="about">
-                <img className="about-img" src={aboutImage03} alt="Jonatha Fernandes" />
+                <img className="about-img" src={image} alt="Jonatha Fernandes" />
                 <div className="about-text">
                 <span>Quem sou</span>
                 <h2>Jonatha Fernandes</h2>
                 <h3>Desenvolvedor Web</h3>
                 <br />
                 <p>
-                    Tenho 29 anos, sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
+                    Sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
                     <br />
                     Meu primeiro contato com programação foi na faculdade em 2018, onde iniciei o aprendizado em
                     Python. Também tive contato com as linguagens Java e SQL. No momento tenho focado meus estudos

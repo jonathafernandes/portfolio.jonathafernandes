@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { styled } from '@mui/material/styles';
 
-import logo104 from '../../public/logo/logo-jonatha-fernandes-1-04.png';
+import logo104 from '/logo/logo-jonatha-fernandes-1-04.png';
 
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';

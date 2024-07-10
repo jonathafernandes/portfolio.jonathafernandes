@@ -2,17 +2,17 @@ import React from 'react';
 import './stack.css';
 import StackCard from '../components/stack-card';
 
-import html5Logo from '/public/techs/html.svg';
-import css3Logo from '/public/techs/css.svg';
-import gitLogo from '/public/techs/git.svg';
-import sassLogo from '/public/techs/sass.svg';
-import javascriptLogo from '/public/techs/javascript.svg';
-import bootstrapLogo from '/public/techs/bootstrap-5-logo-icon.svg';
-import reactLogo from '/public/techs/react.svg';
-import tailwindcssLogo from '/public/techs/tailwindcss.svg';
-import typescriptLogo from '/public/techs/typescript.svg';
-import viteLogo from '/public/techs/vite.svg';
-import nodeLogo from '/public/techs/nodejs.svg';
+import html5Logo from '/techs/html.svg';
+import css3Logo from '/techs/css.svg';
+import gitLogo from '/techs/git.svg';
+import sassLogo from '/techs/sass.svg';
+import javascriptLogo from '/techs/javascript.svg';
+import bootstrapLogo from '/techs/bootstrap-5-logo-icon.svg';
+import reactLogo from '/techs/react.svg';
+import tailwindcssLogo from '/techs/tailwindcss.svg';
+import typescriptLogo from '/techs/typescript.svg';
+import viteLogo from '/techs/vite.svg';
+import nodeLogo from '/techs/nodejs.svg';
 
 const techStack = [
     {
