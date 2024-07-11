@@ -5,24 +5,23 @@ import image from '/others/about-IMG_2023.webp';
 import AboutCard from '../components/about-card';
 
 const About: React.FC = () => {
-    // TODO: Implement this function
-    // const calculateMonths = () => {
-    //     const startDate = new Date(2024, 6);
-    //     const currentDate = new Date();
+    const calculateMonths = () => {
+        const startDate = new Date(2024, 6);
+        const currentDate = new Date();
         
-    //     let totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
-    //     totalMonths += currentDate.getMonth() - startDate.getMonth();
+        let totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
+        totalMonths += currentDate.getMonth() - startDate.getMonth();
         
-    //     const years = Math.floor(totalMonths / 12);
-    //     const months = totalMonths % 12;
+        const years = Math.floor(totalMonths / 12);
+        const months = totalMonths % 12;
     
-    //     const yearsText = years > 0 ? `${years} ano${years > 1 ? 's' : ''}` : '';
-    //     const monthsText = months > 0 ? `${months} mes${months > 1 ? 'es' : ''}` : '';
+        const yearsText = years > 0 ? `${years} ano${years > 1 ? 's' : ''}` : '';
+        const monthsText = months > 0 ? `${months} mes${months > 1 ? 'es' : ''}` : '';
     
-    //     return `${yearsText} ${monthsText}`.trim();
-    // };
+        return `${yearsText} ${monthsText}`.trim();
+    };
 
-    // const months = calculateMonths();
+    const months = calculateMonths();
 
     return (
         <>
@@ -62,19 +61,18 @@ const About: React.FC = () => {
                     <AboutCard
                         date="2023 — 2024 · 10 meses"
                         title="Polícia Civil de Alagoas"
-                        description="Desenvolvedor Web — estágio"
+                        description="Desenvolvedor Web – estágio"
                         url="https://github.com/GeinfoPcal"
                         organization="GeinfoPcal"
                     />
-                    {/* TODO: Implement this card */}
-                    {/* <br />
+                    <br />
                     <AboutCard
-                        date={`${months === '' ? `Junho/2024 — Presente` : `Junho/2024 — Presente · ${months}`}`}
+                        date={`${months === '' ? `Julho/2024 — Presente` : `Julho/2024 — Presente · ${months}`}`}
                         title='Polícia Civil de Alagoas'
-                        description='Desenvolvedor Web — Júnior'
+                        description='Desenvolvedor Web Júnior'
                         url="https://github.com/GeinfoPcal"
                         organization="GeinfoPcal"
-                    /> */}
+                    />
                     <AboutCard
                         tags={['javascript', 'typescript', 'react', 'node.js', 'styled-components', 'next.js']}
                     />
