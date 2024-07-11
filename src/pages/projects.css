@@ -42,6 +42,10 @@
     margin-top: 0.3rem;
 }
 
+.repo-language {
+    margin-bottom: 0.3rem;
+}
+
 #repositories-list li span {
     font-size: 0.8rem;
 }

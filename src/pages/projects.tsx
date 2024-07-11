@@ -152,7 +152,7 @@ const Projects: React.FC = () => {
                                         <FaCircle color='#514796' size={12} />
                                         <span>{repo.language}</span>
                                     </div>
-                                    <br />
+                                    {/* <br /> */}
                                     <button className="repo-image open-modal">
                                         <img src={`/${repo.name}.png`} alt={repo.name} />
                                     </button>
