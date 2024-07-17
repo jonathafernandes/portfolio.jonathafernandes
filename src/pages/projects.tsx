@@ -30,7 +30,8 @@ const specificRepositories = [
     "nikel",
     "consult-bible",
     "blog.github.io",
-    "monteiro-esportes-cms"
+    "monteiro-esportes-cms",
+    "todome"
 ];
 
 const openModal = (modal: HTMLDialogElement) => {
@@ -152,7 +153,6 @@ const Projects: React.FC = () => {
                                         <FaCircle color='#514796' size={12} />
                                         <span>{repo.language}</span>
                                     </div>
-                                    {/* <br /> */}
                                     <button className="repo-image open-modal">
                                         <img src={`/${repo.name}.png`} alt={repo.name} />
                                     </button>
