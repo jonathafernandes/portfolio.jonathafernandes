@@ -31,7 +31,8 @@ const specificRepositories = [
     "consult-bible",
     "blog.github.io",
     "monteiro-esportes-cms",
-    "todome"
+    "todome",
+    "mcz-barbearia"
 ];
 
 const openModal = (modal: HTMLDialogElement) => {
