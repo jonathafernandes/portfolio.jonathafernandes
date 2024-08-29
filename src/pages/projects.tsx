@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './projects.css'
 import axios from 'axios';
 import Button from '../components/button';
@@ -16,67 +16,48 @@ interface Repository {
     language: string;
 }
 
-const specificRepositories = [
-    "alaclimabom",
-    "links.jonathafernandes",
-    "habithub",
-    "form-ex-alunos",
-    "insight-cast",
-    "git-search",
-    "notesnest",
-    "cv-express",
-    "organo",
-    "time-generator",
-    "nikel",
-    "consult-bible",
-    "blog.github.io",
-    "monteiro-esportes-cms",
-    "todome",
-    "mcz-barbearia"
-];
-
-const openModal = (modal: HTMLDialogElement) => {
-    modal.showModal();
-    document.body.classList.add('modal-open');
-}
-
-const closeModal = (modal: HTMLDialogElement) => {
-    modal.close();
-    document.body.classList.remove('modal-open');
-}
-
-const setupModalEvents = (listItem: HTMLLIElement) => {
-    const modal = listItem.querySelector('dialog') as HTMLDialogElement;
-    const openModalButton = listItem.querySelector('.repo-image.open-modal') as HTMLButtonElement;
-    const closeModalButton = listItem.querySelector('.close-modal') as HTMLButtonElement;
-
-    openModalButton.addEventListener('click', () => {
-        openModal(modal);
-    });
-
-    closeModalButton.addEventListener('click', () => {
-        closeModal(modal);
-    });
-
-    document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
-            closeModal(modal);
-        }
-    });
-
-    modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            closeModal(modal);
-        }
-    });
-}
-
 const Projects: React.FC = () => {
     const [repositories, setRepositories] = useState<Repository[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
     const urlBlog = 'https://jonathafernandes.github.io/blog.github.io/';
+
+    const openModal = (modal: HTMLDialogElement) => {
+        modal.showModal();
+        document.body.classList.add('modal-open');
+    }
+
+    const closeModal = (modal: HTMLDialogElement) => {
+        modal.close();
+        document.body.classList.remove('modal-open');
+    }
+
+    const setupModalEvents = useCallback((listItem: HTMLLIElement) => {
+        const modal = listItem.querySelector('dialog') as HTMLDialogElement;
+        const openModalButton = listItem.querySelector('.repo-image.open-modal') as HTMLButtonElement;
+        const closeModalButton = listItem.querySelector('.close-modal') as HTMLButtonElement;
+
+        openModalButton.addEventListener('click', () => {
+            openModal(modal);
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            closeModal(modal);
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeModal(modal);
+            }
+        });
+
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal(modal);
+            }
+        });
+    }, []);
 
     useEffect(() => {
         const fetchRepositories = async () => {
@@ -99,7 +80,8 @@ const Projects: React.FC = () => {
                 const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
                 await fetchData(initialUrl);
 
-                const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
+                const filteredRepositories = allRepositories.filter(repo => repo.topics.length > 0);
+
                 setRepositories(filteredRepositories);
             } catch (error: unknown) {
                 if (error instanceof Error) {
@@ -122,7 +104,7 @@ const Projects: React.FC = () => {
                 setupModalEvents(listItem);
             }
         });
-    }, [repositories]);
+    }, [repositories, setupModalEvents]);
 
     return (
         <section className="projects">
