@@ -1,0 +1,62 @@
+[
+    {
+        "image": "/techs/html.svg",
+        "tech": "HTML",
+        "description": "Utilizada para criar e estruturar conteúdo na web."
+    },
+    {
+        "image": "/techs/css.svg",
+        "tech": "CSS",
+        "description": "Linguagem de estilo usada para descrever a apresentação."
+    },
+    {
+        "image": "/techs/git.svg",
+        "tech": "Git",
+        "description": "Controle de versão para gerenciar e rastrear mudanças no código-fonte durante o desenvolvimento de software."
+    },
+    {
+        "image": "/techs/sass.svg",
+        "tech": "SASS",
+        "description": "Linguagem de extensão do CSS. A sua ideia é adicionar recursos especiais como variáveis, mixins, funções e operações."
+    },
+    {
+        "image": "/techs/javascript.svg",
+        "tech": "JavaScript",
+        "description": "Linguagem de alto nível, usada principalmente para criar interatividade em páginas web."
+    },
+    {
+        "image": "/techs/next-js.svg",
+        "tech": "Next.js",
+        "description": "Framework React que permite renderização do lado do servidor e geração de páginas estáticas."
+    },
+    {
+        "image": "/techs/bootstrap-5-logo-icon.svg",
+        "tech": "Bootstrap",
+        "description": "Ferramenta para criar interfaces web responsivas."
+    },
+    {
+        "image": "/techs/react.svg",
+        "tech": "React",
+        "description": "Biblioteca JavaScript para construção de interfaces de usuário reutilizáveis e componentizadas."
+    },
+    {
+        "image": "/techs/tailwindcss.svg",
+        "tech": "Tailwind CSS",
+        "description": "Framework CSS que permite criar designs personalizados sem sair do HTML."
+    },
+    {
+        "image": "/techs/typescript.svg",
+        "tech": "TypeScript",
+        "description": "Superset de JavaScript que adiciona recursos de tipagem estática para melhorar a produtividade no desenvolvimento."
+    },
+    {
+        "image": "/techs/vite.svg",
+        "tech": "Vite",
+        "description": "Build tool que visa ser uma alternativa mais rápida para o Webpack."
+    },
+    {
+        "image": "/techs/nodejs.svg",
+        "tech": "Node.js",
+        "description": "Plataforma que permite executar JavaScript no lado do servidor."
+    }
+]
