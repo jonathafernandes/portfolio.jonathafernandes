@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import './projects.css'
+import './projects.css';
 import axios from 'axios';
 import Button from '../components/button';
 import Spinner from '../utils/spinner';
@@ -26,12 +26,12 @@ const Projects: React.FC = () => {
     const openModal = (modal: HTMLDialogElement) => {
         modal.showModal();
         document.body.classList.add('modal-open');
-    }
+    };
 
     const closeModal = (modal: HTMLDialogElement) => {
         modal.close();
         document.body.classList.remove('modal-open');
-    }
+    };
 
     const setupModalEvents = useCallback((listItem: HTMLLIElement) => {
         const modal = listItem.querySelector('dialog') as HTMLDialogElement;
@@ -62,12 +62,17 @@ const Projects: React.FC = () => {
     useEffect(() => {
         const fetchRepositories = async () => {
             try {
-                const username = 'jonathafernandes';
                 const perPage = 100;
                 let allRepositories: Repository[] = [];
 
                 const fetchData = async (url: string) => {
-                    const response = await axios.get(url);
+                    const response = await axios.get(url, {
+                        headers: {
+                            Authorization: `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
+                            Accept: 'application/vnd.github.v3+json'
+                        }
+                    });
+
                     allRepositories = allRepositories.concat(response.data);
 
                     const nextLink = response.headers.link && response.headers.link.split(',').find((link: string | string[]) => link.includes('rel="next"'));
@@ -77,7 +82,7 @@ const Projects: React.FC = () => {
                     }
                 };
 
-                const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
+                const initialUrl = `https://api.github.com/user/repos?per_page=${perPage}`;
                 await fetchData(initialUrl);
 
                 const filteredRepositories = allRepositories.filter(repo => repo.topics.length > 0);
@@ -165,6 +170,6 @@ const Projects: React.FC = () => {
             </div>
         </section>
     );
-}
+};
 
 export default Projects;
