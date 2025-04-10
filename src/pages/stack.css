@@ -23,6 +23,11 @@
     height: 1.5rem;
 }
 
+.card img[src*="django-logo-negative.png"] {
+    width: 3rem !important;
+    height: auto !important;
+}
+
 .card p {
     color: #0000009f;
 

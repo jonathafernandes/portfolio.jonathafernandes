@@ -58,5 +58,15 @@
         "image": "/techs/nodejs.svg",
         "tech": "Node.js",
         "description": "Plataforma que permite executar JavaScript no lado do servidor."
+    },
+    {
+        "image": "/techs/django-logo-negative.png",
+        "tech": "Django",
+        "description": "Framework web Python de alto nível que incentiva o desenvolvimento rápido e design limpo."
+    },
+    {
+        "image": "/techs/figma.svg",
+        "tech": "Figma",
+        "description": "Ferramenta de design colaborativo baseada na web."
     }
 ]
