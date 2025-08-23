@@ -8,8 +8,9 @@ import { FaCircle } from 'react-icons/fa';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
-// IconButton removed in favor of project-styled button
 import CloseIcon from '@mui/icons-material/Close';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
 interface Repository {
     name: string;
@@ -36,6 +37,9 @@ const Projects: React.FC = () => {
     const handleClose = () => {
         setOpenRepo(null);
     };
+
+    const theme = useTheme();
+    const isFullScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     useEffect(() => {
         const fetchRepositories = async () => {
@@ -132,13 +136,13 @@ const Projects: React.FC = () => {
                                         onClose={handleClose}
                                         maxWidth="lg"
                                         fullWidth
+                                        fullScreen={isFullScreen}
                                     >
                                         <DialogContent className="modal-content">
                                             <button
                                                 aria-label="fechar"
                                                 onClick={handleClose}
                                                 className="dialog-close-button close-modal"
-                                                style={{ position: 'absolute', right: 25, top: 20 }}
                                             >
                                                 <CloseIcon />
                                             </button>

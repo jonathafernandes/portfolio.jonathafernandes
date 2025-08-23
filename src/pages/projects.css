@@ -62,12 +62,23 @@
     color: var(--primary-color);
 }
 
+.modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--details-color);
+    border-radius: 3px;
+    box-sizing: border-box;
+    min-height: 60vh;
+}
+
 .modal-content img {
-    /* centraliza horizontalmente e limita largura para manter responsividade */
     display: block;
-    margin: 2rem auto;
+    margin: 0 auto;
     width: 100%;
-    max-width: 1000px; /* ajuste conforme necessário */
+    max-width: 1000px;
     height: auto;
     border: 1px solid var(--details-color);
     border-radius: 3px;
@@ -98,4 +109,30 @@
 .dialog-close-button svg {
     width: 1rem;
     height: 1rem;
+}
+
+.modal-content .close-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+}
+
+@media (max-width: 600px) {
+    .modal-content .close-modal {
+        right: 0.75rem;
+        top: 0.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 1rem;
+        min-height: 100vh;
+    }
+
+    .modal-content img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
