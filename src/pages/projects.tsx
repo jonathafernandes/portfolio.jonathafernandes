@@ -1,11 +1,15 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './projects.css';
 import axios from 'axios';
 import Button from '../components/button';
 import Spinner from '../utils/spinner';
 
-import { FaCircle, FaWindowClose } from 'react-icons/fa';
+import { FaCircle } from 'react-icons/fa';
 import { RiGitRepositoryLine } from 'react-icons/ri';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
+// IconButton removed in favor of project-styled button
+import CloseIcon from '@mui/icons-material/Close';
 
 interface Repository {
     name: string;
@@ -23,41 +27,15 @@ const Projects: React.FC = () => {
 
     const urlBlog = 'https://jonathafernandes.github.io/blog.github.io/';
 
-    const openModal = (modal: HTMLDialogElement) => {
-        modal.showModal();
-        document.body.classList.add('modal-open');
+    const [openRepo, setOpenRepo] = useState<string | null>(null);
+
+    const handleOpen = (name: string) => {
+        setOpenRepo(name);
     };
 
-    const closeModal = (modal: HTMLDialogElement) => {
-        modal.close();
-        document.body.classList.remove('modal-open');
+    const handleClose = () => {
+        setOpenRepo(null);
     };
-
-    const setupModalEvents = useCallback((listItem: HTMLLIElement) => {
-        const modal = listItem.querySelector('dialog') as HTMLDialogElement;
-        const openModalButton = listItem.querySelector('.repo-image.open-modal') as HTMLButtonElement;
-        const closeModalButton = listItem.querySelector('.close-modal') as HTMLButtonElement;
-
-        openModalButton.addEventListener('click', () => {
-            openModal(modal);
-        });
-
-        closeModalButton.addEventListener('click', () => {
-            closeModal(modal);
-        });
-
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-                closeModal(modal);
-            }
-        });
-
-        modal.addEventListener('click', (event) => {
-            if (event.target === modal) {
-                closeModal(modal);
-            }
-        });
-    }, []);
 
     useEffect(() => {
         const fetchRepositories = async () => {
@@ -102,14 +80,7 @@ const Projects: React.FC = () => {
         fetchRepositories();
     }, []);
 
-    useEffect(() => {
-        repositories.forEach(repo => {
-            const listItem = document.getElementById(repo.name) as HTMLLIElement;
-            if (listItem) {
-                setupModalEvents(listItem);
-            }
-        });
-    }, [repositories, setupModalEvents]);
+    // no-op: dialog state is managed via React state (openRepo)
 
     return (
         <section className="projects">
@@ -141,7 +112,7 @@ const Projects: React.FC = () => {
                                         <FaCircle color='#514796' size={12} />
                                         <span>{repo.language}</span>
                                     </div>
-                                    <button className="repo-image open-modal">
+                                    <button className="repo-image open-modal" onClick={() => handleOpen(repo.name)}>
                                         <img src={`/${repo.name}.png`} alt={repo.name} />
                                     </button>
                                     <div className="buttons">
@@ -156,12 +127,30 @@ const Projects: React.FC = () => {
                                             {repo.homepage ? 'Visite' : 'Em breve...'}
                                         </Button>
                                     </div>
-                                    <dialog>
-                                        <div className="modal-content">
-                                            <button className="close-modal"><FaWindowClose /></button>
-                                            <img src={`/${repo.name}.png`} alt={repo.name} />
-                                        </div>
-                                    </dialog>
+                                    <Dialog
+                                        open={openRepo === repo.name}
+                                        onClose={handleClose}
+                                        maxWidth="lg"
+                                        fullWidth
+                                    >
+                                        <DialogContent className="modal-content">
+                                            <button
+                                                aria-label="fechar"
+                                                onClick={handleClose}
+                                                className="dialog-close-button close-modal"
+                                                style={{ position: 'absolute', right: 25, top: 20 }}
+                                            >
+                                                <CloseIcon />
+                                            </button>
+                                            <img
+                                                src={`/${repo.name}.png`}
+                                                alt={repo.name}
+                                                loading="lazy"
+                                                style={{ width: '100%', height: 'auto' }}
+                                                onError={(e) => { (e.target as HTMLImageElement).src = '/logo/favicon.ico'; }}
+                                            />
+                                        </DialogContent>
+                                    </Dialog>
                                 </li>
                             ))}
                         </ul>

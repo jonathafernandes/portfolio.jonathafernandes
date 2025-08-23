@@ -29,12 +29,6 @@ body {
   padding: 0 2rem;
 }
 
-body.modal-open {
-  overflow: hidden;
-  backdrop-filter: blur(15px);
-  filter: blur(15px);
-}
-
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -148,12 +142,6 @@ button {
   }
 }
 
-@media (max-width: 800px) {
-  .modal-content {
-      width: 100% !important;
-  }
-}
-
 @media (max-width: 640px) {
   .hero h1 {
       font-size: 1.87rem !important;
@@ -161,10 +149,6 @@ button {
 
   .learn-more-content li {
     width: 100% !important;
-  }
-
-  .modal-content .close-modal {
-      font-size: 1.5rem;
   }
 }
 
