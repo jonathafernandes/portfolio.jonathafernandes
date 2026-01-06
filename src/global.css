@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -19,14 +23,22 @@ html {
   scroll-margin-top: .8em;
 }
 
-body {
-  color: var(--text-color);
-  font-family: 'Manrope', sans-serif;
-  font-weight: 300;
+@layer base {
+  html { scroll-behavior: smooth; }
 
-  max-width: 67rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+  body {
+    @apply font-sans;
+    color: var(--text-color);
+    font-weight: 300;
+
+    max-width: 67rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  button {
+    font-family: theme('fontFamily.rubik');
+  }
 }
 
 a {
@@ -48,12 +60,12 @@ button {
   margin-top: 1.25rem;
 }
 
-.section-title h2 {
+.section-title h1, .section-title h2 {
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-.section-title h2 span {
+.section-title h1 span {
   color: var(--primary-color);
   font-size: 50px;
 }

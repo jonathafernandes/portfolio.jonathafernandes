@@ -8,7 +8,7 @@ const Stack: React.FC = () => {
         <main>
             <section className="stack">
                 <div className="section-title">
-                    <h2>Conhecimento <span>.</span></h2>
+                    <h1>Conhecimento <span>.</span></h1>
                 </div>
                 <div className="cards-techs">
                     {techStack.map((tech, index) => (

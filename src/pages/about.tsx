@@ -29,7 +29,7 @@ const About: React.FC = () => {
             <div className="about">
                 <img className="about-img" src={image} alt="Jonatha Fernandes" />
                 <div className="about-text">
-                    <span>Quem sou</span>
+                    <h1>Quem sou</h1>
                     <h2>Jonatha Fernandes</h2>
                     <h3>Desenvolvedor Web</h3>
                     <br />
