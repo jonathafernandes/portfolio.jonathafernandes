@@ -12,10 +12,10 @@ interface AboutCardProps {
 
 const AboutCard: React.FC<AboutCardProps> = ({ date, title, description, url, organization, tags }) => {
     return (
-        <>  
-            <span>{date}</span>
+        <>
+            <span className="text-xs">{date}</span>
             <h4>{title}</h4>
-            <div className="link">
+            <div className="font-rubik text-xs font-medium uppercase flex gap-1">
                 {url && organization && ('')}
                 {url && <LuExternalLink size={12} />}
                 <a href={url} target="_blank" rel="noopener noreferrer">{organization}</a>

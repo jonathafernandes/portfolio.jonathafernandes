@@ -1,16 +1,15 @@
 import React from 'react';
-import './stack.css';
 import StackCard from '../components/stack-card';
 import techStack from '../data/techStack.json';
 
 const Stack: React.FC = () => {
     return (
         <main>
-            <section className="stack">
+            <section className="font-rubik">
                 <div className="section-title">
                     <h1>Conhecimento <span>.</span></h1>
                 </div>
-                <div className="cards-techs">
+                <div className="flex flex-wrap justify-center gap-8 mt-[3.125rem]">
                     {techStack.map((tech, index) => (
                         <StackCard
                             key={index}

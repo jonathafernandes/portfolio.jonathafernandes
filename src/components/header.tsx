@@ -1,9 +1,6 @@
-import './header.css';
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
-import { styled } from '@mui/material/styles';
 
 import logo104 from '/logo/logo-jonatha-fernandes-1-04.png';
 
@@ -13,52 +10,6 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Box from '@mui/material/Box';
-
-const LogoLink = styled(Link)(({ theme }) => ({
-    display: 'flex',
-    alignItems: 'center',
-    span: {
-        display: 'none'
-    },
-    [theme.breakpoints.up('md')]: {
-        span: {
-            display: 'initial',
-        }
-    }
-}));
-
-const LogoImg = styled('img')(({ theme }) => ({
-    height: 30,
-    marginRight: theme.spacing(1),
-}));
-
-const MenuButton = styled(IconButton)(({ theme }) => ({
-    [theme.breakpoints.up('md')]: {
-        display: 'none'
-    },
-}));
-
-const NavLinks = styled(Box)(({ theme }) => ({
-    boxShadow: 'none',
-    display: 'none',
-    [theme.breakpoints.up('md')]: {
-        display: 'flex',
-        flexGrow: 1,
-        justifyContent: 'flex-end',
-    },
-}));
-
-const LinkItem = styled(Link)(({ theme }) => ({
-    marginRight: theme.spacing(1),
-    padding: '0.5rem',
-    fontFamily: 'Manrope, sans-serif',
-    fontSize: '0.875rem',
-    fontWeight: 600,
-    textTransform: 'uppercase',
-    '&:hover': {
-        backgroundColor: 'var(--bg-color)',
-    },
-}));
 
 const Header: React.FC = () => {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -71,36 +22,38 @@ const Header: React.FC = () => {
         setAnchorEl(null);
     };
 
+    const linkClasses = "mr-2 p-2 font-sans text-sm font-semibold uppercase md:hover:bg-[var(--bg-color)] text-[var(--text-color)]";
+
     return (
-        <AppBar position="static" sx={{ backgroundColor: '#fff', padding: '1rem 0' }}>
-            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: '0' }} className='tool-bar'>
-                <LogoLink to="/">
-                    <LogoImg src={logo104} alt="Jonatha Fernandes - Desenvolvedor Web" />
-                    <span>
+        <AppBar position="static" className="!bg-white !shadow-none !py-4">
+            <Toolbar className="!pt-4 !pb-8 !px-0 border-b-2 border-[var(--details-color)] flex justify-between items-center">
+                <Link to="/" className="flex items-center text-[var(--text-color)]">
+                    <img src={logo104} alt="Jonatha Fernandes - Desenvolvedor Web" className="h-[30px] mr-2" />
+                    <span className="hidden md:inline font-rubik text-lg">
                         Jonatha Fernandes
                     </span>
-                </LogoLink>
-                <MenuButton onClick={handleMenuOpen}>
+                </Link>
+                <IconButton onClick={handleMenuOpen} className="md:!hidden">
                     <HiOutlineMenuAlt3 color='#212121' />
-                </MenuButton>
-                <NavLinks>
-                    <LinkItem to="/">Home</LinkItem>
-                    <LinkItem to="/about">Sobre</LinkItem>
-                    <LinkItem to="/stack">Conhecimento</LinkItem>
-                    <LinkItem to="/projects">Projetos</LinkItem>
-                </NavLinks>
+                </IconButton>
+                <Box className="hidden md:flex grow justify-end shadow-none">
+                    <Link to="/" className={linkClasses}>Home</Link>
+                    <Link to="/about" className={linkClasses}>Sobre</Link>
+                    <Link to="/stack" className={linkClasses}>Conhecimento</Link>
+                    <Link to="/projects" className={linkClasses}>Projetos</Link>
+                </Box>
                 <Menu anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleMenuClose}>
                     <MenuItem onClick={handleMenuClose}>
-                        <LinkItem to="/">Home</LinkItem>
+                        <Link to="/" className={linkClasses}>Home</Link>
                     </MenuItem>
                     <MenuItem onClick={handleMenuClose}>
-                        <LinkItem to="/about">Sobre</LinkItem>
+                        <Link to="/about" className={linkClasses}>Sobre</Link>
                     </MenuItem>
                     <MenuItem onClick={handleMenuClose}>
-                        <LinkItem to="/stack">Conhecimento</LinkItem>
+                        <Link to="/stack" className={linkClasses}>Conhecimento</Link>
                     </MenuItem>
                     <MenuItem onClick={handleMenuClose}>
-                        <LinkItem to="/projects">Projetos</LinkItem>
+                        <Link to="/projects" className={linkClasses}>Projetos</Link>
                     </MenuItem>
                 </Menu>
             </Toolbar>

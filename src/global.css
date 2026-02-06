@@ -24,7 +24,9 @@ html {
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     @apply font-sans;
@@ -60,7 +62,8 @@ button {
   margin-top: 1.25rem;
 }
 
-.section-title h1, .section-title h2 {
+.section-title h1,
+.section-title h2 {
   font-size: 1.5rem;
   font-weight: 300;
 }
@@ -70,7 +73,8 @@ button {
   font-size: 50px;
 }
 
-.primary-button, .disabled-button {
+.primary-button,
+.disabled-button {
   background-color: var(--primary-color);
   color: #fff;
 
@@ -126,9 +130,12 @@ button {
 }
 
 @keyframes bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(0);
   }
+
   50% {
     transform: scale(1);
   }
@@ -136,27 +143,27 @@ button {
 
 @media(max-width: 980px) {
   .about-img {
-      margin-top: 1.8rem;
+    margin-top: 1.8rem;
   }
 
   .about {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .social-media {
-      justify-content: center;
+    justify-content: center;
   }
 
   #repositories-list {
-      justify-content: center;
+    justify-content: center;
   }
 }
 
 @media (max-width: 640px) {
   .hero h1 {
-      font-size: 1.87rem !important;
+    font-size: 1.87rem !important;
   }
 
   .learn-more-content li {
@@ -166,14 +173,14 @@ button {
 
 @media (max-width: 410px) {
   .about {
-      align-items: start;
+    align-items: start;
   }
 
   .about-text h1 {
-      font-size: 1.7rem;
+    font-size: 1.7rem;
   }
 
   footer {
-      padding: 1rem;
+    padding: 1rem;
   }
 }

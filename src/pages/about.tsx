@@ -1,5 +1,4 @@
 import React from 'react';
-import './about.css';
 
 import image from '/others/about-IMG_2023.webp';
 import AboutCard from '../components/about-card';
@@ -26,39 +25,39 @@ const About: React.FC = () => {
 
     return (
         <>
-            <div className="about">
-                <img className="about-img" src={image} alt="Jonatha Fernandes" />
+            <div className="flex gap-[7%] mt-12 p-[4%] bg-[var(--bg-color)] border-2 border-[var(--details-color)] rounded-md font-rubik">
+                <img className="h-[400px] border-2 border-[var(--details-color)] rounded-md" src={image} alt="Jonatha Fernandes" />
                 <div className="about-text">
-                    <h1>Quem sou</h1>
+                    <h1 className="text-[var(--primary-color)] font-normal uppercase">Quem sou</h1>
                     <h2>Jonatha Fernandes</h2>
-                    <h3>Desenvolvedor Web</h3>
+                    <h3 className="text-[#4d4d4d] text-[19px]">Desenvolvedor Web</h3>
                     <br />
-                    <p>
+                    <p className="text-[22px]">
                         Sou apaixonado por tecnologia e sempre me identifiquei muito com a área.
                         <br />
                         Meu primeiro contato com programação foi na faculdade em 2018, onde iniciei o aprendizado em
                         Python. Também tive contato com as linguagens Java e SQL. No momento tenho focado meus estudos
-                        no ecosistema de <strong>JavaScript</strong> com <strong>React</strong>, <strong>Node.js</strong> e <strong>TypeScript</strong>.
+                        no ecosistema de <strong className="text-[#4d4d4d]">JavaScript</strong> com <strong className="text-[#4d4d4d]">React</strong>, <strong className="text-[#4d4d4d]">Node.js</strong> e <strong className="text-[#4d4d4d]">TypeScript</strong>.
                     </p>
                 </div>
             </div>
 
-            <section>
+            <section className="font-rubik">
                 <div className="section-title">
                     <h2>Formação <span>.</span></h2>
                 </div>
-                <div className="academic-education-text">
+                <div className="mt-4 p-[4%] bg-[var(--bg-color)]">
                     <AboutCard date="2022 — 2024" title="Uninassau" description="Análise e Desenvolvimento de Sistemas" tags={['graduação', 'tecnólogo']} />
                     <br />
                     <AboutCard date="2023" title="Alura" description="ONE — Oracle Next Education" tags={['lógica-de-programação', 'html', 'css', 'javascript', 'react']} />
                 </div>
             </section>
 
-            <section>
+            <section className="font-rubik">
                 <div className="section-title">
                     <h2>Experiência <span>.</span></h2>
                 </div>
-                <div className="professional-experience">
+                <div className="mt-4 p-[4%] bg-[var(--bg-color)] professional-experience">
                     <AboutCard
                         date="2023 — 2024 · 10 meses"
                         title="Polícia Civil de Alagoas"

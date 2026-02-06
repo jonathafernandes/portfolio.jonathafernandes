@@ -3,8 +3,8 @@ import React from 'react';
 const Projects: React.FC = () => {
 
     return (
-        <section>
-            <div className="section-title">
+        <section className='font-normal'>
+            <div className="section-title font-rubik">
                 <h1>Projetos <span>.</span></h1>
             </div>
             <div>
