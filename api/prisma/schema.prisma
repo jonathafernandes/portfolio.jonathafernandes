@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Project {
+  id          String   @id @default(uuid())
+  title       String
+  description String?
+  tags        String
+  /**
+   * SQLite não tem array nativo
+   * vamos salvar como string (JSON) e converter no service (isso é um trade‑off consciente)
+   */
+  createdAt   DateTime @default(now())
+}

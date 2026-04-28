@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateProjectDto } from './dto/create-project.dto';
-import { randomUUID } from 'node:crypto';
 import { UpdateProjectDto } from './dto/update-project.dto';
+import { PrismaService } from 'src/prisma/prisma.service';
 
 type Project = {
     id: string;
@@ -13,48 +13,64 @@ type Project = {
 
 @Injectable()
 export class ProjectsService {
-    private projects: Project[] = [];
+    // private projects: Project[] = []; // Armazena dados em memória local
 
-    findAll() {
-        return this.projects;
+    constructor(private readonly prisma: PrismaService) { } // Salva dados no banco com Prisma
+
+    async findAll() {
+        // return this.projects;  // Retorna projetos do armazenamento local
+
+        const projects = await this.prisma.project.findMany({ // Retorna projetos do db com Prisma
+            orderBy: {
+                createdAt: 'desc'
+            }
+        });
+
+        return projects.map(this.mapProject);
     }
 
-    findOne(id: string): Project {
-        const project = this.projects.find((p) => p.id === id);
+    async findOne(id: string) {
+        const project = await this.prisma.project.findUnique({ where: { id } });
         if (!project) {
             throw new NotFoundException('Project not found');
         }
-        return project;
+        return this.mapProject(project)
     }
 
-    create(dto: CreateProjectDto): Project {
-        const project: Project = {
-            id: randomUUID(),
-            title: dto.title,
-            description: dto.description,
-            tags: dto.tags ?? [],
-            createdAt: new Date(),
+    async create(dto: CreateProjectDto) {
+        return await this.prisma.project.create({
+            data: {
+                title: dto.title,
+                description: dto.description,
+                tags: JSON.stringify(dto.tags)
+            }
+        })
+    }
+
+    async update(id: string, dto: UpdateProjectDto) {  // Recebo qual projeto deve ser atualizado por meio do parâmetro
+        await this.findOne(id); // Busca qual o projeto pelo `findOne`
+
+        return this.prisma.project.update({ // Registro a alteração no projeto
+            where: { id },
+            data: {
+                title: dto.title,
+                description: dto.description,
+                tags: dto.tags ? JSON.stringify(dto.tags) : undefined
+            }
+        })
+    }
+
+    async remove(id: string) {
+        await this.findOne(id);
+
+        return await this.prisma.project.delete({ where: { id } })
+    }
+
+    private mapProject(project) {
+        return {
+            ...project,
+            tags: JSON.parse(project.tags)
         }
-
-        this.projects.push(project);
-        return project;
-    }
-
-    update(id: string, dto: UpdateProjectDto): Project {  // Recebo qual projeto deve ser atualizado por meio do parâmetro
-        const project = this.findOne(id); // Busca qual o projeto pelo `findOne`
-        Object.assign(project, dto) // Registro a alteração no projeto
-        return project;
-    }
-
-    remove(id: string): void {
-        // A tipagem 'void' é usada porque esta função não retorna nenhum valor útil
-        // Ela apenas remove um projeto do array e não precisa retornar o projeto removido
-        // O tipo 'void' indica que a função executa uma ação (side effect) mas não produz um resultado
-        const index = this.projects.findIndex((p) => p.id === id);
-        if (index === -1) {
-            throw new NotFoundException('Project not found');
-        }
-        this.projects.splice(index, 1);
     }
 }
 
